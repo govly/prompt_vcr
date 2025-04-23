@@ -1,9 +1,9 @@
-<div class="bg-white shadow rounded-lg overflow-hidden">
-  <div class="p-6 border-b border-gray-200">
+<div class="bg-white dark:bg-gray-800 shadow rounded-lg overflow-hidden">
+  <div class="p-6 border-b border-gray-200 dark:border-gray-700">
     <div class="flex items-center justify-between">
       <div>
-        <h2 class="text-xl font-bold text-gray-800"><%= @cassette_name.humanize %></h2>
-        <div class="flex mt-1 space-x-4 text-sm text-gray-500">
+        <h2 class="text-xl font-bold text-gray-800 dark:text-gray-100"><%= @cassette_name.humanize %></h2>
+        <div class="flex mt-1 space-x-4 text-sm text-gray-500 dark:text-gray-400">
           <% if @cassette_data&.dig("metadata", "created_at") %>
             <p>Created: <%= Time.parse(@cassette_data["metadata"]["created_at"]).strftime("%B %d, %Y %H:%M") %></p>
           <% elsif @file_metadata && @file_metadata[:created_at] %>
@@ -15,17 +15,17 @@
         </div>
       </div>
       <% if @is_prompt_cassette %>
-        <%= link_to "← Back to Prompt Cassettes", prompt_vcr.cassettes_path(type: 'prompts'), class: "text-indigo-600 hover:text-indigo-800 text-sm font-medium" %>
+        <%= link_to "← Back to Prompt Cassettes", prompt_vcr.cassettes_path(type: 'prompts'), class: "text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-300 text-sm font-medium" %>
       <% else %>
-        <%= link_to "← Back to Standard Cassettes", prompt_vcr.cassettes_path(type: 'standard'), class: "text-indigo-600 hover:text-indigo-800 text-sm font-medium" %>
+        <%= link_to "← Back to Standard Cassettes", prompt_vcr.cassettes_path(type: 'standard'), class: "text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-300 text-sm font-medium" %>
       <% end %>
     </div>
   </div>
-  
+
   <% if @cassette_data.nil? %>
     <div class="py-8 text-center p-6">
-      <p class="text-gray-500 mb-4">Prompt data not found</p>
-      <p class="text-sm text-gray-400">The requested prompt does not exist or could not be loaded.</p>
+      <p class="text-gray-500 dark:text-gray-400 mb-4">Prompt data not found</p>
+      <p class="text-sm text-gray-400 dark:text-gray-500">The requested prompt does not exist or could not be loaded.</p>
     </div>
   <% else %>
     <!-- Cassette Display Interface -->
@@ -33,10 +33,10 @@
       <!-- Interactive Prompt Playground Interface -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
       <!-- Left side - Input/Prompt -->
-      <div class="border-r border-gray-200 p-6">
+      <div class="border-r border-gray-200 dark:border-gray-700 p-6">
         <div class="mb-4">
-          <h3 class="text-lg font-semibold text-gray-700 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
             </svg>
             Prompt
@@ -48,147 +48,148 @@
           <% interaction = @cassette_data["http_interactions"].first %>
           <% if interaction && interaction["request"] && interaction["request"]["body"] && interaction["request"]["body"]["string"] %>
             <div class="prompt-metadata mb-4">
-              <h4 class="font-medium text-gray-700 mb-2 text-sm">Parameters</h4>
+              <h4 class="font-medium text-gray-700 dark:text-gray-300 mb-2 text-sm">Parameters</h4>
               <div class="grid grid-cols-2 gap-3 text-sm">
-                <div class="bg-gray-50 p-3 rounded">
-                  <span class="block text-xs text-gray-500">Model</span>
+                <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded">
+                  <span class="block text-xs text-gray-500 dark:text-gray-400">Model</span>
                   <span class="font-medium"><%= JSON.parse(interaction["request"]["body"]["string"])["model"] rescue "N/A" %></span>
                 </div>
-                <div class="bg-gray-50 p-3 rounded">
-                  <span class="block text-xs text-gray-500">Temperature</span>
-                  <span class="font-medium"><%= JSON.parse(interaction["request"]["body"]["string"])["temperature"] rescue "N/A" %></span>
-                </div>
+
               </div>
-              
+
               <% if @request_schema[:has_schema] %>
               <div class="mt-4">
-                <h4 class="font-medium text-gray-700 mb-2 text-sm">Schema Definition</h4>
-                <div class="bg-gray-100 p-3 rounded-md">
+                <h4 class="font-medium text-gray-700 dark:text-gray-300 mb-2 text-sm">Schema Definition</h4>
+                <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-md">
                   <% if @request_schema[:schema_name].present? %>
-                    <h5 class="text-sm font-semibold text-gray-800 mb-2"><%= @request_schema[:schema_name] %></h5>
+                    <h5 class="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2"><%= @request_schema[:schema_name] %></h5>
                   <% end %>
                   <% schema = @request_schema[:schema] %>
                   <% if schema.is_a?(Hash) %>
                     <% if schema["properties"].present? %>
-                      <h5 class="text-xs font-medium text-gray-600 mb-2">Properties:</h5>
-                      <div class="space-y-2">
+                      <h5 class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">Properties:</h5>
+                      <div class="Properties bg-white dark:bg-gray-800 border dark:border-gray-700">
                         <% schema["properties"].each do |prop_name, prop_details| %>
-                          <div class="bg-white p-2 rounded border border-gray-200">
+                          <div class="bg-white dark:bg-gray-800 p-2  border border-gray-200 dark:border-gray-700">
                             <div class="flex justify-between items-start">
-                              <span class="text-sm font-medium text-gray-700"><%= prop_name %></span>
-                              <span class="text-xs bg-gray-100 px-2 py-1 rounded"><%= prop_details["type"] %></span>
+                              <span class="text-sm font-medium text-gray-700 dark:text-gray-300"><%= prop_name %></span>
+                              <span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded dark:text-gray-300"><%= prop_details["type"] %></span>
                             </div>
                             <% if prop_details["description"].present? %>
-                              <p class="text-xs text-gray-500 mt-1"><%= prop_details["description"] %></p>
+                              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><%= prop_details["description"] %></p>
                             <% end %>
                           </div>
                         <% end %>
                       </div>
                     <% else %>
-                      <pre class="bg-white p-2 rounded text-sm"><%= JSON.pretty_generate(schema) %></pre>
+                      <pre class="bg-white dark:bg-gray-800 p-2 rounded text-sm text-gray-800 dark:text-gray-300"><%= JSON.pretty_generate(schema) %></pre>
                     <% end %>
                   <% else %>
-                    <pre class="bg-white p-2 rounded text-sm"><%= schema.to_s %></pre>
+                    <pre class="bg-white dark:bg-gray-800 p-2 rounded text-sm text-gray-800 dark:text-gray-300"><%= schema.to_s %></pre>
                   <% end %>
                 </div>
               </div>
               <% end %>
             </div>
 
-            <div class="prompt-container bg-gray-50 mb-4 rounded-md">
-              <pre class="p-4 text-sm whitespace-pre-wrap break-words text-gray-800"><%= JSON.parse(interaction["request"]["body"]["string"])["input"] rescue interaction["request"]["body"]["string"] %></pre>
+            <div class="prompt-container bg-gray-100 dark:bg-gray-700 mb-4 rounded-md">
+              <div class="prose dark:prose-invert prose-sm max-w-none p-4">
+                <pre class="whitespace-pre-wrap break-words"><%= JSON.parse(interaction["request"]["body"]["string"])["input"] rescue interaction["request"]["body"]["string"] %></pre>
+              </div>
             </div>
           <% end %>
         <% else %>
           <!-- Direct prompt data structure -->
           <% if @cassette_data["request"] && @cassette_data["request"]["prompt"] %>
             <div class="prompt-metadata mb-4">
-              <h4 class="font-medium text-gray-700 mb-2 text-sm">Parameters</h4>
+              <h4 class="font-medium text-gray-700 dark:text-gray-300 mb-2 text-sm">Parameters</h4>
               <div class="grid grid-cols-2 gap-3 text-sm">
-                <div class="bg-gray-50 p-3 rounded">
-                  <span class="block text-xs text-gray-500">Model</span>
+                <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded">
+                  <span class="block text-xs text-gray-500 dark:text-gray-400">Model</span>
                   <span class="font-medium"><%= @cassette_data["request"]["model"] || "N/A" %></span>
                 </div>
-                <div class="bg-gray-50 p-3 rounded">
-                  <span class="block text-xs text-gray-500">Temperature</span>
+                <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded">
+                  <span class="block text-xs text-gray-500 dark:text-gray-400">Temperature</span>
                   <span class="font-medium"><%= @cassette_data["request"]["temperature"] || "N/A" %></span>
                 </div>
                 <% if @cassette_data["request"]["max_tokens"] %>
-                <div class="bg-gray-50 p-3 rounded">
-                  <span class="block text-xs text-gray-500">Max Tokens</span>
+                <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded">
+                  <span class="block text-xs text-gray-500 dark:text-gray-400">Max Tokens</span>
                   <span class="font-medium"><%= @cassette_data["request"]["max_tokens"] %></span>
                 </div>
                 <% end %>
               </div>
-              
+
               <% if @cassette_data["request"]["system_prompt"] %>
               <div class="mt-3">
-                <h5 class="text-xs text-gray-500 mb-1">System Prompt</h5>
-                <div class="bg-indigo-50 rounded-md p-3 text-sm italic text-gray-700">
+                <h5 class="text-xs text-gray-500 dark:text-gray-400 mb-1">System Prompt</h5>
+                <div class="bg-slate-50 dark:bg-slate-900 rounded-md p-3 text-sm italic text-gray-700 dark:text-gray-300">
                   <%= @cassette_data["request"]["system_prompt"] %>
                 </div>
               </div>
               <% end %>
-              
+
               <% if @request_schema[:has_schema] %>
               <div class="mt-4">
-                <h4 class="font-medium text-gray-700 mb-2 text-sm">Schema Definition</h4>
-                <div class="bg-gray-100 p-3 rounded-md">
+                <h4 class="font-medium text-gray-700 dark:text-gray-300 mb-2 text-sm">Schema Definition</h4>
+                <div class="bg-gray-100 dark:bg-gray-700 p-3 rounded-md">
                   <% if @request_schema[:schema_name].present? %>
-                    <h5 class="text-sm font-semibold text-gray-800 mb-2"><%= @request_schema[:schema_name] %></h5>
+                    <h5 class="text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2"><%= @request_schema[:schema_name] %></h5>
                   <% end %>
                   <% schema = @request_schema[:schema] %>
                   <% if schema.is_a?(Hash) %>
                     <% if schema["properties"].present? %>
-                      <h5 class="text-xs font-medium text-gray-600 mb-2">Properties:</h5>
-                      <div class="space-y-2">
+                      <h5 class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-2">Properties:</h5>
+                      <div class="Properties bg-white dark:bg-gray-800 border dark:border-gray-700">
                         <% schema["properties"].each do |prop_name, prop_details| %>
-                          <div class="bg-white p-2 rounded border border-gray-200">
+                          <div class="bg-white dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700">
                             <div class="flex justify-between items-start">
-                              <span class="text-sm font-medium text-gray-700"><%= prop_name %></span>
-                              <span class="text-xs bg-gray-100 px-2 py-1 rounded"><%= prop_details["type"] %></span>
+                              <span class="text-sm font-medium text-gray-700 dark:text-gray-300"><%= prop_name %></span>
+                              <span class="text-xs bg-gray-100 dark:bg-gray-700 px-2 py-1 rounded dark:text-gray-300"><%= prop_details["type"] %></span>
                             </div>
                             <% if prop_details["description"].present? %>
-                              <p class="text-xs text-gray-500 mt-1"><%= prop_details["description"] %></p>
+                              <p class="text-xs text-gray-500 dark:text-gray-400 mt-1"><%= prop_details["description"] %></p>
                             <% end %>
                           </div>
                         <% end %>
                       </div>
                     <% else %>
-                      <pre class="bg-white p-2 rounded text-sm"><%= JSON.pretty_generate(schema) %></pre>
+                      <pre class="bg-white dark:bg-gray-800 p-2 rounded text-sm text-gray-800 dark:text-gray-300"><%= JSON.pretty_generate(schema) %></pre>
                     <% end %>
                   <% else %>
-                    <pre class="bg-white p-2 rounded text-sm"><%= schema.to_s %></pre>
+                    <pre class="bg-white dark:bg-gray-800 p-2 rounded text-sm text-gray-800 dark:text-gray-300"><%= schema.to_s %></pre>
                   <% end %>
                 </div>
               </div>
               <% end %>
             </div>
-            
-            <div class="prompt-container bg-gray-50 mb-4 rounded-md">
-              <pre class="p-4 text-sm whitespace-pre-wrap break-words text-gray-800"><%= @cassette_data["request"]["prompt"] %></pre>
+
+            <div class="prompt-container bg-gray-100 dark:bg-gray-700 mb-4 rounded-md">
+              <div class="prose dark:prose-invert prose-sm max-w-none p-4">
+                <pre class="whitespace-pre-wrap break-words"><%= @cassette_data["request"]["prompt"] %></pre>
+              </div>
             </div>
           <% end %>
         <% end %>
-        
-        <div class="mt-6 bg-gray-50 p-4 rounded-md border border-gray-200">
-          <h4 class="text-sm font-medium text-gray-700 mb-2 flex items-center">
+
+        <div class="mt-6 bg-gray-100 dark:bg-gray-700 p-4 rounded-md border border-gray-200 dark:border-gray-700">
+          <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
             </svg>
             Delete this cassette
           </h4>
-          <div class="bg-gray-100 p-2 rounded-md">
-            <code class="text-xs text-gray-800 block whitespace-pre overflow-auto" id="delete-command">rm <%= Rails.root.join("test/vcr_cassettes/prompts", "#{@cassette_name}.yml") %></code>
+          <div class="bg-gray-100 dark:bg-gray-800 p-2 rounded-md">
+            <code class="text-xs text-gray-800 dark:text-gray-300 block whitespace-pre overflow-auto" id="delete-command">rm <%= Rails.root.join("test/vcr_cassettes/prompts", "#{@cassette_name}.yml") %></code>
           </div>
-          <button onclick="copyDeleteCommand()" class="mt-2 text-xs text-gray-600 hover:text-indigo-600 flex items-center">
+          <button onclick="copyDeleteCommand()" class="mt-2 text-xs  hover:text-slate-600 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
             </svg>
             Copy to clipboard
           </button>
         </div>
-        
+
         <script>
           function copyDeleteCommand() {
             const commandText = document.getElementById('delete-command').textContent;
@@ -204,23 +205,23 @@
           }
         </script>
       </div>
-      
+
       <!-- Right side - Output/Response -->
-      <div class="p-6 bg-gray-50">
+      <div class="p-6 bg-gray-100 dark:bg-gray-700">
         <div class="mb-4">
-          <h3 class="text-lg font-semibold text-gray-700 flex items-center">
+          <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             Response
           </h3>
         </div>
-        
+
         <% if @cassette_data["http_interactions"] %>
           <!-- HTTP-style interactions -->
           <% interaction = @cassette_data["http_interactions"].first %>
           <% if interaction && interaction["response"] && interaction["response"]["body"] && interaction["response"]["body"]["string"] %>
-            <% 
+            <%
               # Use the structured data from the controller
               response_string = interaction["response"]["body"]["string"]
               has_structured_data = @structured_data[:has_structured_data]
@@ -228,25 +229,30 @@
               schema = @structured_data[:schema]
               json_response = @structured_data[:json_response]
             %>
-            
+
             <% if has_structured_data %>
               <!-- Tabbed interface for raw response and structured view -->
-              <div class="border border-gray-200 rounded-md mb-4 overflow-hidden">
-                <div class="bg-white border-b border-gray-200 px-4 py-3">
+              <div class="border border-gray-200 dark:border-gray-700 rounded-md mb-4 overflow-hidden">
+                <div class="bg-white dark:bg-gray-700 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
                   <div class="flex">
-                    <button id="tab-raw" class="px-4 py-2 text-sm font-medium text-indigo-700 bg-white border-b-2 border-indigo-700" onclick="showTab('raw')">Raw Response</button>
-                    <button id="tab-parsed" class="px-4 py-2 text-sm font-medium text-gray-500 bg-white" onclick="showTab('parsed')">Structured View</button>
+                    <button id="tab-raw" class="px-4 py-2 text-sm font-medium text-slate-700 bg-white dark:bg-gray-700 border-b-2 border-slate-700 dark:text-slate-400 dark:border-slate-400" onclick="showTab('raw')">Raw Response</button>
+                    <button id="tab-parsed" class="px-4 py-2 text-sm font-medium text-gray-500 bg-white dark:text-gray-400 dark:bg-gray-700" onclick="showTab('parsed')">Structured View</button>
                   </div>
                 </div>
-                
+
                 <!-- Raw response content -->
-                <div id="raw-tab" class="p-4 bg-white">
-                  <pre class="text-sm whitespace-pre-wrap break-words text-gray-800"><%= response_string %></pre>
+                <div id="raw-tab" class="p-4 bg-white dark:bg-gray-700">
+                  <div class="prose dark:prose-invert prose-sm max-w-none">
+                    <pre class="whitespace-pre-wrap break-words"><%= response_string %></pre>
+                  </div>
                 </div>
-                
+
+
                 <!-- Parsed structured content -->
-                <div id="parsed-tab" class="p-4 bg-white hidden">
-                  <% 
+                <div id="parsed-tab" class="p-4 bg-white dark:bg-gray-700">
+
+                  <div class="prose dark:prose-invert prose-sm max-w-none">
+                      <%
                     # Use structured data from the controller
                     if @structured_data[:structured_output].present?
                       structured_data = @structured_data[:structured_output]
@@ -256,19 +262,19 @@
                       structured_data = nil
                     end
                   %>
-                  <div class="bg-gray-50 rounded-md p-4">
+                  <div class="bg-gray-100 dark:bg-gray-800 rounded-md p-4">
                     <% if structured_data.is_a?(Hash) %>
                       <!-- Display hash data -->
                       <div class="space-y-4">
                         <% structured_data.each do |key, value| %>
-                          <div class="border-b border-gray-200 pb-3 last:border-b-0 last:pb-0">
-                            <h4 class="font-medium text-gray-700 mb-2"><%= key.to_s.humanize %></h4>
+                          <div class="border-b border-gray-200 dark:border-gray-700 pb-3 last:border-b-0 last:pb-0">
+                            <h4 class="font-medium text-gray-700 mb-2 dark:text-gray-300"><%= key.to_s.humanize %></h4>
                             <% if value.is_a?(Hash) || value.is_a?(Array) %>
-                              <div class="bg-white rounded p-3 overflow-auto">
-                                <pre class="text-sm text-gray-800"><%= JSON.pretty_generate(value) rescue value.inspect %></pre>
+                              <div class="bg-white dark:bg-gray-800 rounded p-3 overflow-auto">
+                                <pre class="text-sm text-gray-800 dark:text-gray-300"><%= JSON.pretty_generate(value) rescue value.inspect %></pre>
                               </div>
                             <% else %>
-                              <p class="text-sm text-gray-800"><%= value.to_s %></p>
+                              <p class="text-sm text-gray-800 dark:text-gray-300"><%= value.to_s %></p>
                             <% end %>
                           </div>
                         <% end %>
@@ -277,89 +283,94 @@
                       <!-- Display array data -->
                       <div class="space-y-4">
                         <% structured_data.each_with_index do |item, index| %>
-                          <div class="border border-gray-200 rounded-md p-3 bg-white">
-                            <h4 class="font-medium text-gray-700 mb-2">Item <%= index + 1 %></h4>
+                          <div class="border border-gray-200 dark:border-gray-700 rounded-md p-3 bg-white dark:bg-gray-800">
+                            <h4 class="font-medium text-gray-700 mb-2 dark:text-gray-300">Item <%= index + 1 %></h4>
                             <% if item.is_a?(Hash) %>
+                              <!-- If the array item is a hash, display its fields -->
                               <div class="space-y-2 pl-3">
                                 <% item.each do |key, value| %>
                                   <div class="flex">
-                                    <span class="text-gray-600 text-sm font-medium w-1/3"><%= key.to_s.humanize %>:</span>
-                                    <span class="text-gray-800 text-sm flex-1"><%= value.to_s %></span>
+                                    <span class="text-gray-600 dark:text-gray-400 text-sm font-medium w-1/3"><%= key.to_s.humanize %>:</span>
+                                    <span class="text-gray-800 dark:text-gray-300 text-sm flex-1"><%= value.to_s %></span>
                                   </div>
                                 <% end %>
                               </div>
                             <% else %>
-                              <p class="text-sm text-gray-800"><%= item.to_s %></p>
+                              <p class="text-sm text-gray-800 dark:text-gray-300"><%= item.to_s %></p>
                             <% end %>
                           </div>
                         <% end %>
                       </div>
                     <% else %>
-                      <pre class="text-sm text-gray-800"><%= structured_data.inspect %></pre>
+                      <pre class="text-sm text-gray-800 dark:text-gray-300"><%= structured_data.inspect %></pre>
                     <% end %>
                   </div>
                 </div>
               </div>
-              
+
               <!-- Add JavaScript for tab switching -->
               <script>
                 function showTab(tabName) {
                   // Hide all tabs
                   document.getElementById('raw-tab').classList.add('hidden');
                   document.getElementById('parsed-tab').classList.add('hidden');
-                  
+
                   // Remove active class from all tab buttons
-                  document.getElementById('tab-raw').classList.remove('text-indigo-700', 'border-b-2', 'border-indigo-700');
-                  document.getElementById('tab-raw').classList.add('text-gray-500');
-                  document.getElementById('tab-parsed').classList.remove('text-indigo-700', 'border-b-2', 'border-indigo-700');
-                  document.getElementById('tab-parsed').classList.add('text-gray-500');
-                  
+                  document.getElementById('tab-raw').classList.remove('text-slate-700', 'dark:text-slate-400', 'border-b-2', 'border-slate-700', 'dark:border-slate-400');
+                  document.getElementById('tab-raw').classList.add('text-gray-500', 'dark:text-gray-400');
+                  document.getElementById('tab-parsed').classList.remove('text-slate-700', 'dark:text-slate-400', 'border-b-2', 'border-slate-700', 'dark:border-slate-400');
+                  document.getElementById('tab-parsed').classList.add('text-gray-500', 'dark:text-gray-400');
+
                   // Show the selected tab
                   document.getElementById(tabName + '-tab').classList.remove('hidden');
-                  
+
                   // Add active class to the selected tab button
-                  document.getElementById('tab-' + tabName).classList.remove('text-gray-500');
-                  document.getElementById('tab-' + tabName).classList.add('text-indigo-700', 'border-b-2', 'border-indigo-700');
+                  document.getElementById('tab-' + tabName).classList.remove('text-gray-500', 'dark:text-gray-400');
+                  document.getElementById('tab-' + tabName).classList.add('text-slate-700', 'dark:text-slate-400', 'border-b-2', 'border-slate-700', 'dark:border-slate-400');
                 }
               </script>
             <% else %>
               <!-- Regular response display -->
-              <div class="response-container bg-white border border-gray-200 rounded-md mb-4">
-                <pre class="p-4 text-sm whitespace-pre-wrap break-words text-gray-800"><%= response_string %></pre>
+              <div class="response-container bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md mb-4">
+                <div class="prose dark:prose-invert prose-sm max-w-none p-4">
+                  <pre class="whitespace-pre-wrap break-words"><%= response_string %></pre>
+                </div>
               </div>
             <% end %>
           <% end %>
         <% else %>
           <!-- Direct prompt data structure -->
           <% if @cassette_data["response"] && @cassette_data["response"]["content"] %>
-            <% 
+            <%
               # Use the structured data from the controller
               has_structured_output = @structured_data[:has_structured_data]
               content = @structured_data[:content]
             %>
-            
+
             <% if has_structured_output %>
               <!-- Tabbed interface for content and structured output -->
               <div class="border border-gray-200 rounded-md mb-4 overflow-hidden">
                 <div class="bg-white border-b border-gray-200 px-4 py-3">
                   <div class="flex">
-                    <button id="tab-content" class="px-4 py-2 text-sm font-medium text-indigo-700 bg-white border-b-2 border-indigo-700" onclick="showTab('content')">Response</button>
+                    <button id="tab-content" class="px-4 py-2 text-sm font-medium text-slate-700 bg-white border-b-2 border-slate-700" onclick="showTab('content')">Response</button>
                     <button id="tab-structured" class="px-4 py-2 text-sm font-medium text-gray-500 bg-white" onclick="showTab('structured')">Structured Output</button>
                   </div>
                 </div>
-                
+
                 <!-- Response content -->
-                <div id="content-tab" class="p-4 bg-white">
-                  <pre class="text-sm whitespace-pre-wrap break-words text-gray-800"><%= content %></pre>
+                <div id="content-tab" class="p-4 bg-white dark:bg-gray-800">
+                  <div class="prose dark:prose-invert prose-sm max-w-none">
+                    <pre class="whitespace-pre-wrap break-words"><%= content %></pre>
+                  </div>
                 </div>
-                
+
                 <!-- Structured output -->
                 <div id="structured-tab" class="p-4 bg-white hidden">
-                  <% 
+                  <%
                     # Get the structured output
                     structured_output = @cassette_data["response"]["structured_output"] || @cassette_data["response"]["schema"]
                   %>
-                  <div class="bg-gray-50 rounded-md p-4">
+                  <div class="bg-gray-100 dark:bg-gray-700 rounded-md p-4">
                     <% if structured_output.is_a?(Hash) %>
                       <!-- Display hash data in a nice format -->
                       <div class="space-y-4">
@@ -368,7 +379,7 @@
                             <h4 class="font-medium text-gray-700 mb-2"><%= key.to_s.humanize %></h4>
                             <% if value.is_a?(Hash) || value.is_a?(Array) %>
                               <div class="bg-white rounded p-3 overflow-auto">
-                                <pre class="text-sm text-gray-800"><%= JSON.pretty_generate(value) rescue value.inspect %></pre>
+                                <pre class="text-sm text-gray-800 dark:text-gray-300"><%= JSON.pretty_generate(value) rescue value.inspect %></pre>
                               </div>
                             <% elsif value.is_a?(String) && value.length > 100 %>
                               <!-- For long strings, use a scrollable area -->
@@ -405,52 +416,54 @@
                       </div>
                     <% else %>
                       <!-- Fallback for other types -->
-                      <pre class="text-sm text-gray-800"><%= structured_output.inspect %></pre>
+                      <pre class="text-sm text-gray-800 dark:text-gray-300"><%= structured_output.inspect %></pre>
                     <% end %>
                   </div>
                 </div>
               </div>
-              
+
               <!-- Add JavaScript for tab switching -->
               <script>
                 function showTab(tabName) {
                   // Hide all tabs
                   document.getElementById('content-tab').classList.add('hidden');
                   document.getElementById('structured-tab').classList.add('hidden');
-                  
+
                   // Remove active class from all tab buttons
-                  document.getElementById('tab-content').classList.remove('text-indigo-700', 'border-b-2', 'border-indigo-700');
-                  document.getElementById('tab-content').classList.add('text-gray-500');
-                  document.getElementById('tab-structured').classList.remove('text-indigo-700', 'border-b-2', 'border-indigo-700');
-                  document.getElementById('tab-structured').classList.add('text-gray-500');
-                  
+                  document.getElementById('tab-content').classList.remove('text-slate-700', 'dark:text-slate-400', 'border-b-2', 'border-slate-700', 'dark:border-slate-400');
+                  document.getElementById('tab-content').classList.add('text-gray-500', 'dark:text-gray-400');
+                  document.getElementById('tab-structured').classList.remove('text-slate-700', 'dark:text-slate-400', 'border-b-2', 'border-slate-700', 'dark:border-slate-400');
+                  document.getElementById('tab-structured').classList.add('text-gray-500', 'dark:text-gray-400');
+
                   // Show the selected tab
                   document.getElementById(tabName + '-tab').classList.remove('hidden');
-                  
+
                   // Add active class to the selected tab button
-                  document.getElementById('tab-' + tabName).classList.remove('text-gray-500');
-                  document.getElementById('tab-' + tabName).classList.add('text-indigo-700', 'border-b-2', 'border-indigo-700');
+                  document.getElementById('tab-' + tabName).classList.remove('text-gray-500', 'dark:text-gray-400');
+                  document.getElementById('tab-' + tabName).classList.add('text-slate-700', 'dark:text-slate-400', 'border-b-2', 'border-slate-700', 'dark:border-slate-400');
                 }
               </script>
             <% else %>
               <!-- Regular response display -->
-              <div class="response-container bg-white border border-gray-200 rounded-md mb-4">
-                <pre class="p-4 text-sm whitespace-pre-wrap break-words text-gray-800"><%= content %></pre>
+              <div class="response-container bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md mb-4">
+                <div class="prose dark:prose-invert prose-sm max-w-none p-4">
+                  <pre class="whitespace-pre-wrap break-words"><%= content %></pre>
+                </div>
               </div>
             <% end %>
-            
+
             <div class="response-metadata">
               <h4 class="font-medium text-gray-700 mb-2 text-sm">Response Details</h4>
               <div class="grid grid-cols-2 gap-3 text-sm">
                 <% if @cassette_data["response"]["tokens"] %>
                 <div class="bg-white p-3 rounded border border-gray-200">
-                  <span class="block text-xs text-gray-500">Tokens</span>
+                  <span class="block text-xs text-gray-500 dark:text-gray-400">Tokens</span>
                   <span class="font-medium"><%= @cassette_data["response"]["tokens"] %></span>
                 </div>
                 <% end %>
                 <% if @cassette_data["response"]["finished_reason"] %>
                 <div class="bg-white p-3 rounded border border-gray-200">
-                  <span class="block text-xs text-gray-500">Finished Reason</span>
+                  <span class="block text-xs text-gray-500 dark:text-gray-400">Finished Reason</span>
                   <span class="font-medium"><%= @cassette_data["response"]["finished_reason"] %></span>
                 </div>
                 <% end %>
@@ -458,7 +471,7 @@
             </div>
           <% end %>
         <% end %>
-        
+
         <% if @cassette_data["metadata"] %>
         <div class="mt-6 border-t border-gray-200 pt-4">
           <h4 class="text-sm font-medium text-gray-500 mb-2">Metadata</h4>
@@ -472,43 +485,43 @@
           </div>
         </div>
         <% end %>
-        
+
 
       </div>
       </div>
   <% else %>
     <!-- Standard VCR Cassette Display -->
     <div class="grid grid-cols-1 gap-6 p-6">
-      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-        <h3 class="text-lg font-semibold text-gray-700 mb-3">VCR Cassette Details</h3>
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-4">
+        <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3">VCR Cassette Details</h3>
         <div class="grid grid-cols-2 gap-4 mb-4">
           <div>
-            <p class="text-sm text-gray-500">Filename</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Filename</p>
             <p class="text-sm font-medium"><%= @cassette_name %></p>
           </div>
           <div>
-            <p class="text-sm text-gray-500">Interactions</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Interactions</p>
             <p class="text-sm font-medium"><%= @cassette_data["http_interactions"] ? @cassette_data["http_interactions"].size : 0 %></p>
           </div>
           <div>
-            <p class="text-sm text-gray-500">Created</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Created</p>
             <p class="text-sm font-medium"><%= @file_metadata[:created_at] ? @file_metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %></p>
           </div>
           <div>
-            <p class="text-sm text-gray-500">Last updated</p>
+            <p class="text-sm text-gray-500 dark:text-gray-400">Last updated</p>
             <p class="text-sm font-medium"><%= @file_metadata[:updated_at] ? @file_metadata[:updated_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %></p>
           </div>
         </div>
-        
+
         <div class="mb-4">
-          <h4 class="text-md font-medium text-gray-700 mb-2">HTTP Interactions</h4>
+          <h4 class="text-md font-medium text-gray-700 dark:text-gray-300 mb-2">HTTP Interactions</h4>
           <% if @cassette_data["http_interactions"] && !@cassette_data["http_interactions"].empty? %>
             <div class="space-y-3">
               <% @cassette_data["http_interactions"].each_with_index do |interaction, index| %>
-                <div class="border border-gray-200 rounded-md">
-                  <div class="px-4 py-2 bg-gray-50 border-b border-gray-200 flex justify-between items-center">
+                <div class="border border-gray-200 dark:border-gray-700 rounded-md">
+                  <div class="px-4 py-2 bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center">
                     <div>
-                      <span class="text-sm font-medium text-gray-700">Interaction #<%= index + 1 %></span>
+                      <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Interaction #<%= index + 1 %></span>
                       <% if interaction["request"] && interaction["request"]["uri"] %>
                         <span class="ml-2 text-xs text-gray-500"><%= interaction["request"]["uri"] %></span>
                       <% end %>
@@ -519,19 +532,19 @@
                   </div>
                   <div class="p-3">
                     <div class="mb-2">
-                      <h5 class="text-xs uppercase tracking-wide text-gray-500 mb-1">Request</h5>
-                      <div class="bg-gray-50 p-2 rounded text-xs font-mono overflow-auto max-h-24">
+                      <h5 class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-300 mb-1">Request</h5>
+                      <div class="bg-gray-100 dark:bg-gray-800 p-2 rounded text-xs font-mono overflow-auto max-h-24">
                         <% if interaction["request"] && interaction["request"]["method"] %>
-                          <span class="text-blue-600 font-semibold"><%= interaction["request"]["method"] %></span>
+                          <span class="text-amber-600 font-semibold"><%= interaction["request"]["method"] %></span>
                         <% end %>
                         <% if interaction["request"] && interaction["request"]["uri"] %>
-                          <span class="text-gray-700"><%= interaction["request"]["uri"] %></span>
+                          <span class="text-gray-700 dark:text-gray-300"><%= interaction["request"]["uri"] %></span>
                         <% end %>
                       </div>
                     </div>
                     <div>
-                      <h5 class="text-xs uppercase tracking-wide text-gray-500 mb-1">Response</h5>
-                      <div class="bg-gray-50 p-2 rounded text-xs font-mono overflow-auto max-h-36">
+                      <h5 class="text-xs uppercase tracking-wide text-gray-500 dark:text-gray-300 mb-1">Response</h5>
+                      <div class="bg-gray-100 dark:bg-gray-800 p-2 rounded text-xs font-mono overflow-auto max-h-36">
                         <% if interaction["response"] && interaction["response"]["body"] && interaction["response"]["body"]["string"] %>
                           <% response_snippet = interaction["response"]["body"]["string"].to_s %>
                           <% if response_snippet.length > 500 %>
@@ -540,7 +553,7 @@
                             <%= response_snippet %>
                           <% end %>
                         <% else %>
-                          <span class="text-gray-500 italic">No response body</span>
+                          <span class="text-gray-500 dark:text-gray-300 italic">No response body</span>
                         <% end %>
                       </div>
                     </div>
@@ -549,21 +562,21 @@
               <% end %>
             </div>
           <% else %>
-            <p class="text-sm text-gray-500 italic">No HTTP interactions found in this cassette</p>
+            <p class="text-sm text-gray-500 dark:text-gray-300 italic">No HTTP interactions found in this cassette</p>
           <% end %>
         </div>
-        
-        <div class="mt-6 bg-gray-50 p-4 rounded-md border border-gray-200">
-          <h4 class="text-sm font-medium text-gray-700 mb-2 flex items-center">
+
+        <div class="mt-6 bg-white dark:bg-gray-800 p-4 rounded-md border border-gray-200 dark:border-gray-700">
+          <h4 class="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
             </svg>
             Delete this cassette
           </h4>
-          <div class="bg-gray-100 p-2 rounded-md">
-            <code class="text-xs text-gray-800 block whitespace-pre overflow-auto" id="delete-command">rm <%= Rails.root.join("test/vcr_cassettes", "#{@cassette_name}.yml") %></code>
+          <div class="bg-gray-100 dark:bg-gray-800 p-2 rounded-md">
+            <code class="text-xs text-gray-800 dark:text-gray-300 block whitespace-pre overflow-auto" id="delete-command">rm <%= Rails.root.join("test/vcr_cassettes", "#{@cassette_name}.yml") %></code>
           </div>
-          <button onclick="copyDeleteCommand()" class="mt-2 text-xs text-gray-600 hover:text-indigo-600 flex items-center">
+          <button onclick="copyDeleteCommand()" class="mt-2 text-xs  hover:text-slate-600 flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
             </svg>
@@ -571,20 +584,22 @@
           </button>
         </div>
       </div>
-      
+
       <!-- Raw YAML Section -->
-      <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
-        <h3 class="text-lg font-semibold text-gray-700 mb-3 flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 p-4">
+        <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-3 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-500 dark:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
           </svg>
           Raw YAML
         </h3>
-        <div class="bg-gray-50 rounded-md border border-gray-200 p-3 overflow-auto max-h-96">
-          <pre class="text-xs text-gray-800 whitespace-pre"><%= YAML.dump(@cassette_data) %></pre>
+        <div class="border-gray-200 dark:border-gray-700 p-3 overflow-auto max-h-96 bg-gray-100 rounded dark:bg-gray-800">
+          <div class=" dark:prose-invert prose-sm max-w-none">
+            <code class="text-xs whitespace-pre"><%= YAML.dump(@cassette_data) %></code>
+          </div>
         </div>
       </div>
-      
+
       <script>
         function copyDeleteCommand() {
           const commandText = document.getElementById('delete-command').textContent;
