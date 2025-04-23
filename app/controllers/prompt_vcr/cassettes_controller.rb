@@ -97,6 +97,29 @@ module PromptVcr
         @request_schema = { has_schema: false }
       end
     end
+    
+    def destroy
+      @cassette_name = params[:id]
+      
+      # Determine if this is a prompt cassette
+      is_prompt_cassette = if params[:cassette_type].present?
+                             params[:cassette_type] == 'prompt'
+                           else
+                             # Fall back to path-based detection
+                             @cassette_name.include?(CassetteParser::PROMPTS_DIR) || 
+                             @cassette_name.include?(CassetteParser::PROMPTS_DIR.singularize)
+                           end
+      
+      # Choose the appropriate parser
+      appropriate_parser = is_prompt_cassette ? prompts_parser : standard_parser
+      
+      # Attempt to delete the cassette
+      if appropriate_parser.delete_cassette(@cassette_name)
+        redirect_to cassettes_path, notice: "Cassette '#{@cassette_name}' was successfully deleted."
+      else
+        redirect_to cassette_path(@cassette_name), alert: "Failed to delete cassette '#{@cassette_name}'."
+      end
+    end
 
     private
     

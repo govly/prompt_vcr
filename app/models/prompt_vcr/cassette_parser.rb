@@ -143,6 +143,41 @@ module PromptVcr
       found_path ? File.mtime(found_path) : nil 
     end
     
+    def delete_cassette(name)
+      # Use the same path finding logic as in load_cassette
+      possible_paths = []
+      
+      # Standard cassette path
+      possible_paths << File.join(Rails.root, "test/vcr_cassettes", "#{name}.yml") 
+      
+      # Prompt cassette path (both with and without 'prompts/' prefix)
+      clean_name = name.sub(/^prompts\//, '')
+      possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{clean_name}.yml")
+      
+      # If name doesn't already have the subdirectory and it's a prompt cassette
+      if prompt_cassette?(name) && !name.include?('/')
+        possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{name}.yml")
+      end
+      
+      # Try all possible paths
+      found_path = possible_paths.find { |path| File.exist?(path) }
+      
+      if found_path
+        Rails.logger.info("Deleting cassette file: #{found_path}")
+        begin
+          File.delete(found_path)
+          true
+        rescue => e
+          Rails.logger.error("Error deleting cassette: #{e.message}")
+          false
+        end
+      else
+        paths_tried = possible_paths.join(", ")
+        Rails.logger.error("Cassette file not found for deletion. Tried paths: #{paths_tried}")
+        false
+      end
+    end
+    
     def extract_metadata(data, cassette_name)
       return {} unless data
       

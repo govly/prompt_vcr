@@ -91,8 +91,13 @@
                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                   <%= metadata[:created_at] ? metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %>
                 </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium dark:font-medium">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium dark:font-medium flex space-x-3">
                   <%= link_to "View", prompt_vcr.cassette_path(cassette, cassette_type: 'standard'), class: "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-300" %>
+                  <%= button_to "Delete", prompt_vcr.cassette_path(cassette, cassette_type: 'standard'),
+                      method: :delete,
+                      class: "text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 text-sm font-medium",
+                      form: { class: "inline" },
+                      data: { confirm: "Are you sure you want to delete this cassette? This action cannot be undone." } %>
                 </td>
               </tr>
             <% end %>

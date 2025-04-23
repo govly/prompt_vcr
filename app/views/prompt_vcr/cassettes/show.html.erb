@@ -179,31 +179,18 @@
             </svg>
             Delete this cassette
           </h4>
-          <div class="bg-gray-100 dark:bg-gray-800 p-2 rounded-md">
-            <code class="text-xs text-gray-800 dark:text-gray-300 block whitespace-pre overflow-auto" id="delete-command">rm <%= Rails.root.join("test/vcr_cassettes/prompts", "#{@cassette_name}.yml") %></code>
-          </div>
-          <button onclick="copyDeleteCommand()" class="mt-2 text-xs  hover:text-slate-600 flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
-            </svg>
-            Copy to clipboard
-          </button>
-        </div>
+          <p class="text-xs text-gray-500 dark:text-gray-400 mb-3">This will permanently delete the cassette file.</p>
 
-        <script>
-          function copyDeleteCommand() {
-            const commandText = document.getElementById('delete-command').textContent;
-            navigator.clipboard.writeText(commandText).then(function() {
-              // Show a temporary success message
-              const button = event.target.closest('button');
-              const originalText = button.innerHTML;
-              button.innerHTML = '<span class="text-green-600">✓ Copied!</span>';
-              setTimeout(function() {
-                button.innerHTML = originalText;
-              }, 2000);
-            });
-          }
-        </script>
+          <%= button_to prompt_vcr.cassette_path(@cassette_name, cassette_type: @is_prompt_cassette ? 'prompt' : 'standard'),
+                method: :delete,
+                class: "text-white bg-red-600 hover:bg-red-700 font-medium rounded-md text-sm px-3 py-2 text-center inline-flex items-center",
+                data: { confirm: "Are you sure you want to delete this cassette? This action cannot be undone." } do %>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+            </svg>
+            Delete
+          <% end %>
+        </div>
       </div>
 
       <!-- Right side - Output/Response -->
@@ -249,61 +236,27 @@
 
 
                 <!-- Parsed structured content -->
-                <div id="parsed-tab" class="p-4 bg-white dark:bg-gray-700">
-
+                <div id="parsed-tab">
                   <div class="prose dark:prose-invert prose-sm max-w-none">
-                      <%
-                    # Use structured data from the controller
-                    if @structured_data[:structured_output].present?
-                      structured_data = @structured_data[:structured_output]
-                    elsif @structured_data[:schema].present?
-                      structured_data = @structured_data[:schema]
-                    else
-                      structured_data = nil
-                    end
-                  %>
-                  <div class="bg-gray-100 dark:bg-gray-800 rounded-md p-4">
-                    <% if structured_data.is_a?(Hash) %>
-                      <!-- Display hash data -->
-                      <div class="space-y-4">
-                        <% structured_data.each do |key, value| %>
-                          <div class="border-b border-gray-200 dark:border-gray-700 pb-3 last:border-b-0 last:pb-0">
-                            <h4 class="font-medium text-gray-700 mb-2 dark:text-gray-300"><%= key.to_s.humanize %></h4>
-                            <% if value.is_a?(Hash) || value.is_a?(Array) %>
-                              <div class="bg-white dark:bg-gray-800 rounded p-3 overflow-auto">
-                                <pre class="text-sm text-gray-800 dark:text-gray-300"><%= JSON.pretty_generate(value) rescue value.inspect %></pre>
-                              </div>
-                            <% else %>
-                              <p class="text-sm text-gray-800 dark:text-gray-300"><%= value.to_s %></p>
-                            <% end %>
-                          </div>
-                        <% end %>
-                      </div>
-                    <% elsif structured_data.is_a?(Array) %>
-                      <!-- Display array data -->
-                      <div class="space-y-4">
-                        <% structured_data.each_with_index do |item, index| %>
-                          <div class="border border-gray-200 dark:border-gray-700 rounded-md p-3 bg-white dark:bg-gray-800">
-                            <h4 class="font-medium text-gray-700 mb-2 dark:text-gray-300">Item <%= index + 1 %></h4>
-                            <% if item.is_a?(Hash) %>
-                              <!-- If the array item is a hash, display its fields -->
-                              <div class="space-y-2 pl-3">
-                                <% item.each do |key, value| %>
-                                  <div class="flex">
-                                    <span class="text-gray-600 dark:text-gray-400 text-sm font-medium w-1/3"><%= key.to_s.humanize %>:</span>
-                                    <span class="text-gray-800 dark:text-gray-300 text-sm flex-1"><%= value.to_s %></span>
-                                  </div>
-                                <% end %>
-                              </div>
-                            <% else %>
-                              <p class="text-sm text-gray-800 dark:text-gray-300"><%= item.to_s %></p>
-                            <% end %>
-                          </div>
-                        <% end %>
-                      </div>
-                    <% else %>
-                      <pre class="text-sm text-gray-800 dark:text-gray-300"><%= structured_data.inspect %></pre>
-                    <% end %>
+                    <%
+                      # Use structured data from the controller
+                      if @structured_data[:structured_output].present?
+                        structured_data = @structured_data[:structured_output]
+                      elsif @structured_data[:schema].present?
+                        structured_data = @structured_data[:schema]
+                      else
+                        structured_data = nil
+                      end
+                    %>
+                    <div>
+                      <% if structured_data.present? %>
+                        <div class="bg-white dark:bg-gray-700 rounded p-3 overflow-auto">
+                          <pre class="mt-0 text-sm text-gray-800 dark:text-gray-300 whitespace-pre-wrap break-words"><%= JSON.pretty_generate(structured_data) rescue structured_data.inspect %></pre>
+                        </div>
+                      <% else %>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 italic">No structured data available</p>
+                      <% end %>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -365,58 +318,18 @@
                 </div>
 
                 <!-- Structured output -->
-                <div id="structured-tab" class="p-4 bg-white hidden">
+                <div id="structured-tab" class="p-4 bg-white dark:bg-gray-700 hidden">
                   <%
                     # Get the structured output
                     structured_output = @cassette_data["response"]["structured_output"] || @cassette_data["response"]["schema"]
                   %>
-                  <div class="bg-gray-100 dark:bg-gray-700 rounded-md p-4">
-                    <% if structured_output.is_a?(Hash) %>
-                      <!-- Display hash data in a nice format -->
-                      <div class="space-y-4">
-                        <% structured_output.each do |key, value| %>
-                          <div class="border-b border-gray-200 pb-3 last:border-b-0 last:pb-0">
-                            <h4 class="font-medium text-gray-700 mb-2"><%= key.to_s.humanize %></h4>
-                            <% if value.is_a?(Hash) || value.is_a?(Array) %>
-                              <div class="bg-white rounded p-3 overflow-auto">
-                                <pre class="text-sm text-gray-800 dark:text-gray-300"><%= JSON.pretty_generate(value) rescue value.inspect %></pre>
-                              </div>
-                            <% elsif value.is_a?(String) && value.length > 100 %>
-                              <!-- For long strings, use a scrollable area -->
-                              <div class="bg-white rounded p-3 max-h-48 overflow-auto">
-                                <p class="text-sm text-gray-800 whitespace-pre-wrap"><%= value %></p>
-                              </div>
-                            <% else %>
-                              <p class="text-sm text-gray-800"><%= value.to_s %></p>
-                            <% end %>
-                          </div>
-                        <% end %>
-                      </div>
-                    <% elsif structured_output.is_a?(Array) %>
-                      <!-- Display array data in a nice format -->
-                      <div class="space-y-4">
-                        <% structured_output.each_with_index do |item, index| %>
-                          <div class="border border-gray-200 rounded-md p-3 bg-white">
-                            <h4 class="font-medium text-gray-700 mb-2">Item <%= index + 1 %></h4>
-                            <% if item.is_a?(Hash) %>
-                              <!-- If the array item is a hash, display its fields -->
-                              <div class="space-y-2 pl-3">
-                                <% item.each do |key, value| %>
-                                  <div class="flex">
-                                    <span class="text-gray-600 text-sm font-medium w-1/3"><%= key.to_s.humanize %>:</span>
-                                    <span class="text-gray-800 text-sm flex-1"><%= value.to_s %></span>
-                                  </div>
-                                <% end %>
-                              </div>
-                            <% else %>
-                              <p class="text-sm text-gray-800"><%= item.to_s %></p>
-                            <% end %>
-                          </div>
-                        <% end %>
+                  <div class="bg-gray-100 dark:bg-gray-800 rounded-md p-4">
+                    <% if structured_output.present? %>
+                      <div class="bg-white dark:bg-gray-800 rounded p-3 overflow-auto">
+                        <pre class="text-sm text-gray-800 dark:text-gray-300 whitespace-pre-wrap break-words"><%= JSON.pretty_generate(structured_output) rescue structured_output.inspect %></pre>
                       </div>
                     <% else %>
-                      <!-- Fallback for other types -->
-                      <pre class="text-sm text-gray-800 dark:text-gray-300"><%= structured_output.inspect %></pre>
+                      <p class="text-sm text-gray-500 dark:text-gray-400 italic">No structured data available</p>
                     <% end %>
                   </div>
                 </div>
