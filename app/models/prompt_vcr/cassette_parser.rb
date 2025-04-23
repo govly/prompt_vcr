@@ -1,6 +1,6 @@
 require 'fileutils'
 
-module PromptVcr
+module PromptVCR
   class CassetteParser
     attr_reader :base_dir
 
@@ -13,11 +13,11 @@ module PromptVcr
       else
         case type
         when :prompts
-          @base_dir = Rails.root.join("test/vcr_cassettes/prompts")
+          @base_dir = PromptVCR.prompt_cassettes_path
         when :all
-          @base_dir = Rails.root.join("test/vcr_cassettes")
+          @base_dir = PromptVCR.cassettes_path
         else
-          @base_dir = Rails.root.join("test/vcr_cassettes")
+          @base_dir = PromptVCR.cassettes_path
         end
       end
       
@@ -70,15 +70,15 @@ module PromptVcr
       possible_paths = []
 
       # Standard cassette path
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes", "#{name}.yml") 
+      possible_paths << File.join(PromptVCR.cassettes_path, "#{name}.yml") 
       
       # Prompt cassette path (both with and without 'prompts/' prefix)
       clean_name = name.sub(/^prompts\//, '')
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{clean_name}.yml")
+      possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{clean_name}.yml")
       
       # If name doesn't already have the subdirectory and it's a prompt cassette
       if prompt_cassette?(name) && !name.include?('/')
-        possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{name}.yml")
+        possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{name}.yml")
       end
       
       # Try all possible paths
@@ -104,15 +104,15 @@ module PromptVcr
       possible_paths = []
       
       # Standard cassette path
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes", "#{name}.yml") 
+      possible_paths << File.join(PromptVCR.cassettes_path, "#{name}.yml") 
       
       # Prompt cassette path (both with and without 'prompts/' prefix)
       clean_name = name.sub(/^prompts\//, '')
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{clean_name}.yml")
+      possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{clean_name}.yml")
       
       # If name doesn't already have the subdirectory and it's a prompt cassette
       if prompt_cassette?(name) && !name.include?('/')
-        possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{name}.yml")
+        possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{name}.yml")
       end
       
       # Try all possible paths
@@ -126,15 +126,15 @@ module PromptVcr
       possible_paths = []
       
       # Standard cassette path
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes", "#{name}.yml") 
+      possible_paths << File.join(PromptVCR.cassettes_path, "#{name}.yml") 
       
       # Prompt cassette path (both with and without 'prompts/' prefix)
       clean_name = name.sub(/^prompts\//, '')
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{clean_name}.yml")
+      possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{clean_name}.yml")
       
       # If name doesn't already have the subdirectory and it's a prompt cassette
       if prompt_cassette?(name) && !name.include?('/')
-        possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{name}.yml")
+        possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{name}.yml")
       end
       
       # Try all possible paths
@@ -148,15 +148,15 @@ module PromptVcr
       possible_paths = []
       
       # Standard cassette path
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes", "#{name}.yml") 
+      possible_paths << File.join(PromptVCR.cassettes_path, "#{name}.yml") 
       
       # Prompt cassette path (both with and without 'prompts/' prefix)
       clean_name = name.sub(/^prompts\//, '')
-      possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{clean_name}.yml")
+      possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{clean_name}.yml")
       
       # If name doesn't already have the subdirectory and it's a prompt cassette
       if prompt_cassette?(name) && !name.include?('/')
-        possible_paths << File.join(Rails.root, "test/vcr_cassettes/prompts", "#{name}.yml")
+        possible_paths << File.join(PromptVCR.prompt_cassettes_path, "#{name}.yml")
       end
       
       # Try all possible paths

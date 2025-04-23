@@ -1,6 +1,6 @@
 require 'fileutils'
 
-module PromptVcr
+module PromptVCR
   class CassettesController < ApplicationController
     layout "prompt_vcr/application"
 
