@@ -4,41 +4,16 @@ PromptVCR is a Rails engine that provides a UI for browsing and viewing AI promp
 
 ## Installation
 
-This gem is available as a private package via GitHub Packages.
-
-### 1. Authentication Setup
-
-To use this private gem, you'll need to authenticate with GitHub Packages. Create or update your `~/.bundle/config` file with your GitHub credentials:
-
-```
-# ~/.bundle/config
-GITHUB__COM: "YOUR_GITHUB_ACCESS_TOKEN:x-oauth-basic"
-```
-
-You'll need a GitHub personal access token with the `read:packages` scope. You can create one at https://github.com/settings/tokens.
-
-### 2. Update your Gemfile
-
-Add this line to your application's Gemfile:
+PromptVCR is available directly via git source. Add this line to your application's Gemfile:
 
 ```ruby
-source "https://rubygems.pkg.github.com/govly" do
-  gem "prompt_vcr", group: [:development, :test]
-end
+gem "prompt_vcr", git: "https://github.com/govly/prompt_vcr.git", branch: "main", group: [:development, :test]
 ```
 
 And then execute:
 
 ```bash
 $ bundle install
-```
-
-### 3. Alternative: Using Git Source
-
-Alternatively, you can use the git source directly:
-
-```ruby
-gem "prompt_vcr", git: "https://github.com/govly/prompt_vcr.git", branch: "main", group: [:development, :test]
 ```
 
 ## Configuration

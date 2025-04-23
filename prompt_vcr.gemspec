@@ -6,12 +6,12 @@ Gem::Specification.new do |spec|
   spec.authors     = [ "Govly" ]
   spec.email       = [ "engineering@govly.com" ]
   spec.homepage    = "https://github.com/govly/prompt_vcr"
-   spec.summary    = "A VCR UI for prompts"
+  spec.summary    = "A VCR UI for prompts"
   spec.description = "A VCR UI for prompts"
   spec.license     = "MIT"
 
-  # This is a private gem, not meant for public distribution for now.
-  spec.metadata["allowed_push_host"] = "https://github.com/govly/prompt_vcr"
+  # This gem is meant to be used via git source
+  # spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/weilandia/prompt_vcr"
