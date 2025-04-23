@@ -1,0 +1,252 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.openai.com/v1/responses
+    body:
+      encoding: UTF-8
+      string: '{"input":"    I need you to evaluate multiple model responses to the
+        same prompt and determine which model performs best.\n\n    The first response
+        (index 0) in the array is from our reference model, which should be considered
+        the highest quality. Use this as a benchmark to evaluate the other responses.\n\n    For
+        each response, assess:\n    1. Accuracy - How factually correct is the response?\n    2.
+        Completeness - How thoroughly does it address the query?\n    3. Relevance
+        - How well does it focus on what was asked?\n    4. Clarity - How clear and
+        well-structured is the response?\n\n    Here are the model responses to evaluate:\n    MODEL
+        0: oai_gpt41\nRESPONSE 0:\n{\"reasoning\" =\u003e \"The page lists public
+        project solicitations with bid/request names, closing dates, project owners,
+        and locations, matching typical features of a government procurement portal.
+        It allows users to view current bidding opportunities, which is a key feature
+        of such portals.\", \"is_portal\" =\u003e true, \"has_opportunities\" =\u003e
+        true, \"has_awards\" =\u003e false}\n\n---\n\nMODEL 1: azure41_mini\nRESPONSE
+        1:\n{\"reasoning\" =\u003e \"The page lists project bids with details like
+        bid closing dates, solicitation numbers, owners (e.g., counties, cities),
+        and project types, consistent with government procurement opportunities. There
+        is no explicit listing of awards. It appears to be a government or public-sector
+        procurement portal.\", \"is_portal\" =\u003e true, \"has_opportunities\" =\u003e
+        true, \"has_awards\" =\u003e false}\n\n---\n\nMODEL 2: azure41_nano\nRESPONSE
+        2:\n{\"reasoning\" =\u003e \"The page lists construction project opportunities
+        with bid closing dates, project details, and government locations, indicating
+        it is a government procurement portal.\", \"is_portal\" =\u003e true, \"has_opportunities\"
+        =\u003e true, \"has_awards\" =\u003e false}\n\n\n    Provide a structured
+        evaluation of each response compared to the reference model (Model 0) and
+        recommend which model should be used based on your analysis.\n","previous_response_id":null,"model":"gpt-4.1","tools":[],"tool_choice":"auto","text":{"format":{"type":"json_schema","name":"ModelEval","strict":true,"schema":{"type":"object","additionalProperties":false,"required":["evaluations","recommendation"],"properties":{"evaluations":{"type":"array","items":{"type":"object","required":["model_index","model_name","scores","summary"],"additionalProperties":false,"properties":{"model_index":{"type":"integer","description":"Index
+        of the model in the provided array"},"model_name":{"type":"string","description":"Name
+        of the model being evaluated"},"scores":{"type":"object","required":["accuracy","completeness","relevance","clarity","overall"],"additionalProperties":false,"properties":{"accuracy":{"type":"number","description":"Score
+        from 1-10 on factual correctness"},"completeness":{"type":"number","description":"Score
+        from 1-10 on thoroughness of addressing the query"},"relevance":{"type":"number","description":"Score
+        from 1-10 on focus and relevance to the question"},"clarity":{"type":"number","description":"Score
+        from 1-10 on clarity and structure"},"overall":{"type":"number","description":"Overall
+        performance score from 1-10"}}},"summary":{"type":"string","description":"Brief
+        qualitative assessment of the model''s performance"}}}},"recommendation":{"type":"object","required":["model_index","model_name","reasoning"],"additionalProperties":false,"properties":{"model_index":{"type":"integer","description":"Index
+        of the recommended model"},"model_name":{"type":"string","description":"Name
+        of the recommended model"},"reasoning":{"type":"string","description":"Brief
+        explanation of why this model is recommended over others"}}}}}}}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer BEARER_TOKEN
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 23 Apr 2025 19:01:42 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Openai-Version:
+      - '2020-10-01'
+      Openai-Organization:
+      - govly
+      X-Request-Id:
+      - req_01e69593d2ca0814d0210d3a9fb0274e
+      Openai-Processing-Ms:
+      - '15918'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=pd6QHa.RT046K8X71a.y.wRSN9A1ZLx7yZJrKaqWjPE-1745434902-1.0.1.1-BtB8MM0J0i9zIC6T2fMnK8jCJrRm7DkTmBR.GLMNBx8SqdsxEyS6vLr5Wf499j7YNQo0Eq.uebXhQQbqtGK9mddU1h8t8lzsMTUObwn2SlA;
+        path=/; expires=Wed, 23-Apr-25 19:31:42 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=m9OuUsrkUgrzz1b_7OoU4xIKAlsdrwznG7qahKrluVk-1745434902393-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 934f9c07fb542f5d-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "id": "resp_680939067590819188eef6f5208f8c2c0c75e7e68c579ffc",
+          "object": "response",
+          "created_at": 1745434886,
+          "status": "completed",
+          "error": null,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": null,
+          "model": "gpt-4.1-2025-04-14",
+          "output": [
+            {
+              "id": "msg_680939109b948191b3f864deb469dd360c75e7e68c579ffc",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "text": "{\n  \"evaluations\": [\n    {\n      \"model_index\": 0,\n      \"model_name\": \"oai_gpt41\",\n      \"scores\": {\n        \"accuracy\": 10,\n        \"completeness\": 10,\n        \"relevance\": 10,\n        \"clarity\": 10,\n        \"overall\": 10\n      },\n      \"summary\": \"This reference response gives detailed reasoning about the features of the page (solicitations, closing dates, owners, and locations), perfectly explains why it qualifies as a government procurement portal, and explicitly mentions which features are and aren\u2019t present. The structure and clarity are excellent.\"\n    },\n    {\n      \"model_index\": 1,\n      \"model_name\": \"azure41_mini\",\n      \"scores\": {\n        \"accuracy\": 9,\n        \"completeness\": 9,\n        \"relevance\": 10,\n        \"clarity\": 9,\n        \"overall\": 9\n      },\n      \"summary\": \"The response closely matches the reference: it covers bid listings, closing dates, solicitation numbers, project owners, and types, and remarks on the absence of awards. Its reasoning is slightly less detailed than the reference, notably a bit less specific in language, but it still addresses all key elements and remains highly relevant, clear, and accurate.\"\n    },\n    {\n      \"model_index\": 2,\n      \"model_name\": \"azure41_nano\",\n      \"scores\": {\n        \"accuracy\": 8,\n        \"completeness\": 7,\n        \"relevance\": 9,\n        \"clarity\": 8,\n        \"overall\": 8\n      },\n      \"summary\": \"This response identifies that the page lists construction project opportunities with bid and location details and recognizes it as a procurement portal. However, it is less specific: it omits mention of solicitation numbers, the explicit absence of awards, and some types of project owner details. While accurate and relevant, its brevity makes it less complete, and clarity is lower due to the lack of elaboration.\"\n    }\n  ],\n  \"recommendation\": {\n    \"model_index\": 0,\n    \"model_name\": \"oai_gpt41\",\n    \"reasoning\": \"The reference model provides the most thorough, clear, and accurate response, covering all relevant features and explicitly commenting on the presence or absence of opportunities and awards. It sets the benchmark in completeness and detail, making it the preferred model for this type of task.\"\n  }\n}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "previous_response_id": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "ModelEval",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "evaluations",
+                  "recommendation"
+                ],
+                "properties": {
+                  "evaluations": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "model_index",
+                        "model_name",
+                        "scores",
+                        "summary"
+                      ],
+                      "additionalProperties": false,
+                      "properties": {
+                        "model_index": {
+                          "type": "integer",
+                          "description": "Index of the model in the provided array"
+                        },
+                        "model_name": {
+                          "type": "string",
+                          "description": "Name of the model being evaluated"
+                        },
+                        "scores": {
+                          "type": "object",
+                          "required": [
+                            "accuracy",
+                            "completeness",
+                            "relevance",
+                            "clarity",
+                            "overall"
+                          ],
+                          "additionalProperties": false,
+                          "properties": {
+                            "accuracy": {
+                              "type": "number",
+                              "description": "Score from 1-10 on factual correctness"
+                            },
+                            "completeness": {
+                              "type": "number",
+                              "description": "Score from 1-10 on thoroughness of addressing the query"
+                            },
+                            "relevance": {
+                              "type": "number",
+                              "description": "Score from 1-10 on focus and relevance to the question"
+                            },
+                            "clarity": {
+                              "type": "number",
+                              "description": "Score from 1-10 on clarity and structure"
+                            },
+                            "overall": {
+                              "type": "number",
+                              "description": "Overall performance score from 1-10"
+                            }
+                          }
+                        },
+                        "summary": {
+                          "type": "string",
+                          "description": "Brief qualitative assessment of the model's performance"
+                        }
+                      }
+                    }
+                  },
+                  "recommendation": {
+                    "type": "object",
+                    "required": [
+                      "model_index",
+                      "model_name",
+                      "reasoning"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "model_index": {
+                        "type": "integer",
+                        "description": "Index of the recommended model"
+                      },
+                      "model_name": {
+                        "type": "string",
+                        "description": "Name of the recommended model"
+                      },
+                      "reasoning": {
+                        "type": "string",
+                        "description": "Brief explanation of why this model is recommended over others"
+                      }
+                    }
+                  }
+                }
+              },
+              "strict": true
+            }
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 701,
+            "input_tokens_details": {
+              "cached_tokens": 0
+            },
+            "output_tokens": 517,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 1218
+          },
+          "user": null,
+          "metadata": {}
+        }
+  recorded_at: Wed, 23 Apr 2025 19:01:42 GMT
+recorded_with: VCR 6.3.1

@@ -1,0 +1,171 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://govly-azure-openai-east2.openai.azure.com/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2025-03-01-preview
+    body:
+      encoding: UTF-8
+      string: '{"messages":[{"role":"user","content":"    Based on the following webpage
+        content, determine if this is a government procurement portal or award listings
+        page.\n\n    ISG - Mankato MN - ProjectsURL: https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all\n\n    A
+        government procurement portal typically:\n    - Lists contract opportunities,
+        solicitations, RFPs, or tenders\n    - May show awarded contracts or past
+        procurement decisions\n    - Is hosted by a government entity (federal, state,
+        local) or authorized procurement agency\n    - Contains information about
+        bidding, vendor registration, or procurement processes\n\n    Content:\n              **Do
+        you want to continue your session?**\n\nFor security reasons, sessions time
+        out after 60 minutes of inactivity.\n\nYour session will expire in 05:00 unless
+        you click to continue.\n\n**Important note: you will lose any unsaved work
+        when the session times out!**\n\n**Please enter the Quest Number or the Owner''s
+        Project or Bid number**\n\nShowing 1 to 7 of 7 entries\n\nShow 255075100 entries\n\n-
+        [Previous](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)\n-
+        [1](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)\n-
+        [Next](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)\n\n|
+        [Post Date](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [Quest Number](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [Category Code](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [Bid/Request Name](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [Bid Closing Date](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [City](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [County](http\n          s://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [State]\n          (https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | [O\n          wner](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)\n           |
+        [Solicitor](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projT\n          ype=all#)
+        | [Posting Type](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provide\n          r=3949\u0026projType=all#)
+        |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | ---\n           |
+        --- |\n|  |  |  |  |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- |
+        --- |\n          --- | --- | --- | --- | --- |\n| 03/19/2025 | [**9592805**](https://qcpi.questcdn.co\n          m/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | Arena/Stadium - Athletic/Sp\n          ort... | [**Solon CSD Track Resurfacing**](https://qcpi.questcdn.com/cdn/posting/?gr\n          oup=3949\u0026provider=3949\u0026projType=all#)
+        | 04/23/2025 01:00 PM CDT | Solon | Johnson |\n          IA | Solon CSD |
+        ISG | Construction Project |\n| 04/14/2025 | [**9626271**](https://\n          qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | Drainage,Er\n          osion Control - Tem... | [**Blue Earth County Ditch
+        No. 56 Branch 3 Repair**](https:\n          //qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | 05/02/202\n          5 10:00 AM CDT | Garden Cit... | Blue Earth | MN |
+        Blue Earth County Dr... | ISGInc\n          - Mankato P... | Construction
+        Project |\n| 04/14/2025 | [**9630481**](https://qcpi.q\n          uestcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | Drainage, Dredgin\n          g, Ditches an... | [**Blue Earth County Judicial
+        Ditch No. 48 Repair**](https://qcpi\n          .questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | 05/06/2025 10:0\n          0 AM CDT | Judson \u0026 L... | Blue Earth |
+        MN | Blue Earth County Dr... | ISGInc - Mank\n          ato P... | Construction
+        Project |\n| 04/17/2025 | [**9604658**](https://qcpi.questcd\n          n.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | Concrete/Formed/Flatwor\n          k/Found... | [**Jackson County Judicial
+        Ditch No. 2 Pump Station T...**](https://qcp\n          i.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | 05/08/2025 10:\n          00 AM CDT | Weimer Tow... | Jackson | MN | Jackson
+        County Drain... | ISGInc - Mankat\n          o P... | Construction Project
+        |\n| 04/18/2025 | [**9600409**](https://qcpi.questcdn.\n          com/cdn/posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | Buildings/Public | [**For\n          t Dodge Public School Transportation
+        Renovation...**](https://qcpi.questcdn.com/cdn/\n          posting/?group=3949\u0026provider=3949\u0026projType=all#)
+        | 05/08/2025 02:00 PM CDT | Fort Do\n          dge | Webster | IA | Fort Dodge
+        Public Sc... | ISGInc - Mankato O... | Construction\n          Project |\n|
+        04/22/2025 | [**9641839**](https://qcpi.questcdn.com/cdn/posting/?group\n          =3949\u0026provider=3949\u0026projType=all#)
+        | Directional Bore,Drainage,Eros... | [**Watonwan\n           \u0026 Brown
+        County Judicial Ditch No. 8**](https://qcpi.questcdn.com/cdn/posting/?group\n          =3949\u0026provider=3949\u0026projType=all#)
+        | 05/14/2025 10:00 AM CDT | Nelson Tow... | Waton\n          wan | MN | Watonwan
+        County \u0026 Br... | ISGInc - Mankato P... | Construction Project |          n|
+        03/31/2025 | [**9622006**](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026prov\n          ider=3949\u0026projType=all#)
+        | Buildings/Public,Conduit/Elect... | [**Wastewater System\n          Improvements**](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provider=3949\u0026proj\n          Type=all#)
+        | 05/15/2025 02:00 PM CDT | Swea City | Kossuth | IA | City of Swea City\n          |
+        ISGInc - Mankato P... | Construction Project |\n\nProcessing...\n\nShowing
+        1 to 7\n          of 7 entries\n\n- [Previous](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026provi\n          der=3949\u0026projType=all#)\n-
+        [1](https://qcpi.questcdn.com/cdn/posting/?group=3949\u0026pro\n          vider=3949\u0026projType=all#)\n-
+        [Next](https://qcpi.questcdn.com/cdn/posting/?group=394\n          9\u0026provider=3949\u0026projType=all#)\n\n\n    Respond
+        with YES if this appears to be a government procurement portal or NO if not.\n    After
+        your YES/NO answer, provide a brief explanation of your reasoning.\n"}],"model":"gpt-4.1-mini","response_format":{"type":"json_schema","json_schema":{"name":"ProcurementPortalBasicEval","strict":true,"schema":{"type":"object","additionalProperties":false,"required":["reasoning","is_portal","has_opportunities","has_awards"],"properties":{"reasoning":{"type":"string","description":"A
+        brief explanation of your reasoning no longer than 50 words."},"is_portal":{"type":"boolean","description":"YES/NO
+        answer to whether this is a government procurement portal or award listings
+        page."},"has_opportunities":{"type":"boolean","description":"YES/NO answer
+        to whether this portal has active opportunities listed."},"has_awards":{"type":"boolean","description":"YES/NO
+        answer to whether this portal explicitly has awards listed."}}}}}}'
+    headers:
+      Content-Type:
+      - application/json
+      Api-Key:
+      - AZURE_OPENAI_EAST2_API_KEY
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+      Apim-Request-Id:
+      - 57bc4655-6b4f-4533-a053-5d9bb3ae3601
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Ms-Region:
+      - East US 2
+      X-Ratelimit-Remaining-Requests:
+      - '4999'
+      X-Ratelimit-Limit-Requests:
+      - '5000'
+      X-Ratelimit-Remaining-Tokens:
+      - '4997802'
+      X-Ratelimit-Limit-Tokens:
+      - '5000000'
+      X-Accel-Buffering:
+      - 'no'
+      X-Ms-Rai-Invoked:
+      - 'false'
+      X-Envoy-Upstream-Service-Time:
+      - '1091'
+      X-Request-Id:
+      - '0668279b-d88b-48e4-aa03-d43f6ec598ef'
+      Ms-Azureml-Model-Time:
+      - '1089'
+      X-Ms-Client-Request-Id:
+      - 57bc4655-6b4f-4533-a053-5d9bb3ae3601
+      Azureml-Model-Session:
+      - v20250415-5-168444713-3
+      X-Ms-Deployment-Name:
+      - gpt-4.1-mini
+      Date:
+      - Wed, 23 Apr 2025 19:01:25 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        {
+          "id": "chatcmpl-BPZdUZGnhvIiSYQ70JxwmrxmOwgnD",
+          "object": "chat.completion",
+          "created": 1745434884,
+          "model": "gpt-4.1-mini-2025-04-14",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "{\"reasoning\":\"The page lists project bids with details like bid closing dates, solicitation numbers, owners (e.g., counties, cities), and project types, consistent with government procurement opportunities. There is no explicit listing of awards. It appears to be a government or public-sector procurement portal.\",\"is_portal\":true,\"has_opportunities\":true,\"has_awards\":false}",
+                "refusal": null
+              },
+              "logprobs": null,
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 2112,
+            "completion_tokens": 77,
+            "total_tokens": 2189,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "audio_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 0,
+              "audio_tokens": 0,
+              "accepted_prediction_tokens": 0,
+              "rejected_prediction_tokens": 0
+            }
+          },
+          "system_fingerprint": "fp_c8225066ea"
+        }
+  recorded_at: Wed, 23 Apr 2025 19:01:25 GMT
+recorded_with: VCR 6.3.1

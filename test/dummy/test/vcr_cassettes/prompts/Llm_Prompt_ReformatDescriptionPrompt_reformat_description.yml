@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://endpoint.ANTHROPIC_KEYwordsai.co/api/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"azure/gpt-4o-mini","messages":[{"role":"user","content":"Task:
+        Enhance the readability of the provided text by reformatting it with appropriate
+        HTML tags.\nInstructions:\n\t1.\tUse HTML tags to structure the text for better
+        readability.\n  2.  This will appear inside another page, do not include the
+        \u003chtml\u003e, \u003chead\u003e, or \u003cbody\u003e tags.\n\t3.\tUse the
+        context and placement of newlines in the text to determine where to add the
+        tags.\n\t4.\tRetain all information in the description, unless there are malformed
+        or misencoded characters, which should be removed.\nInput: The contractor
+        shall provide all personnel, equipment, tools, materials, supervision, and
+        other items and services necessary to perform the services described in the
+        Performance Work Statement (PWS) for the Air Force Research Laboratory (AFRL)
+        Information Directorate (RI) and the Air Force Office of Scientific Research
+        (AFOSR) located at Rome Research Site, Rome, NY. The contractor shall provide
+        all personnel, equipment, tools, materials, supervision, and other items and
+        services necessary to perform the services described in the Performance Work
+        Statement (PWS) for the Air Force Research Laboratory (AFRL) Information Directorate
+        (RI) and the Air Force Office of Scientific Research (AFOSR) located at Rome
+        Research Site, Rome, NY. The contractor shall provide all personnel, equipment,
+        tools, materials, supervision, and other items and services necessary to perform
+        the services described in the Performance Work Statement (PWS) for the Air
+        Force Research Laboratory (AFRL) Information Directorate (RI) and the Air
+        Force Office of Scientific Research (AFOSR) located at Rome Research Site,
+        Rome, NY.\nOutput: The reformatted text with appropriate HTML tags.\n"}],"load_balance_group":{"group_id":"azure-gpt-4o-mini","models":[{"model":"azure/gpt-4o-mini","weight":1,"credentials":{"api_ANTHROPIC_KEY":"AZURE_OPENAI_EAST_API_KEY","api_base":"https://govly-azure-openai-east.openai.azure.com","api_version":"AZURE_OPENAI_API_VERSION"}}]}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer KEYWORDSAI_KEY
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Sep 2024 19:32:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1991'
+      Connection:
+      - keep-alive
+      Server:
+      - uvicorn
+      Vary:
+      - Accept, origin
+      Allow:
+      - POST, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - same-origin
+      Cross-Origin-Opener-Policy:
+      - same-origin
+    body:
+      encoding: UTF-8
+      string: '{"id":"chatcmpl-A9HAuMQuZKQ0Z1P1wgJS02AlpjrkV","choices":[{"finish_reason":"stop","index":0,"message":{"content":"<p>\n    The
+        contractor shall provide all personnel, equipment, tools, materials, supervision,
+        and other items and services necessary to perform the services described in
+        the <strong>Performance Work Statement (PWS)</strong> for the \n    <strong>Air
+        Force Research Laboratory (AFRL)</strong> Information Directorate (RI) and
+        the \n    <strong>Air Force Office of Scientific Research (AFOSR)</strong>
+        located at \n    <strong>Rome Research Site, Rome, NY</strong>.\n</p>\n<p>\n    The
+        contractor shall provide all personnel, equipment, tools, materials, supervision,
+        and other items and services necessary to perform the services described in
+        the <strong>Performance Work Statement (PWS)</strong> for the \n    <strong>Air
+        Force Research Laboratory (AFRL)</strong> Information Directorate (RI) and
+        the \n    <strong>Air Force Office of Scientific Research (AFOSR)</strong>
+        located at \n    <strong>Rome Research Site, Rome, NY</strong>.\n</p>\n<p>\n    The
+        contractor shall provide all personnel, equipment, tools, materials, supervision,
+        and other items and services necessary to perform the services described in
+        the <strong>Performance Work Statement (PWS)</strong> for the \n    <strong>Air
+        Force Research Laboratory (AFRL)</strong> Information Directorate (RI) and
+        the \n    <strong>Air Force Office of Scientific Research (AFOSR)</strong>
+        located at \n    <strong>Rome Research Site, Rome, NY</strong>.\n</p>","role":"assistant"}}],"created":1726774336,"model":"gpt-4o-mini","object":"chat.completion","system_fingerprint":"fp_80a1bad4c7","usage":{"completion_tokens":315,"prompt_tokens":352,"total_tokens":667},"prompt_filter_results":[{"prompt_index":0,"content_filter_results":{"hate":{"filtered":false,"severity":"safe"},"self_harm":{"filtered":false,"severity":"safe"},"sexual":{"filtered":false,"severity":"safe"},"violence":{"filtered":false,"severity":"safe"}}}]}'
+  recorded_at: Thu, 19 Sep 2024 19:32:18 GMT
+recorded_with: VCR 6.2.0

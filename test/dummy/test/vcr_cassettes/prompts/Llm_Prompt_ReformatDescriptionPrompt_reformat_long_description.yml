@@ -1,0 +1,526 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://endpoint.ANTHROPIC_KEYwordsai.co/api/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"azure/gpt-4o-mini","messages":[{"role":"user","content":"Task:
+        Enhance the readability of the provided text by reformatting it with appropriate
+        HTML tags.\nInstructions:\n\t1.\tUse HTML tags to structure the text for better
+        readability.\n  2.  This will appear inside another page, do not include the
+        \u003chtml\u003e, \u003chead\u003e, or \u003cbody\u003e tags.\n  3.  This
+        will appear well inside the page, do not include header tags, instead use
+        \u003cp\u003e tags with \u003cstrong\u003e tags for headings.\n  4.  Use \u003cdiv\u003e
+        tags where appropriate to group related content.\n\t5.\tUse the context of
+        the text and placement of newlines in the text to determine where to add the
+        tags.\n\t7.\tRetain all information in the description, unless there are malformed
+        or misencoded characters, which should be removed.\n  8.  Do not wrap the
+        text in ``` or \u003cpre\u003e tags.\nInput: Attachment 1: Combined Synopsis-Solicitation
+        for Commercial Products and Commercial Services \nEffective Date: 03/15/2023\nRevision:
+        01\nDescription\nThis is a combined synopsis/solicitation for commercial products
+        and commercial services prepared in accordance with the format in Federal
+        Acquisition Regulation (FAR) subpart 12.6,  Streamlined Procedures for Evaluation
+        and Solicitation for Commercial Products and Commercial Services,  as supplemented
+        with additional information included in this notice. This announcement constitutes
+        the only solicitation; quotes are being requested, and a written solicitation
+        document will not be issued.\n\nThis solicitation is issued as a small business
+        set aside request for quotes (RFQ).  The solicitation number is 36C25024Q1006.  The
+        solicitation document and incorporated provisions and clauses are those in
+        effect through Federal Acquisition Circular 2024-06.  \n \nThe associated
+        North American Industrial Classification System (NAICS) code for this procurement
+        is 334111, with a small business size standard of 1,250 Employees.  The FSC/PSC
+        is DA10.\n\nThe Department of Veterans Affairs, Cincinnati VA Medical Center
+        (CVAMC) located at 3200 Vine Street, Cincinnati, OH 45220-2213 is seeking
+        to purchase the brand name ScriptPro Pharmacy Workflow Management System (WMS).   \n\nAll
+        interested companies shall provide quotations for the following:\n\nSupplies/Services\n\nLine
+        Item\nDescription\nQuantity\nUnit of Measure\nUnit Price\nTotal Price\n\n1\n\nRemote
+        Access Server for WMS   Inbound Access to WMS Software for up to five (5)
+        sessons\n\n\n1\n\nEach\n\n\n\n\n2\n\nRAS Device License Package   Workflow
+        Management System RAS Device License Package (5 Devices)\n\n\n2\n\nEach\n\n\n\n3\n\nEndpoint
+        Security (Per Server/Client Computer)   Endpoint Security (Per Server Computer,
+        HCI VM, Client Computer)\n\n\n1\n\nEach\n\n\n\n4\n\nMonthly Support\n\n\n12\n\nJob\n\n\n\n\nTOTAL\n\n\n\n\n\nThe
+        requested brand name WMS Software must provide the capabilities outlined in
+        the Statement of Work.\n\nSTATEMENT OF WORK\n\nDESCRIPTION OF SERVICE:  ScriptPro
+        Remote Access Server\n\nBACKGROUND:  The Cincinnati VA Medical Center s (CVAMC)
+        Pharmacy Service relies on the ScriptPro Robotic Prescription fill machine
+        to physically count, bottle and label the prescriptions dispensed to all outpatients
+        seen in the clinics and to the patients housed on campus in our domiciliary
+        programs.  The system consists of 3 fill robots connected through a server
+        to fill and check stations used by the staff to verify the prescription and
+        to dispense it to the patient at the pick-up window.  The system interfaces
+        with VistA and sends the fill information to the VA computer system.  This
+        system is in use in many VA pharmacies and has been in use at the Cincinnati
+        VAMC s pharmacy since 2000.  The system is designed so that all robots, hardware
+        and software can be upgraded when necessary.  \n\nOBJECTIVE: Procure remote
+        access server required to run and print ScriptPro reports from standard VA-issued
+        laptops. This will allow real-time tracking of ANTHROPIC_KEY performance and
+        patient measures such as items in out-of-stock queue, number of prescriptions
+        in pending queue, and other day to day functions. This remote access should
+        improve efficiencies with all levels of outpatient prescription filling. \n\nSCOPE
+        OF WORK:  ScriptPro remote access will be installed as accessible software
+        for specific number of licensed users. Remote Access Server provides users
+        a quick and easy way to access ScriptPro s Workflow Management and Pharmacy
+        Management Systems from a non-ScriptPro computer. Users initiate a secure
+        session to the Remote Access Server by launching a Remote Desktop Protocol
+        (RDP) session from a non-ScriptPro computer. The secure session provides access
+        to many of the ScriptPro System features that are available from an SP Datapoint.
+        Prescription status inquiries, processing exceptions management, pharmacy
+        reporting, remote inspection, and access to other important operational data
+        are all possible via Remote Access Server. Includes five (5) Remote Access
+        sessions. Additional Remote Access sessions (in groups of five) available
+        for additional fee.  Maximum of 15 sessions supported.\n\nTERM OF CONTRACT
+        AND PRICING:  The VA anticipates the award of a single contract on a firm,
+        fixed-price, indefinite delivery, indefinite quantity basis from this solicitation.
+        The solicitation will be conducted in accordance with FAR 12 and 15.  Pricing
+        should be quoted by GS schedule and subject to the availability of VA funds.\n\nHOURS
+        OF OPERATION:  Not applicable.\n\nIMAGE AND DATA TRANSMISSION SECURITY: \n\nSystem
+        Connectivity. The contractor shall provide and maintain the means for enabling
+        and maintaining system connectivity.  All required/supporting documentation
+        including, but not limited to Memorandum of Understanding and Interconnected
+        Security Agreement shall be completed with appropriate signatures and shall
+        be updated as changes occur.\n\nThe contractor shall maintain external communication
+        systems required for secure, VA-compliant image and data delivery to its pharmacists
+        and shall configure, install and maintain the purchased software.  Routine
+        preventative maintenance inspections shall be the responsibility of the contractor.  The
+        contractor shall expeditiously provide all requested information to CVAMC
+        s Information Security Officers (ISO), Chief Information Manager and the COR   before
+        the contractor is able to provide service.\n\nThe contractor shall comply
+        with all VA information security requirements including initial and annual
+        security awareness training, background checks and using equipment that meets
+        VA security standards.  The contractor shall conform to all Rules of Behavior
+        set forth by the Office of Cyber \u0026 Information Security (OCIS).  In order
+        to have remove access, contractor shall apply for and install the One-VA VPN.  The
+        contractor shall apply for network access and sign Rules of Behavior/Security
+        Agreement.  Note:  Microsoft Windows (currently edition) is the Government
+        s operating system.  \n\nCVAMC shall provide a firewall and antivirus software
+        (for VA protection only) to the connection if needed.  If a firewall or antivirus
+        software is needed for the contractor side, they will be the responsibility
+        of the contractor.\n\nThe contractor shall provide e-mail address and a telephone
+        number(s) and contract person(s) to be used by CVAMC for inquiries and problem
+        solving at all times via 24-hour, 7-day/week number.  \n\nThe contractor shall
+        secure and maintain the communications link between the contractor s facility
+        and the VA facilities at the contractor s expense.\n\nDue to the confidential
+        nature of the patient information, services that are completed within the
+        contractor s office or home facilities (if the contractor provides services
+        from the home) shall employ a security system adequate to maintain confidentiality.\n\nThe
+        connectivity/functionality should be approved and verified by the VA prior
+        to acceptance.  The contractor shall be responsible for any costs associated
+        with connectivity to a VA System, to include configuring the system for connectivity
+        to the VA and/or any costs incurred on the contractor s side.\n\nSECURITY
+        REQUIREMENTS FOR CONTRACTOR EMPLOYEES:\n\nThe contractor(s) shall insure the
+        confidentiality of all patient and employee information and shall be held
+        liable in the event of breach of confidentiality according to federal regulations
+        contained in HIPPA.  Any person who knowingly or willingly discloses confidential
+        information from the VA Medical Centers may be subject to fines of up to 0,000
+        and may be subjected to civil litigation from the patient(s).\n\nThe contractor
+        shall be compliant with VA Handbook 6500, Information Security Program. \n\nThe
+        contractor shall maintain a drug-free workplace in accordance with Federal
+        regulations.   The contractor shall establish and maintain a drug-free workplace
+        program.  The administration of this program as well as the establishment
+        of commensurate disciplinary action will be the responsibility of the contractor.\n\nAll
+        costs associated with obtaining clearances for contractor(s) provided personnel
+        shall be the responsibility of the contractor(s).  Further, the contractor(s)
+        shall b responsibly for the actions of those individuals they provide to perform
+        work for the VA under this contract.  In the event that damages arise from
+        work performed by the contractor(s) provided personnel, under the auspices
+        of this contract, the contractor(s) shall be responsible for all resources
+        necessary to remedy the incident.\n\nINFORMATION MANAGEMENT:\n\nSystem of
+        Records: The Veterans Affairs system(s) of records to which the contractor(s)
+        personnel will have access in order to maintain is  Patient Medical Records   VA
+        (24VA136). \n\nSystem Security: The contractor(s) shall provide VA with the
+        full assurance that security measures have been implemented which are consistent
+        with OMB Circular A-130 and VA Departmental Standards.\n\nConfidentiality
+        of Patient Records:  The contractor is a VA contractor and will assist in
+        the provision of health care to patients seeking such care for or through
+        the VA.  As such, the contractor is considered part of the Department of Health
+        Care Activity.  The contractor is considered to be a VA contractor for purposes
+        of the Privacy Act, Title 5 U.S.C. 552a.  Further, for the purpose of VA records
+        access and patient confidentiality, the contractor is considered to be a VA
+        contractor for the following provisions:  Title 38 U.S.C. 5701, 5705, and
+        7362.  Therefore, the contractor may have access, as would other appropriate
+        components of VA, to patient medical records, including patient treatment
+        records pertaining to drug and alcohol abuse, HIV and sickle cell anemia,
+        to the extent necessary to perform its contractual responsibilities.  However,
+        like other components of the Department, and not withstanding  any other provisions
+        of the contract, the contractor is restricted from making a disclosure of
+        VA records, or information contained in such records, to which it may have
+        access, except to the extent that explicit disclosure authority from VA has
+        been received.  The contractor is subject to the same penalties and liabilities
+        for unauthorized disclosures of such records as VA.  The records referred
+        to above shall be, and remain, the property of the VA and shall not be removed
+        or transferred from VA except in accordance with U.S.C. 551a (Privacy Act),
+        38 U.S.C. 5701 (Confidentiality of Claimants Records), 5 U.S.C. 552 (FOIA),
+        38 U.S.C 5705 (Confidentiality of Medical Quality Assurance Records), 38 U.S.C.
+        7332 (confidentiality of Certain Medical Records) and federal laws, rules
+        and regulations.  Subject to applicable federal confidentiality or privacy
+        laws, the contractor, or their designated representatives, and designated
+        representatives of federal regulatory agencies having jurisdiction over contractor,
+        may have access to the VA s records, at the VA s place of business on request
+        during normal business hours, to inspect and review and make copies of such
+        records. In addition, the following policies and laws are applicable under
+        this contract:\n\n Computer Security Act of 1987, PL 100-235\n  Privacy Act
+        of 1974, 5 U.S.C. 552a\n Healthcare Insurance Portability and Accountability
+        Act of 1996 (HIPPA)\nFraud and Related Activity in Connection with Access
+        Devices and Computers, 18 U.S.C. 1029-1030\n Electronic Communications Privacy
+        Act of 1986, PL 99-508\n U.S.C. 3301, Confidential Nature of Claims\n U.S.C.
+        3305, Confidentiality of Medical Quality Assurance Records\n U. S. C 4132,
+        Confidentiality of Certain Medical Records\n\n       8.4 The contractor shall
+        comply with CVAMC computer and end user security  requirements:\n  Access
+        only data for which the contractor has authorized privileges. Maintain                                   confidentiality
+        of sensitive data or information.  Protect any assigned user    ID s, passwords,
+        electronic signatures and other access ANTHROPIC_KEY from disclosure.    Secure
+        sensitive printed information in approved storage containers when not in   use.  Practice
+        good housekeeping with equipment and work areas.   Log off    systems before
+        leaving a computer unattended.  Refrain from the illegal    reproduction or
+        use of copyrighted and licensed software.  Utilize the data only    to the
+        need necessary to perform the requirements of this contract. \n\n \nThe contractor
+        understands and agrees that the medical records of a patient and radiology
+        reports generated are strictly confidential.  Each person assigned to this
+        contract shall be required to sign a confidentiality statement. Each person
+        allowed access to the VistA system shall sign an Automated Information Security
+        Agreement annually.\n\nHealth Insurance Portability and Accountability (HIPAA).  In
+        accordance with 45 CFR 164.5029e), the Privacy Rule includes exception to
+        the Business Associate Agreement in order for Covered Entity to disclose Protected
+        Health Information to: a health care provider for treatment.  Based on this
+        exception, a Business Associate Agreement is not required for this contract.\n\nThe
+        contractor shall maintain an  Errors and Omissions  liability insurance policy
+        which insures against a negligent act, error or omission and the oral or written
+        publication of material that violated a person s rights of privacy.  The contractor
+        shall also maintain a commercial general liability policy.  Evidence of coverage
+        shall be provided to the VA credentialing department upon request.\n\nIn accordance
+        with the Health Insurance Portability and Accountability Act (HIPAA) and the
+        Balanced Budget Act (BBA) of 1977, the Office of Inspector General (OIG) has
+        established a list of parties and entities excluded from federal health care
+        programs.  Specifically, the listed parties and entities on the OIG List of
+        Excluded Individuals/Entities may not receive federal health care program
+        payments due to fraud and/or abuse of the Medicare and Medicaid programs.\n\nTherefore,
+        all offerors shall review the OIG List of Excluded Individuals/Entities on
+        the OIG web site at www.hhs.gov/oig  to ensure that the proposed candidate(s)
+        and/or firm(s) are not listed.  Offerors should note that any excluded individual
+        or entity that submits a claim for reimbursement to a federal health care
+        program, or causes such a claim to be submitted, may be subject to a civil
+        monetary penalty (CMP) of 0,000 for each item or service furnished during
+        a period that the person or entity was excluded an may also be subject to
+        treble damages for the amount claimed for each item or service.  CMP s may
+        also be imposed against health care providers and entities that employ or
+        enter into contracts with excluded individuals or entities to provide items
+        or service to federal program beneficiaries. \n\nBy signing the offer/bid,
+        the contractor certifies that he/she has reviewed the OIG List of Excluded
+        Individuals/Entities and that the proposed candidate(s) and/or firm are not
+        listed as of the date the offer/bid was signed.\n\n MAINTENANCE AND TECHNICAL
+        SUPPORT: Provide maintenance on all contractor-provided equipment and installed
+        systems.  Contractor shall make provisions for the proper maintenance and
+        functioning of associated equipment, facilities and fixtures as may reasonably
+        be required by pharmacists to perform services hereunder.  Provide after-hours
+        support for problems with call-pack periods not to exceed 30 minutes from
+        the placement of a call for assistance.\n\nUPTIME: Provide a system that maintains
+        at least a 99% uptime performance rate.  VA personnel shall be notified immediately
+        of any equipment malfunction that would hinder the transmission of images
+        or other data.  In the event of a system failure, contractor shall work cooperatively
+        with the VA facility to remedy the situation as quickly as possible.  The
+        contractor may contact the CVAMC s CIO during normal business hours at 610-384-7711
+        x 4555 or the AOD at 610-384-7711 x5060 OR 4290 on evenings/holidays/weekends.\n\nPLANNING
+        AND INSTALLATION:\n\nContractor shall develop a project implementation strategy
+        with CVAMC to include the preparation of buildings, establishing telecommunications
+        etc. if necessary \n\nThe service provider shall be required to utilize a
+        point-to-point VPN between themselves and CVAMC if necessary to dial into
+        the system for diagnostic or upgrade purposes.  All security requirements
+        need to be met.\n\nContractor shall provide a system that maintains a minimum
+        of 99% up time performance rate.  Failure to provide this shall result in
+        a deduction on the contract by 1/30th for each day down and possibly contract
+        termination.\n\nContractor shall provide hardware necessary to connect remotely
+        to CVAMC to be utilized at the contractor site.\n\nContractor shall provide
+        facsimile, telephone, computer/laptops, networking and other telecommunication
+        equipment to be utilized at the contractor facility.\n\nContractor shall provide
+        al supplies, services, maintenance, repairs and upgrades required at contractor
+        facility to provide services as described above.\n\nContractor s equipment,
+        hardware, software and supplies shall be compatible with the VA s software
+        and hardware used during performance of this contract, including critical
+        patches and antivirus updates.  Contractor shall provide proof of installation
+        of critical patches and/or antivirus updates to the VA upon request.\n\nContractor
+        s network and security system shall be compatible with the VA s network and
+        security system.\n\nContractor shall use any VA furnished items in conjunction
+        with, and exclusively for, performance under this contract.\n12.1  After award
+        of contract, all inquiries and correspondence relative to the administration
+        of the     contract shall be addressed to:  Contracting Officer (CO)\n\n(End
+        of SOW)\n\n\nThe full text of FAR provisions or clauses may be accessed electronically
+        at http://acquisition.gov/comp/far/index.html. \n\nThe following solicitation
+        provisions apply to this acquisition:\nFAR 52.203-17,  Contractor Employee
+        Whistleblower Rights  (Nov 2023)\nFAR 52.204-13,  System for Award Management
+        Maintenance  (Oct 2018)\nFAR 52.204-27,  Prohibition on a ByteDance Covered
+        Application   (Jun 2023)\nFAR 52.212-1,  Instructions to Offerors Commercial
+        Products and Commercial Services  (Sep 2023) \nADDENDUM to FAR 52.212-1 INSTRUCTIONS
+        TO OFFERORS COMMERCIAL PRODUCTS AND COMMERCIAL SERVICES (NOV 2021)\nProvisions
+        that are incorporated by reference (by Citation Number, Title, and Date),
+        have the same force and effect as if they were given in full text. Upon request,
+        the Contracting Officer will make their full text available. The version of
+        FAR 52.212-1 in the addendum is tailored for Simplified Acquisition Procedures
+        and supersedes the current version of FAR 52.212-1 contained in the FAR. \nThe
+        following provision is incorporated into 52.212-1 as an addendum to this solicitation:\nFAR
+        52.212-1 Instructions to Offerors   Commercial Products and Commercial Services
+        (Nov 2021)\n(a)Â North American Industry Classification System (NAICS) code
+        and small business size standard.Â The NAICS code(s) and small business size
+        standard(s) for thisÂ acquisitionÂ appear elsewhere in theÂ Request for Quote
+        (RFQ). However, the small business size standard for a concern that submits
+        aÂ quote, other than on aÂ constructionÂ or serviceÂ acquisition, but proposes
+        to furnish an end item that it did not itself manufacture, process, or produce
+        is 500 employees if theÂ acquisition \nIs set aside for small business and
+        has a value above theÂ simplified acquisition threshold; or\n\nUses theÂ HUBZoneÂ price
+        evaluation preference regardless of dollar value, unless theÂ quoterÂ waives
+        the price evaluation preference; or\n\nIs an 8(a),Â HUBZone, service-disabled
+        veteran-owned, economically disadvantaged women-owned, or women-owned small
+        business set-aside or sole-source award regardless of dollar value.\n(b)Â Submission
+        ofÂ Quotes. Submit signed and datedÂ quotesÂ to the office specified in thisÂ Request
+        for Quote (RFQ) at or before the exact time specified.Â QuotesÂ mayÂ be submitted
+        on letterhead stationery, or as otherwise specified in theÂ RFQ. As a minimum,Â quotesÂ mustÂ show
+        \nÂ Â Â Â Â Â Â Â Â Â Â (1)Â TheÂ solicitation number;\nÂ Â Â Â Â Â Â Â Â Â Â (2)Â The
+        time specified in theÂ solicitationÂ for receipt ofÂ quotations;Â \nÂ Â Â Â Â Â Â Â Â Â (3)Â The
+        name, address, and telephone number of theÂ quoter;\nA technical description
+        of the items being quoted in sufficient detail to evaluate compliance with
+        the requirements in theÂ solicitation. ThisÂ mayÂ include product literature,
+        or other documents, if necessary;\nÂ Â Â Â Â Â Â Â Â Â Â (5)Â Terms of any
+        expressÂ warranty;\nÂ Â Â Â Â Â Â Â Â Â Â (6)Â Price and any discount terms;\nÂ Â Â Â Â Â Â Â Â Â Â (7)Â Remit
+        to address, if different than mailing address;\n(8)Â A completed copy of the
+        representations and certifications at  FederalÂ AcquisitionÂ Regulation (FAR)Â 52.212-3Â (see
+        FARÂ 52.212-3(b) for those representations and certifications that theÂ quoterÂ shallÂ complete
+        electronically);\nÂ Â Â Â Â Â Â Â Â Â Â (9)Â Acknowledgment Request for Quotation
+        amendments;\n(10)Â Past performanceÂ will not be considered in simplified
+        acquisition procurements.\n(11)Â Quote should include a statement specifying
+        the extent of agreement with all terms, conditions, and provisions included
+        in theÂ solicitation.Â QuotesÂ that fail to furnish required representations
+        and certifications, information requested in (1) to (9) and accept the terms
+        and conditions of theÂ solicitationÂ mayÂ be excluded from consideration.\n(c)Â Period
+        for acceptance ofÂ Quotes. TheÂ quoterÂ agrees to hold the prices in itsÂ quoteÂ firm
+        for 30 calendar days from the date specified for receipt ofÂ quotes unless
+        another time period is specified in an addendum to theÂ solicitation.\n(d)Â Product
+        samples. When required by theÂ solicitation, product samplesÂ shallÂ be submitted
+        at or prior to the time specified for receipt ofÂ quotes. Unless otherwise
+        specified in thisÂ solicitation, these samplesÂ shallÂ be submitted at no
+        expense to the Government, and returned at the sender s request and expense,
+        unless they are destroyed during ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEYing.\n(e)Â MultipleÂ Quotes.Â QuotersÂ are
+        encouraged to submit multipleÂ quotesÂ presenting alternativeÂ line itemsÂ (provided
+        that the alternativeÂ line itemsÂ are consistent with FARÂ subpartÂ  4.10),
+        or alternativeÂ commercial productsÂ orÂ commercial servicesÂ for satisfying
+        the requirements of thisÂ solicitation. EachÂ quoteÂ submitted will be evaluated
+        separately.\n(f)Â Late submissions, revisions, and withdrawals ofÂ quotes.
+        \n(1)Â QuotersÂ are responsible for submittingÂ quotes so as to reach the
+        Government office designated in theÂ solicitationÂ by the time specified in
+        theÂ solicitation. If no time is specified in theÂ solicitation, the time
+        for receipt is 4:30 p.m., local time, for the designated Government office
+        on the date thatÂ quotesÂ are due.\n(2)Â AnyÂ quotation received at the Government
+        office designated in theÂ solicitationÂ after the exact time specified for
+        receipt ofÂ quotesÂ is late and may not be considered unless it is received
+        before purchase order issuance and theÂ Contracting OfficerÂ (CO) determines
+        that accepting the lateÂ quotationÂ would not unduly delay theÂ acquisition.
+        \n(3)Â If anÂ emergencyÂ or unanticipated event interrupts normal Government
+        processes so thatÂ quotations cannot be received at the Government office
+        designated for receipt ofÂ quotesÂ by the exact time specified in theÂ solicitation,
+        and urgent Government requirements preclude a notice of an extension of the
+        closing date, the time specified for receipt ofÂ quotes will be deemed to
+        be extended to the same time ofÂ dayÂ specified in theÂ solicitationÂ on the
+        first workÂ dayÂ on which normal Government processes resume.\n(g)Â Issuance
+        of Purchase Order. The Government may issue a purchase order to one or more
+        quoters as identified in the Request for Quote (RFQ).  Therefore, theÂ quoter
+        s initialÂ quoteÂ shouldÂ contain theÂ best terms from a price and technical
+        standpoint. However, the GovernmentÂ mayÂ reject any or allÂ quotesÂ if such
+        action is in the public s best interest. The Contracting Officer (CO) may
+        issue a purchase order to other than the quoter with the lowest priced quotation.
+        \n(h)Â Multiple awards. The GovernmentÂ mayÂ issue a purchase order for any
+        item or group of items of a quotation, unless theÂ quoterÂ qualifies theÂ quotation
+        by specific limitations. Unless otherwise provided in the Schedule,Â quotationsÂ mayÂ not
+        be submitted for quantities less than those specified. The Government reserves
+        the right to issue a purchase order for a quantity less than the quantity
+        quoted, at the unit prices quoted, unless theÂ quoterÂ specifies otherwise
+        in theÂ quotation.\nÂ Â Â Â Â Â (1)Â Availability of requirements documents
+        cited in theÂ solicitation.\n(i)Â The GSA Index of Federal Specifications,
+        Standards and Commercial Item Descriptions, FPMR Part 101-29, and copies of
+        specifications, standards, and commercial item descriptions cited in thisÂ solicitationÂ mayÂ be
+        obtained for a fee by submitting a request to- GSA Federal Supply Service
+        Specifications Section Suite 8100 470 East L Enfant Plaza, SW Washington,
+        DC 20407 Telephone (202) 619-8925, Facsimile (202) 619-8978.\n(j)Â Unique
+        entity identifier (UEI). Applies to all quotesÂ that exceed theÂ micro-purchase
+        threshold, andÂ quotesÂ at or below theÂ micro-purchase thresholdÂ if theÂ solicitationÂ requires
+        the contractor to beÂ registered in the System for Award Management (SAM).)
+        TheÂ quoterÂ mustÂ enter, in the block with its name and address on the cover
+        page of itsÂ quote, the annotation Unique Entity Identifier followed by theÂ unique
+        entity identifierÂ that identifies theÂ quoters name and address. TheÂ quoterÂ alsoÂ must
+        enter itsÂ Electronic Funds Transfer (EFT) indicator, if applicable. The EFT
+        indicator is a four-character suffix to theÂ UEI. The suffix is assigned at
+        the discretion of theÂ quoterÂ to establish additional SAM records for identifying
+        alternative EFT accounts (see FARÂ subpartÂ  32.11) for the same entity. If
+        theÂ quoterÂ does not have a UEI, itÂ shouldÂ contact the entity designated
+        atÂ www.sam.govÂ forÂ UEIÂ establishment directly to obtain one. TheÂ quoterÂ shouldÂ indicate
+        that it is aÂ quoterÂ for a government contract when contacting the entity
+        designated atÂ www.sam.govÂ for establishing theÂ UEI.\n(k)Â [Reserved]\n(l)Â Requests
+        for information. The CO will not notify unsuccessful quoters that responded
+        to this Request for Quotation (RFQ). However, quoters may request information
+        on purchase order(s) resulting from this solicitation with the CO.\n(End of
+        Provision)\n\nFAR 52.212-3,  Offerors Representations and Certifications Commercial
+        Products and Commercial Services  (May 2024)\n\nOfferors must complete annual
+        representations and certifications electronically via the System for Award
+        Management (SAM) website located at https://www.sam.gov/portal in accordance
+        with FAR 52.212-3,  Offerors Representations and Certifications Commercial
+        Products and Commercial Services.  If paragraph (j) of the provision is applicable,
+        a written submission is required.\n\n FAR 52.212-4,  Contract Terms and Conditions   Commercial
+        Products and Commercial Services  (Nov 2023)\n \nFAR 52.212-5,  Contract Terms
+        and Conditions Required to Implement Statutes or Executive Orders   Commercial
+        Products and Commercial Services  (May 2024) \n\nFAR 52.225-1,  Buy American   Supplies  (Oct
+        2022)\n\nVAAR 852.212-71,  Grey Market and Counterfeit Items  (Feb 2023)\n\nVAAR
+        852.212-72,  Grey Market and Counterfeit Items   Information Technology Maintenance
+        Allowing Other-than-New-Parts  (Feb 2023)\n\n VAAR 852.219-76,  VA Notice
+        of Limitations on Subcontracting   Certificate of Compliance for Supplies
+        and Products  (Nov 2022)  \n852.219-76Â VA Notice of Limitations on Subcontracting
+        - Certificate of Compliance for Supplies and Products.\nAs prescribed in 819.7011(c),
+        insert the following clause. The contracting officer shall tailor the clause
+        in paragraph (a)(2)(iii) as appropriate:\nVA Notice of Limitations on Subcontracting
+        - Certificate of Compliance for Supplies and Products (NOV 2022)\n(a) Pursuant
+        to 38 U.S.C. 8127(k)(2), the offeror certifies that -\n(1) If awarded a contract
+        (see FAR 2.101 definition), it will comply with the limitations on subcontracting
+        requirement as provided in the solicitation and the resultant contract, as
+        follows: [Offeror check the appropriate box]\n(i)   In the case of a contract
+        for supplies or products (other than from a non-manufacturer of such supplies),
+        it will not pay more than 50% of the amount paid by the government to it to
+        firms that are not VIP-listed SDVOSBs as set forth in 852.219-73 or VOSBs
+        as set forth in 852.219-74. Any work that a similarly situated VIP-listed
+        subcontractor further subcontracts will count towards the 50% subcontract
+        amount that cannot be exceeded. Cost of materials are excluded and not considered
+        to be subcontracted.\n(ii)   In the case of a contract for supplies from a
+        nonmanufacturer, it will supply the product of a domestic small business manufacturer
+        or processor, unless a waiver as described in 13 CFR 121.406(b)(5) is granted.
+        The offeror understands that, as provided in 13 CFR 121.406(b)(7), such a
+        waiver has no effect on requirements external to the Small Business Act, such
+        as the Buy American Act or the Trade Agreements Act.\n(2) Manufacturer or
+        nonmanufacturer representation and certification. [Offeror fill-in - check
+        each applicable box below. The offeror must select the applicable provision
+        below, identifying itself as either a manufacturer or nonmanufacturer]:\n(i)  Â Manufacturer
+        or producer.Â The offeror certifies that it is the manufacturer or producer
+        of the end item being procured, and the end item is manufactured or produced
+        in the United States, in accordance with paragraph (a)(1)(i).\n(ii)  Â Nonmanufacturer.Â The
+        offeror certifies that it qualifies as a nonmanufacturer in accordance with
+        the requirements of 13 CFR 121.406(b) and paragraph (a)(1)(ii). The offeror
+        further certifies it meets each element below as required in order to qualify
+        as a nonmanufacturer. [Offeror fill-in - check each box below.]\n  The offeror
+        certifies that it does not exceed 500 employees (or 150 employees for the
+        Information Technology Value Added Reseller exception to NAICS code 541519,
+        which is found at 13 CFR 121.201, footnote 18).\n  The offeror certifies that
+        it is primarily engaged in the retail or wholesale trade and normally sells
+        the type of item being supplied.\n  The offeror certifies that it will take
+        ownership or possession of the item(s) with its personnel, equipment, or facilities
+        in a manner consistent with industry practice.\n(iii)   If this is a multiple
+        item acquisition, the offeror certifies that at least 50% of the estimated
+        contract value is composed of items that are manufactured by small business
+        concerns. \n(3) The offeror acknowledges that this certification concerns
+        a matter within the jurisdiction of an Agency of the United States. The offeror
+        further acknowledges that this certification is subject to Title 18, United
+        States Code, Section 1001, and, as such, a false, fictitious, or fraudulent
+        certification may render the offeror subject to criminal, civil, or administrative
+        penalties, including prosecution.\n(4) If VA determines that an SDVOSB/VOSB
+        awarded a contract pursuant to 38 U.S.C. 8127 did not act in good faith, such
+        SDVOSB/VOSB shall be subject to any or all of the following:\n(i) Referral
+        to the VA Suspension and Debarment Committee;\n(ii) A fine under section 16(g)\n(1)
+        of the Small Business Act (15 U.S.C. 645(g)(1)); and\n(iii) Prosecution for
+        violating section 1001 of title 18.\n(b) The offeror represents and understands
+        that by submission of its offer and award of a contract it may be required
+        to provide copies of documents or records to VA that VA may review to determine
+        whether the offeror complied with the limitations on subcontracting requirement
+        specified in the contract or to determine whether the offeror qualifies as
+        a manufacturer or nonmanufacturer in compliance with the limitations on subcontracting
+        requirement. Contracting officers may, at their discretion, require the contractor
+        to demonstrate its compliance with the limitations on subcontracting at any
+        time during performance and upon completion of a contract if the information
+        regarding such compliance is not already available to the contracting officer.
+        Evidence of compliance includes, but is not limited to, invoices, copies of
+        subcontracts, or a list of the value of tasks performed.\n(c) The offeror
+        further agrees to cooperate fully and make available any documents or records
+        as may be required to enable VA to determine compliance. The offeror understands
+        that failure to provide documents as requested by VA may result in remedial
+        action as the Government deems appropriate.\n(d) Offeror completed certification/fill-in
+        required. The formal certification must be completed, signed and returned
+        with the offeror''s bid, quotation, or proposal. The Government will not consider
+        offers for award from offerors that do not provide the certification, and
+        all such responses will be deemed ineligible for evaluation and award.\nCertification\nI
+        hereby certify that if awarded the contract, [insert name of offeror] will
+        comply with the limitations on subcontracting specified in this clause and
+        in the resultant contract. I further certify that I am authorized to execute
+        this certification on behalf of [insert name of offeror].\nPrinted Name of
+        Signee:\nPrinted Title of Signee:\nSignature:\nDate:\nCompany Name and Address:\n(End
+        of clause)\nVAAR 852.239-71,  Information System Security Plan and Accreditation  (Feb
+        2023)\n\nVAAR 852.239-75,  Information and Communication Technology Accessibility
+        Notice  (Feb 2023)\n\nVAAR 852.239-76,  Information and Communication Technology
+        Accessibility  (Feb 2023)\n\nVAAR 852.273-70,  Late Offers  (Nov 2021)\n\nAll
+        quoters shall submit the following:  Certificate of Compliance for Supplies
+        and Products, pricing quote, copy of OEM s Authorized Distributor letter (if
+        applicable), and estimated schedule for delivery.\n\nDelivery shall be provided
+        no later than 60 days after receipt of order (ARO) unless notification of
+        delays are provided to the Contracting Officer/Specialist.  FOB destination.
+        \nPlace of Performance/Place of Delivery\nAddress:\n3200 Vine Street\nCincinnati,
+        OH\nPostal Code:\n45220-2213\nCountry:\nUNITED STATES\n\nAward will be based
+        upon a comparative evaluation of quotes in accordance with the Simplified
+        Acquisition Procedures of FAR 13.  Comparative evaluation is the side by side
+        pairwise comparison of quotes based on factors resulting in a Contracting
+        Officer decision for the quote most favorable to the Government.   \n\nThe
+        following are the decision factors: Price, technical capabilities, product
+        support, warranty/extended warranty, and speed of delivery.\n\nThe award will
+        be made to the response most advantageous to the Government.  Responses should
+        contain your best terms, conditions.\n\nTo facilitate the award process, all
+        quotes must include a statement regarding the terms and conditions herein
+        as follows:\nThe terms and conditions in the solicitation are acceptable to
+        be included in the award document without modification, deletion, or addition.\nOR\nThe
+        terms and conditions in the solicitation are acceptable to be included in
+        the award document with the exception, deletion, or addition of the following:\nQuoters
+        shall list exception(s) and rationale for the exception(s), if any.\n\nSubmission
+        of your response shall be received not later than 4:00PM EST on Monday, September
+        16, 2024, at Barbara.Robertson@va.gov. No submission received after the above-mentioned
+        date and time will be accepted.   \n\nLate submissions shall be treated in
+        accordance with the solicitation provision at FAR 52.212-1(f).  \n\nAny questions
+        or concerns regarding this solicitation should be forwarded in writing via
+        e-mail to the Point of Contact listed below by 12:00PM on Thursday, September
+        12, 2024.  Responses will be posted by 5:00PM on Thursday, September 12, 2024.  No
+        telephone calls will be accepted.\nPoint of Contact:  Barbara Robertson, Email:  Barbara.Robertson@va.gov\n\u003cbr/\u003e\u003cbr/\u003e\u003cbr/\u003e\u003cstrong\u003eAdditional
+        Links:\u003c/strong\u003e\u003cbr/\u003e\u003ca href=''https://www.va.gov''
+        target=''_blank''\u003eWebsite\u003c/a\u003e\n\n\nOutput:\n"}],"load_balance_group":{"group_id":"azure-gpt-4o-mini","models":[{"model":"azure/gpt-4o-mini","weight":1,"credentials":{"api_ANTHROPIC_KEY":"AZURE_OPENAI_EAST_API_KEY","api_base":"https://govly-azure-openai-east.openai.azure.com","api_version":"AZURE_OPENAI_API_VERSION"}}]}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer KEYWORDSAI_KEY
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Sep 2024 20:12:05 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '40801'
+      Connection:
+      - keep-alive
+      Server:
+      - uvicorn
+      Vary:
+      - Accept, origin
+      Allow:
+      - POST, OPTIONS
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      Referrer-Policy:
+      - same-origin
+      Cross-Origin-Opener-Policy:
+      - same-origin
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6ImNoYXRjbXBsLUE5SG1FbTUzdUNlc2lLMDV6NkZzY3ptd3BSbVhmIiwiY2hvaWNlcyI6W3siZmluaXNoX3JlYXNvbiI6InN0b3AiLCJpbmRleCI6MCwibWVzc2FnZSI6eyJjb250ZW50IjoiPGRpdj5cbiAgICA8cD48c3Ryb25nPkF0dGFjaG1lbnQgMTo8L3N0cm9uZz4gQ29tYmluZWQgU3lub3BzaXMtU29saWNpdGF0aW9uIGZvciBDb21tZXJjaWFsIFByb2R1Y3RzIGFuZCBDb21tZXJjaWFsIFNlcnZpY2VzPC9wPlxuICAgIDxwPjxzdHJvbmc+RWZmZWN0aXZlIERhdGU6PC9zdHJvbmc+IDAzLzE1LzIwMjM8L3A+XG4gICAgPHA+PHN0cm9uZz5SZXZpc2lvbjo8L3N0cm9uZz4gMDE8L3A+XG5cbiAgICA8cD48c3Ryb25nPkRlc2NyaXB0aW9uPC9zdHJvbmc+PC9wPlxuICAgIDxwPlRoaXMgaXMgYSBjb21iaW5lZCBzeW5vcHNpcy9zb2xpY2l0YXRpb24gZm9yIGNvbW1lcmNpYWwgcHJvZHVjdHMgYW5kIGNvbW1lcmNpYWwgc2VydmljZXMgcHJlcGFyZWQgaW4gYWNjb3JkYW5jZSB3aXRoIHRoZSBmb3JtYXQgaW4gRmVkZXJhbCBBY3F1aXNpdGlvbiBSZWd1bGF0aW9uIChGQVIpIHN1YnBhcnQgMTIuNiwgU3RyZWFtbGluZWQgUHJvY2VkdXJlcyBmb3IgRXZhbHVhdGlvbiBhbmQgU29saWNpdGF0aW9uIGZvciBDb21tZXJjaWFsIFByb2R1Y3RzIGFuZCBDb21tZXJjaWFsIFNlcnZpY2VzLCBhcyBzdXBwbGVtZW50ZWQgd2l0aCBhZGRpdGlvbmFsIGluZm9ybWF0aW9uIGluY2x1ZGVkIGluIHRoaXMgbm90aWNlLiBUaGlzIGFubm91bmNlbWVudCBjb25zdGl0dXRlcyB0aGUgb25seSBzb2xpY2l0YXRpb247IHF1b3RlcyBhcmUgYmVpbmcgcmVxdWVzdGVkIGFuZCBhIHdyaXR0ZW4gc29saWNpdGF0aW9uIGRvY3VtZW50IHdpbGwgbm90IGJlIGlzc3VlZC48L3A+XG5cbiAgICA8cD5UaGlzIHNvbGljaXRhdGlvbiBpcyBpc3N1ZWQgYXMgYSBzbWFsbCBidXNpbmVzcyBzZXQgYXNpZGUgcmVxdWVzdCBmb3IgcXVvdGVzIChSRlEpLiBUaGUgc29saWNpdGF0aW9uIG51bWJlciBpcyAzNkMyNTAyNFExMDA2LiBUaGUgc29saWNpdGF0aW9uIGRvY3VtZW50IGFuZCBpbmNvcnBvcmF0ZWQgcHJvdmlzaW9ucyBhbmQgY2xhdXNlcyBhcmUgdGhvc2UgaW4gZWZmZWN0IHRocm91Z2ggRmVkZXJhbCBBY3F1aXNpdGlvbiBDaXJjdWxhciAyMDI0LTA2LjwvcD5cblxuICAgIDxwPlRoZSBhc3NvY2lhdGVkIE5vcnRoIEFtZXJpY2FuIEluZHVzdHJpYWwgQ2xhc3NpZmljYXRpb24gU3lzdGVtIChOQUlDUykgY29kZSBmb3IgdGhpcyBwcm9jdXJlbWVudCBpcyA8c3Ryb25nPjMzNDExMTwvc3Ryb25nPiwgd2l0aCBhIHNtYWxsIGJ1c2luZXNzIHNpemUgc3RhbmRhcmQgb2YgPHN0cm9uZz4xLDI1MCBFbXBsb3llZXM8L3N0cm9uZz4uIFRoZSBGU0MvUFNDIGlzIDxzdHJvbmc+REExMDwvc3Ryb25nPi48L3A+XG5cbiAgICA8cD5UaGUgRGVwYXJ0bWVudCBvZiBWZXRlcmFucyBBZmZhaXJzLCBDaW5jaW5uYXRpIFZBIE1lZGljYWwgQ2VudGVyIChDVkFNQykgbG9jYXRlZCBhdCAzMjAwIFZpbmUgU3RyZWV0LCBDaW5jaW5uYXRpLCBPSCA0NTIyMC0yMjEzLCBpcyBzZWVraW5nIHRvIHB1cmNoYXNlIHRoZSBicmFuZCBuYW1lIFNjcmlwdFBybyBQaGFybWFjeSBXb3JrZmxvdyBNYW5hZ2VtZW50IFN5c3RlbSAoV01TKS48L3A+XG5cbiAgICA8cD48c3Ryb25nPkFsbCBpbnRlcmVzdGVkIGNvbXBhbmllcyBzaGFsbCBwcm92aWRlIHF1b3RhdGlvbnMgZm9yIHRoZSBmb2xsb3dpbmc6PC9zdHJvbmc+PC9wPlxuXG4gICAgPHRhYmxlPlxuICAgICAgICA8dHI+XG4gICAgICAgICAgICA8dGg+TGluZSBJdGVtPC90aD5cbiAgICAgICAgICAgIDx0aD5EZXNjcmlwdGlvbjwvdGg+XG4gICAgICAgICAgICA8dGg+UXVhbnRpdHk8L3RoPlxuICAgICAgICAgICAgPHRoPlVuaXQgb2YgTWVhc3VyZTwvdGg+XG4gICAgICAgICAgICA8dGg+VW5pdCBQcmljZTwvdGg+XG4gICAgICAgICAgICA8dGg+VG90YWwgUHJpY2U8L3RoPlxuICAgICAgICA8L3RyPlxuICAgICAgICA8dHI+XG4gICAgICAgICAgICA8dGQ+MTwvdGQ+XG4gICAgICAgICAgICA8dGQ+UmVtb3RlIEFjY2VzcyBTZXJ2ZXIgZm9yIFdNUyBJbmJvdW5kIEFjY2VzcyB0byBXTVMgU29mdHdhcmUgZm9yIHVwIHRvIGZpdmUgKDUpIHNlc3Npb25zPC90ZD5cbiAgICAgICAgICAgIDx0ZD4xPC90ZD5cbiAgICAgICAgICAgIDx0ZD5FYWNoPC90ZD5cbiAgICAgICAgICAgIDx0ZD48L3RkPlxuICAgICAgICAgICAgPHRkPjwvdGQ+XG4gICAgICAgIDwvdHI+XG4gICAgICAgIDx0cj5cbiAgICAgICAgICAgIDx0ZD4yPC90ZD5cbiAgICAgICAgICAgIDx0ZD5SQVMgRGV2aWNlIExpY2Vuc2UgUGFja2FnZSBXb3JrZmxvdyBNYW5hZ2VtZW50IFN5c3RlbSBSQVMgRGV2aWNlIExpY2Vuc2UgUGFja2FnZSAoNSBEZXZpY2VzKTwvdGQ+XG4gICAgICAgICAgICA8dGQ+MjwvdGQ+XG4gICAgICAgICAgICA8dGQ+RWFjaDwvdGQ+XG4gICAgICAgICAgICA8dGQ+PC90ZD5cbiAgICAgICAgICAgIDx0ZD48L3RkPlxuICAgICAgICA8L3RyPlxuICAgICAgICA8dHI+XG4gICAgICAgICAgICA8dGQ+MzwvdGQ+XG4gICAgICAgICAgICA8dGQ+RW5kcG9pbnQgU2VjdXJpdHkgKFBlciBTZXJ2ZXIvQ2xpZW50IENvbXB1dGVyKTwvdGQ+XG4gICAgICAgICAgICA8dGQ+MTwvdGQ+XG4gICAgICAgICAgICA8dGQ+RWFjaDwvdGQ+XG4gICAgICAgICAgICA8dGQ+PC90ZD5cbiAgICAgICAgICAgIDx0ZD48L3RkPlxuICAgICAgICA8L3RyPlxuICAgICAgICA8dHI+XG4gICAgICAgICAgICA8dGQ+NDwvdGQ+XG4gICAgICAgICAgICA8dGQ+TW9udGhseSBTdXBwb3J0PC90ZD5cbiAgICAgICAgICAgIDx0ZD4xMjwvdGQ+XG4gICAgICAgICAgICA8dGQ+Sm9iPC90ZD5cbiAgICAgICAgICAgIDx0ZD48L3RkPlxuICAgICAgICAgICAgPHRkPjwvdGQ+XG4gICAgICAgIDwvdHI+XG4gICAgICAgIDx0cj5cbiAgICAgICAgICAgIDx0ZCBjb2xzcGFuPVwiNVwiPjxzdHJvbmc+VE9UQUw8L3N0cm9uZz48L3RkPlxuICAgICAgICAgICAgPHRkPjwvdGQ+XG4gICAgICAgIDwvdHI+XG4gICAgPC90YWJsZT5cblxuICAgIDxwPlRoZSByZXF1ZXN0ZWQgYnJhbmQgbmFtZSBXTVMgU29mdHdhcmUgbXVzdCBwcm92aWRlIHRoZSBjYXBhYmlsaXRpZXMgb3V0bGluZWQgaW4gdGhlIFN0YXRlbWVudCBvZiBXb3JrLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+U1RBVEVNRU5UIE9GIFdPUks8L3N0cm9uZz48L3A+XG4gICAgXG4gICAgPHA+PHN0cm9uZz5ERVNDUklQVElPTiBPRiBTRVJWSUNFOjwvc3Ryb25nPiBTY3JpcHRQcm8gUmVtb3RlIEFjY2VzcyBTZXJ2ZXI8L3A+XG4gICAgXG4gICAgPHA+PHN0cm9uZz5CQUNLR1JPVU5EOjwvc3Ryb25nPiBUaGUgQ2luY2lubmF0aSBWQSBNZWRpY2FsIENlbnRlcidzIChDVkFNQykgUGhhcm1hY3kgU2VydmljZSByZWxpZXMgb24gdGhlIFNjcmlwdFBybyBSb2JvdGljIFByZXNjcmlwdGlvbiBmaWxsIG1hY2hpbmUgdG8gcGh5c2ljYWxseSBjb3VudCwgYm90dGxlLCBhbmQgbGFiZWwgdGhlIHByZXNjcmlwdGlvbnMgZGlzcGVuc2VkIHRvIGFsbCBvdXRwYXRpZW50cyBzZWVuIGluIHRoZSBjbGluaWNzIGFuZCB0byB0aGUgcGF0aWVudHMgaG91c2VkIG9uIGNhbXB1cyBpbiBvdXIgZG9taWNpbGlhcnkgcHJvZ3JhbXMuIFRoZSBzeXN0ZW0gY29uc2lzdHMgb2YgMyBmaWxsIHJvYm90cyBjb25uZWN0ZWQgdGhyb3VnaCBhIHNlcnZlciB0byBmaWxsIGFuZCBjaGVjayBzdGF0aW9ucyB1c2VkIGJ5IHRoZSBzdGFmZiB0byB2ZXJpZnkgdGhlIHByZXNjcmlwdGlvbiBhbmQgdG8gZGlzcGVuc2UgaXQgdG8gdGhlIHBhdGllbnQgYXQgdGhlIHBpY2stdXAgd2luZG93LiBUaGUgc3lzdGVtIGludGVyZmFjZXMgd2l0aCBWaXN0QSBhbmQgc2VuZHMgdGhlIGZpbGwgaW5mb3JtYXRpb24gdG8gdGhlIFZBIGNvbXB1dGVyIHN5c3RlbS4gVGhpcyBzeXN0ZW0gaGFzIGJlZW4gaW4gdXNlIGluIG1hbnkgVkEgcGhhcm1hY2llcyBhbmQgaGFzIGJlZW4gaW4gdXNlIGF0IHRoZSBDaW5jaW5uYXRpIFZBTUPigJlzIHBoYXJtYWN5IHNpbmNlIDIwMDAuIFRoZSBzeXN0ZW0gaXMgZGVzaWduZWQgc28gdGhhdCBhbGwgcm9ib3RzLCBoYXJkd2FyZSwgYW5kIHNvZnR3YXJlIGNhbiBiZSB1cGdyYWRlZCB3aGVuIG5lY2Vzc2FyeS48L3A+XG4gICAgXG4gICAgPHA+PHN0cm9uZz5PQkpFQ1RJVkU6PC9zdHJvbmc+IFByb2N1cmUgYSByZW1vdGUgYWNjZXNzIHNlcnZlciByZXF1aXJlZCB0byBydW4gYW5kIHByaW50IFNjcmlwdFBybyByZXBvcnRzIGZyb20gc3RhbmRhcmQgVkEtaXNzdWVkIGxhcHRvcHMuIFRoaXMgd2lsbCBhbGxvdyByZWFsLXRpbWUgdHJhY2tpbmcgb2YgQU5USFJPUElDX0tFWSBwZXJmb3JtYW5jZSBhbmQgcGF0aWVudCBtZWFzdXJlcyBzdWNoIGFzIGl0ZW1zIGluIHRoZSBvdXQtb2Ytc3RvY2sgcXVldWUsIHRoZSBudW1iZXIgb2YgcHJlc2NyaXB0aW9ucyBpbiB0aGUgcGVuZGluZyBxdWV1ZSwgYW5kIG90aGVyIGRheS10by1kYXkgZnVuY3Rpb25zLiBUaGlzIHJlbW90ZSBhY2Nlc3Mgc2hvdWxkIGltcHJvdmUgZWZmaWNpZW5jaWVzIHdpdGggYWxsIGxldmVscyBvZiBvdXRwYXRpZW50IHByZXNjcmlwdGlvbiBmaWxsaW5nLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+U0NPUEUgT0YgV09SSzo8L3N0cm9uZz4gU2NyaXB0UHJvIHJlbW90ZSBhY2Nlc3Mgd2lsbCBiZSBpbnN0YWxsZWQgYXMgYWNjZXNzaWJsZSBzb2Z0d2FyZSBmb3IgYSBzcGVjaWZpYyBudW1iZXIgb2YgbGljZW5zZWQgdXNlcnMuIFRoZSBSZW1vdGUgQWNjZXNzIFNlcnZlciBwcm92aWRlcyB1c2VycyBhIHF1aWNrIGFuZCBlYXN5IHdheSB0byBhY2Nlc3MgU2NyaXB0UHJv4oCZcyBXb3JrZmxvdyBNYW5hZ2VtZW50IGFuZCBQaGFybWFjeSBNYW5hZ2VtZW50IFN5c3RlbXMgZnJvbSBhIG5vbi1TY3JpcHRQcm8gY29tcHV0ZXIuIFVzZXJzIGluaXRpYXRlIGEgc2VjdXJlIHNlc3Npb24gdG8gdGhlIFJlbW90ZSBBY2Nlc3MgU2VydmVyIGJ5IGxhdW5jaGluZyBhIFJlbW90ZSBEZXNrdG9wIFByb3RvY29sIChSRFApIHNlc3Npb24gZnJvbSBhIG5vbi1TY3JpcHRQcm8gY29tcHV0ZXIuIFRoZSBzZWN1cmUgc2Vzc2lvbiBwcm92aWRlcyBhY2Nlc3MgdG8gbWFueSBvZiB0aGUgU2NyaXB0UHJvIFN5c3RlbSBmZWF0dXJlcyB0aGF0IGFyZSBhdmFpbGFibGUgZnJvbSBhbiBTUCBEYXRhcG9pbnQuIFByZXNjcmlwdGlvbiBzdGF0dXMgaW5xdWlyaWVzLCBwcm9jZXNzaW5nIGV4Y2VwdGlvbnMgbWFuYWdlbWVudCwgcGhhcm1hY3kgcmVwb3J0aW5nLCByZW1vdGUgaW5zcGVjdGlvbiwgYW5kIGFjY2VzcyB0byBvdGhlciBpbXBvcnRhbnQgb3BlcmF0aW9uYWwgZGF0YSBhcmUgYWxsIHBvc3NpYmxlIHZpYSBSZW1vdGUgQWNjZXNzIFNlcnZlci4gSW5jbHVkZXMgZml2ZSAoNSkgUmVtb3RlIEFjY2VzcyBzZXNzaW9ucy4gQWRkaXRpb25hbCBSZW1vdGUgQWNjZXNzIHNlc3Npb25zIChpbiBncm91cHMgb2YgZml2ZSkgYXJlIGF2YWlsYWJsZSBmb3IgYW4gYWRkaXRpb25hbCBmZWUuIE1heGltdW0gb2YgMTUgc2Vzc2lvbnMgc3VwcG9ydGVkLjwvcD5cbiAgICBcbiAgICA8cD48c3Ryb25nPlRFUk0gT0YgQ09OVFJBQ1QgQU5EIFBSSUNJTkc6PC9zdHJvbmc+IFRoZSBWQSBhbnRpY2lwYXRlcyB0aGUgYXdhcmQgb2YgYSBzaW5nbGUgY29udHJhY3Qgb24gYSBmaXJtLCBmaXhlZC1wcmljZSwgaW5kZWZpbml0ZSBkZWxpdmVyeSwgaW5kZWZpbml0ZSBxdWFudGl0eSBiYXNpcyBmcm9tIHRoaXMgc29saWNpdGF0aW9uLiBUaGUgc29saWNpdGF0aW9uIHdpbGwgYmUgY29uZHVjdGVkIGluIGFjY29yZGFuY2Ugd2l0aCBGQVIgMTIgYW5kIDE1LiBQcmljaW5nIHNob3VsZCBiZSBxdW90ZWQgYnkgR1Mgc2NoZWR1bGUgYW5kIGlzIHN1YmplY3QgdG8gdGhlIGF2YWlsYWJpbGl0eSBvZiBWQSBmdW5kcy48L3A+XG4gICAgXG4gICAgPHA+PHN0cm9uZz5IT1VSUyBPRiBPUEVSQVRJT046PC9zdHJvbmc+IE5vdCBhcHBsaWNhYmxlLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+SU1BR0UgQU5EIERBVEEgVFJBTlNNSVNTSU9OIFNFQ1VSSVRZOjwvc3Ryb25nPjwvcD5cbiAgICBcbiAgICA8cD48c3Ryb25nPlN5c3RlbSBDb25uZWN0aXZpdHk6PC9zdHJvbmc+IFRoZSBjb250cmFjdG9yIHNoYWxsIHByb3ZpZGUgYW5kIG1haW50YWluIHRoZSBtZWFucyBmb3IgZW5hYmxpbmcgc3lzdGVtIGNvbm5lY3Rpdml0eS4gQWxsIHJlcXVpcmVkL3N1cHBvcnRpbmcgZG9jdW1lbnRhdGlvbiwgaW5jbHVkaW5nLCBidXQgbm90IGxpbWl0ZWQgdG8gTWVtb3JhbmR1bSBvZiBVbmRlcnN0YW5kaW5nIGFuZCBJbnRlcmNvbm5lY3RlZCBTZWN1cml0eSBBZ3JlZW1lbnQgc2hhbGwgYmUgY29tcGxldGVkIHdpdGggYXBwcm9wcmlhdGUgc2lnbmF0dXJlcyBhbmQgc2hhbGwgYmUgdXBkYXRlZCBhcyBjaGFuZ2VzIG9jY3VyLjwvcD5cblxuICAgIDxwPlRoZSBjb250cmFjdG9yIHNoYWxsIG1haW50YWluIGV4dGVybmFsIGNvbW11bmljYXRpb24gc3lzdGVtcyByZXF1aXJlZCBmb3Igc2VjdXJlLCBWQS1jb21wbGlhbnQgaW1hZ2UgYW5kIGRhdGEgZGVsaXZlcnkgdG8gaXRzIHBoYXJtYWNpc3RzIGFuZCBzaGFsbCBjb25maWd1cmUsIGluc3RhbGwsIGFuZCBtYWludGFpbiB0aGUgcHVyY2hhc2VkIHNvZnR3YXJlLiBSb3V0aW5lIHByZXZlbnRhdGl2ZSBtYWludGVuYW5jZSBpbnNwZWN0aW9ucyBzaGFsbCBiZSB0aGUgcmVzcG9uc2liaWxpdHkgb2YgdGhlIGNvbnRyYWN0b3IuIFRoZSBjb250cmFjdG9yIHNoYWxsIGV4cGVkaXRpb3VzbHkgcHJvdmlkZSBhbGwgcmVxdWVzdGVkIGluZm9ybWF0aW9uIHRvIENWQU1DJ3MgSW5mb3JtYXRpb24gU2VjdXJpdHkgT2ZmaWNlcnMgKElTTyksIENoaWVmIEluZm9ybWF0aW9uIE1hbmFnZXIsIGFuZCB0aGUgQ09SIGJlZm9yZSB0aGUgY29udHJhY3RvciBpcyBhYmxlIHRvIHByb3ZpZGUgc2VydmljZS48L3A+XG4gICAgXG4gICAgPHA+VGhlIGNvbnRyYWN0b3Igc2hhbGwgY29tcGx5IHdpdGggYWxsIFZBIGluZm9ybWF0aW9uIHNlY3VyaXR5IHJlcXVpcmVtZW50cywgaW5jbHVkaW5nIGluaXRpYWwgYW5kIGFubnVhbCBzZWN1cml0eSBhd2FyZW5lc3MgdHJhaW5pbmcsIGJhY2tncm91bmQgY2hlY2tzLCBhbmQgdXNpbmcgZXF1aXBtZW50IHRoYXQgbWVldHMgVkEgc2VjdXJpdHkgc3RhbmRhcmRzLiBUaGUgY29udHJhY3RvciBzaGFsbCBjb25mb3JtIHRvIGFsbCBSdWxlcyBvZiBCZWhhdmlvciBzZXQgZm9ydGggYnkgdGhlIE9mZmljZSBvZiBDeWJlciAmIEluZm9ybWF0aW9uIFNlY3VyaXR5IChPQ0lTKS4gSW4gb3JkZXIgdG8gaGF2ZSByZW1vdGUgYWNjZXNzLCB0aGUgY29udHJhY3RvciBzaGFsbCBhcHBseSBmb3IgYW5kIGluc3RhbGwgdGhlIE9uZS1WQSBWUE4uIFRoZSBjb250cmFjdG9yIHNoYWxsIGFwcGx5IGZvciBuZXR3b3JrIGFjY2VzcyBhbmQgc2lnbiBSdWxlcyBvZiBCZWhhdmlvci9TZWN1cml0eSBBZ3JlZW1lbnQuIDxzdHJvbmc+Tm90ZTo8L3N0cm9uZz4gTWljcm9zb2Z0IFdpbmRvd3MgKGN1cnJlbnQgZWRpdGlvbikgaXMgdGhlIEdvdmVybm1lbnTigJlzIG9wZXJhdGluZyBzeXN0ZW0uPC9wPlxuXG4gICAgPHA+Q1ZBTUMgc2hhbGwgcHJvdmlkZSBhIGZpcmV3YWxsIGFuZCBhbnRpdmlydXMgc29mdHdhcmUgKGZvciBWQSBwcm90ZWN0aW9uIG9ubHkpIHRvIHRoZSBjb25uZWN0aW9uIGlmIG5lZWRlZC4gSWYgYSBmaXJld2FsbCBvciBhbnRpdmlydXMgc29mdHdhcmUgaXMgbmVlZGVkIGZvciB0aGUgY29udHJhY3RvcidzIHNpZGUsIHRoZXkgd2lsbCBiZSB0aGUgcmVzcG9uc2liaWxpdHkgb2YgdGhlIGNvbnRyYWN0b3IuPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3Igc2hhbGwgcHJvdmlkZSBhbiBlbWFpbCBhZGRyZXNzIGFuZCB0ZWxlcGhvbmUgbnVtYmVyKHMpIGFuZCBjb250YWN0IHBlcnNvbihzKSB0byBiZSB1c2VkIGJ5IENWQU1DIGZvciBpbnF1aXJpZXMgYW5kIHByb2JsZW0tc29sdmluZyBhdCBhbGwgdGltZXMgdmlhIGEgMjQtaG91ciwgNy1kYXkvd2VlayBudW1iZXIuPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3Igc2hhbGwgc2VjdXJlIGFuZCBtYWludGFpbiB0aGUgY29tbXVuaWNhdGlvbnMgbGluayBiZXR3ZWVuIHRoZSBjb250cmFjdG9y4oCZcyBmYWNpbGl0eSBhbmQgdGhlIFZBIGZhY2lsaXRpZXMgYXQgdGhlIGNvbnRyYWN0b3LigJlzIGV4cGVuc2UuPC9wPlxuXG4gICAgPHA+RHVlIHRvIHRoZSBjb25maWRlbnRpYWwgbmF0dXJlIG9mIHRoZSBwYXRpZW50IGluZm9ybWF0aW9uLCBzZXJ2aWNlcyB0aGF0IGFyZSBjb21wbGV0ZWQgd2l0aGluIHRoZSBjb250cmFjdG9y4oCZcyBvZmZpY2Ugb3IgaG9tZSBmYWNpbGl0aWVzIChpZiB0aGUgY29udHJhY3RvciBwcm92aWRlcyBzZXJ2aWNlcyBmcm9tIGhvbWUpIHNoYWxsIGVtcGxveSBhIHNlY3VyaXR5IHN5c3RlbSBhZGVxdWF0ZSB0byBtYWludGFpbiBjb25maWRlbnRpYWxpdHkuPC9wPlxuXG4gICAgPHA+VGhlIGNvbm5lY3Rpdml0eS9mdW5jdGlvbmFsaXR5IHNob3VsZCBiZSBhcHByb3ZlZCBhbmQgdmVyaWZpZWQgYnkgdGhlIFZBIHByaW9yIHRvIGFjY2VwdGFuY2UuIFRoZSBjb250cmFjdG9yIHNoYWxsIGJlIHJlc3BvbnNpYmxlIGZvciBhbnkgY29zdHMgYXNzb2NpYXRlZCB3aXRoIGNvbm5lY3Rpdml0eSB0byBhIFZBIFN5c3RlbSwgaW5jbHVkaW5nIGNvbmZpZ3VyaW5nIHRoZSBzeXN0ZW0gZm9yIGNvbm5lY3Rpdml0eSB0byB0aGUgVkEgYW5kL29yIGFueSBjb3N0cyBpbmN1cnJlZCBvbiB0aGUgY29udHJhY3RvcuKAmXMgc2lkZS48L3A+XG5cbiAgICA8cD48c3Ryb25nPlNFQ1VSSVRZIFJFUVVJUkVNRU5UUyBGT1IgQ09OVFJBQ1RPUiBFTVBMT1lFRVM6PC9zdHJvbmc+PC9wPlxuICAgIFxuICAgIDxwPlRoZSBjb250cmFjdG9yKHMpIHNoYWxsIGVuc3VyZSB0aGUgY29uZmlkZW50aWFsaXR5IG9mIGFsbCBwYXRpZW50IGFuZCBlbXBsb3llZSBpbmZvcm1hdGlvbiBhbmQgc2hhbGwgYmUgaGVsZCBsaWFibGUgaW4gdGhlIGV2ZW50IG9mIGEgYnJlYWNoIG9mIGNvbmZpZGVudGlhbGl0eSBhY2NvcmRpbmcgdG8gZmVkZXJhbCByZWd1bGF0aW9ucyBjb250YWluZWQgaW4gSElQQUEuIEFueSBwZXJzb24gd2hvIGtub3dpbmdseSBvciB3aWxsaW5nbHkgZGlzY2xvc2VzIGNvbmZpZGVudGlhbCBpbmZvcm1hdGlvbiBmcm9tIHRoZSBWQSBNZWRpY2FsIENlbnRlcnMgbWF5IGJlIHN1YmplY3QgdG8gZmluZXMgb2YgdXAgdG8gJDI1MCwwMDAgYW5kIG1heSBiZSBzdWJqZWN0ZWQgdG8gY2l2aWwgbGl0aWdhdGlvbiBmcm9tIHRoZSBwYXRpZW50KHMpLjwvcD5cblxuICAgIDxwPlRoZSBjb250cmFjdG9yIHNoYWxsIGJlIGNvbXBsaWFudCB3aXRoIFZBIEhhbmRib29rIDY1MDAsIEluZm9ybWF0aW9uIFNlY3VyaXR5IFByb2dyYW0uPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3Igc2hhbGwgbWFpbnRhaW4gYSBkcnVnLWZyZWUgd29ya3BsYWNlIGluIGFjY29yZGFuY2Ugd2l0aCBGZWRlcmFsIHJlZ3VsYXRpb25zLiBUaGUgY29udHJhY3RvciBzaGFsbCBlc3RhYmxpc2ggYW5kIG1haW50YWluIGEgZHJ1Zy1mcmVlIHdvcmtwbGFjZSBwcm9ncmFtLiBUaGUgYWRtaW5pc3RyYXRpb24gb2YgdGhpcyBwcm9ncmFtLCBhcyB3ZWxsIGFzIHRoZSBlc3RhYmxpc2htZW50IG9mIGNvbW1lbnN1cmF0ZSBkaXNjaXBsaW5hcnkgYWN0aW9uLCB3aWxsIGJlIHRoZSByZXNwb25zaWJpbGl0eSBvZiB0aGUgY29udHJhY3Rvci48L3A+XG5cbiAgICA8cD5BbGwgY29zdHMgYXNzb2NpYXRlZCB3aXRoIG9idGFpbmluZyBjbGVhcmFuY2VzIGZvciBjb250cmFjdG9yKHMpIHByb3ZpZGVkIHBlcnNvbm5lbCBzaGFsbCBiZSB0aGUgcmVzcG9uc2liaWxpdHkgb2YgdGhlIGNvbnRyYWN0b3IocykuIEZ1cnRoZXIsIHRoZSBjb250cmFjdG9yKHMpIHNoYWxsIGJlIHJlc3BvbnNpYmxlIGZvciB0aGUgYWN0aW9ucyBvZiB0aG9zZSBpbmRpdmlkdWFscyB0aGV5IHByb3ZpZGUgdG8gcGVyZm9ybSB3b3JrIGZvciB0aGUgVkEgdW5kZXIgdGhpcyBjb250cmFjdC4gSW4gdGhlIGV2ZW50IHRoYXQgZGFtYWdlcyBhcmlzZSBmcm9tIHdvcmsgcGVyZm9ybWVkIGJ5IHRoZSBjb250cmFjdG9yKHMpIHByb3ZpZGVkIHBlcnNvbm5lbCwgdW5kZXIgdGhlIGF1c3BpY2VzIG9mIHRoaXMgY29udHJhY3QsIHRoZSBjb250cmFjdG9yKHMpIHNoYWxsIGJlIHJlc3BvbnNpYmxlIGZvciBhbGwgcmVzb3VyY2VzIG5lY2Vzc2FyeSB0byByZW1lZHkgdGhlIGluY2lkZW50LjwvcD5cblxuICAgIDxwPjxzdHJvbmc+SU5GT1JNQVRJT04gTUFOQUdFTUVOVDo8L3N0cm9uZz48L3A+XG4gICAgXG4gICAgPHA+PHN0cm9uZz5TeXN0ZW0gb2YgUmVjb3Jkczo8L3N0cm9uZz4gVGhlIFZldGVyYW5zIEFmZmFpcnMgc3lzdGVtKHMpIG9mIHJlY29yZHMgdG8gd2hpY2ggdGhlIGNvbnRyYWN0b3IocykgcGVyc29ubmVsIHdpbGwgaGF2ZSBhY2Nlc3MgaW4gb3JkZXIgdG8gbWFpbnRhaW4gaXMgUGF0aWVudCBNZWRpY2FsIFJlY29yZHMgKFZBIDI0VkExMzYpLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+U3lzdGVtIFNlY3VyaXR5Ojwvc3Ryb25nPiBUaGUgY29udHJhY3RvcihzKSBzaGFsbCBwcm92aWRlIFZBIHdpdGggZnVsbCBhc3N1cmFuY2UgdGhhdCBzZWN1cml0eSBtZWFzdXJlcyBoYXZlIGJlZW4gaW1wbGVtZW50ZWQgd2hpY2ggYXJlIGNvbnNpc3RlbnQgd2l0aCBPTUIgQ2lyY3VsYXIgQS0xMzAgYW5kIFZBIERlcGFydG1lbnRhbCBTdGFuZGFyZHMuPC9wPlxuXG4gICAgPHA+PHN0cm9uZz5Db25maWRlbnRpYWxpdHkgb2YgUGF0aWVudCBSZWNvcmRzOjwvc3Ryb25nPiBUaGUgY29udHJhY3RvciBpcyBhIFZBIGNvbnRyYWN0b3IgYW5kIHdpbGwgYXNzaXN0IGluIHRoZSBwcm92aXNpb24gb2YgaGVhbHRoIGNhcmUgdG8gcGF0aWVudHMgc2Vla2luZyBzdWNoIGNhcmUgZm9yIG9yIHRocm91Z2ggdGhlIFZBLiBBcyBzdWNoLCB0aGUgY29udHJhY3RvciBpcyBjb25zaWRlcmVkIHBhcnQgb2YgdGhlIERlcGFydG1lbnQgb2YgSGVhbHRoIENhcmUgQWN0aXZpdHkuIFRoZSBjb250cmFjdG9yIGlzIGNvbnNpZGVyZWQgdG8gYmUgYSBWQSBjb250cmFjdG9yIGZvciBwdXJwb3NlcyBvZiB0aGUgUHJpdmFjeSBBY3QsIFRpdGxlIDUgVS5TLkMuIDU1MmEuIEZ1cnRoZXIsIGZvciB0aGUgcHVycG9zZSBvZiBWQSByZWNvcmRzIGFjY2VzcyBhbmQgcGF0aWVudCBjb25maWRlbnRpYWxpdHksIHRoZSBjb250cmFjdG9yIGlzIGNvbnNpZGVyZWQgdG8gYmUgYSBWQSBjb250cmFjdG9yIGZvciB0aGUgZm9sbG93aW5nIHByb3Zpc2lvbnM6IFRpdGxlIDM4IFUuUy5DLiA1NzAxLCA1NzA1LCBhbmQgNzM2Mi4gVGhlcmVmb3JlLCB0aGUgY29udHJhY3RvciBtYXkgaGF2ZSBhY2Nlc3MsIGFzIHdvdWxkIG90aGVyIGFwcHJvcHJpYXRlIGNvbXBvbmVudHMgb2YgVkEsIHRvIHBhdGllbnQgbWVkaWNhbCByZWNvcmRzLCBpbmNsdWRpbmcgcGF0aWVudCB0cmVhdG1lbnQgcmVjb3JkcyBwZXJ0YWluaW5nIHRvIGRydWcgYW5kIGFsY29ob2wgYWJ1c2UsIEhJViBhbmQgc2lja2xlIGNlbGwgYW5lbWlhLCB0byB0aGUgZXh0ZW50IG5lY2Vzc2FyeSB0byBwZXJmb3JtIGl0cyBjb250cmFjdHVhbCByZXNwb25zaWJpbGl0aWVzLiBIb3dldmVyLCBsaWtlIG90aGVyIGNvbXBvbmVudHMgb2YgdGhlIERlcGFydG1lbnQsIGFuZCBub3R3aXRoc3RhbmRpbmcgYW55IG90aGVyIHByb3Zpc2lvbnMgb2YgdGhlIGNvbnRyYWN0LCB0aGUgY29udHJhY3RvciBpcyByZXN0cmljdGVkIGZyb20gbWFraW5nIGEgZGlzY2xvc3VyZSBvZiBWQSByZWNvcmRzLCBvciBpbmZvcm1hdGlvbiBjb250YWluZWQgaW4gc3VjaCByZWNvcmRzLCB0byB3aGljaCBpdCBtYXkgaGF2ZSBhY2Nlc3MsIGV4Y2VwdCB0byB0aGUgZXh0ZW50IHRoYXQgZXhwbGljaXQgZGlzY2xvc3VyZSBhdXRob3JpdHkgZnJvbSBWQSBoYXMgYmVlbiByZWNlaXZlZC4gVGhlIGNvbnRyYWN0b3IgaXMgc3ViamVjdCB0byB0aGUgc2FtZSBwZW5hbHRpZXMgYW5kIGxpYWJpbGl0aWVzIGZvciB1bmF1dGhvcml6ZWQgZGlzY2xvc3VyZXMgb2Ygc3VjaCByZWNvcmRzIGFzIFZBLiBUaGUgcmVjb3JkcyByZWZlcnJlZCB0byBhYm92ZSBzaGFsbCBiZSwgYW5kIHJlbWFpbiwgdGhlIHByb3BlcnR5IG9mIHRoZSBWQSBhbmQgc2hhbGwgbm90IGJlIHJlbW92ZWQgb3IgdHJhbnNmZXJyZWQgZnJvbSBWQSBleGNlcHQgaW4gYWNjb3JkYW5jZSB3aXRoIFUuUy5DLiA1NTFhIChQcml2YWN5IEFjdCksIDM4IFUuUy5DLiA1NzAxIChDb25maWRlbnRpYWxpdHkgb2YgQ2xhaW1hbnRzIFJlY29yZHMpLCA1IFUuUy5DLiA1NTIgKEZPSUEpLCAzOCBVLlMuQy4gNTcwNSAoQ29uZmlkZW50aWFsaXR5IG9mIE1lZGljYWwgUXVhbGl0eSBBc3N1cmFuY2UgUmVjb3JkcyksIDM4IFUuUy5DLiA3MzMyIChjb25maWRlbnRpYWxpdHkgb2YgQ2VydGFpbiBNZWRpY2FsIFJlY29yZHMpLCBhbmQgZmVkZXJhbCBsYXdzLCBydWxlcywgYW5kIHJlZ3VsYXRpb25zLiBTdWJqZWN0IHRvIGFwcGxpY2FibGUgZmVkZXJhbCBjb25maWRlbnRpYWxpdHkgb3IgcHJpdmFjeSBsYXdzLCB0aGUgY29udHJhY3Rvciwgb3IgdGhlaXIgZGVzaWduYXRlZCByZXByZXNlbnRhdGl2ZXMsIGFuZCBkZXNpZ25hdGVkIHJlcHJlc2VudGF0aXZlcyBvZiBmZWRlcmFsIHJlZ3VsYXRvcnkgYWdlbmNpZXMgaGF2aW5nIGp1cmlzZGljdGlvbiBvdmVyIHRoZSBjb250cmFjdG9yLCBtYXkgaGF2ZSBhY2Nlc3MgdG8gdGhlIFZB4oCZcyByZWNvcmRzLCBhdCB0aGUgVkHigJlzIHBsYWNlIG9mIGJ1c2luZXNzIG9uIHJlcXVlc3QgZHVyaW5nIG5vcm1hbCBidXNpbmVzcyBob3VycywgdG8gaW5zcGVjdCwgcmV2aWV3LCBhbmQgbWFrZSBjb3BpZXMgb2Ygc3VjaCByZWNvcmRzLiBJbiBhZGRpdGlvbiwgdGhlIGZvbGxvd2luZyBwb2xpY2llcyBhbmQgbGF3cyBhcmUgYXBwbGljYWJsZSB1bmRlciB0aGlzIGNvbnRyYWN0OjwvcD5cblxuICAgIDx1bD5cbiAgICAgICAgPGxpPkNvbXB1dGVyIFNlY3VyaXR5IEFjdCBvZiAxOTg3LCBQTCAxMDAtMjM1PC9saT5cbiAgICAgICAgPGxpPlByaXZhY3kgQWN0IG9mIDE5NzQsIDUgVS5TLkMuIDU1MmE8L2xpPlxuICAgICAgICA8bGk+SGVhbHRoY2FyZSBJbnN1cmFuY2UgUG9ydGFiaWxpdHkgYW5kIEFjY291bnRhYmlsaXR5IEFjdCBvZiAxOTk2IChISVBBQSk8L2xpPlxuICAgICAgICA8bGk+RnJhdWQgYW5kIFJlbGF0ZWQgQWN0aXZpdHkgaW4gQ29ubmVjdGlvbiB3aXRoIEFjY2VzcyBEZXZpY2VzIGFuZCBDb21wdXRlcnMsIDE4IFUuUy5DLiAxMDI5LTEwMzA8L2xpPlxuICAgICAgICA8bGk+RWxlY3Ryb25pYyBDb21tdW5pY2F0aW9ucyBQcml2YWN5IEFjdCBvZiAxOTg2LCBQTCA5OS01MDg8L2xpPlxuICAgICAgICA8bGk+VS5TLkMuIDMzMDEsIENvbmZpZGVudGlhbCBOYXR1cmUgb2YgQ2xhaW1zPC9saT5cbiAgICAgICAgPGxpPlUuUy5DLiAzMzA1LCBDb25maWRlbnRpYWxpdHkgb2YgTWVkaWNhbCBRdWFsaXR5IEFzc3VyYW5jZSBSZWNvcmRzPC9saT5cbiAgICAgICAgPGxpPlUuUy5DIDQxMzIsIENvbmZpZGVudGlhbGl0eSBvZiBDZXJ0YWluIE1lZGljYWwgUmVjb3JkczwvbGk+XG4gICAgPC91bD5cblxuICAgIDxwPlRoZSBjb250cmFjdG9yIHNoYWxsIGNvbXBseSB3aXRoIENWQU1DIGNvbXB1dGVyIGFuZCBlbmQtdXNlciBzZWN1cml0eSByZXF1aXJlbWVudHM6IEFjY2VzcyBvbmx5IGRhdGEgZm9yIHdoaWNoIHRoZSBjb250cmFjdG9yIGhhcyBhdXRob3JpemVkIHByaXZpbGVnZXMuIE1haW50YWluIHRoZSBjb25maWRlbnRpYWxpdHkgb2Ygc2Vuc2l0aXZlIGRhdGEgb3IgaW5mb3JtYXRpb24uIFByb3RlY3QgYW55IGFzc2lnbmVkIHVzZXIgSURzLCBwYXNzd29yZHMsIGVsZWN0cm9uaWMgc2lnbmF0dXJlcywgYW5kIG90aGVyIGFjY2VzcyBBTlRIUk9QSUNfS0VZcyBmcm9tIGRpc2Nsb3N1cmUuIFNlY3VyZSBzZW5zaXRpdmUgcHJpbnRlZCBpbmZvcm1hdGlvbiBpbiBhcHByb3ZlZCBzdG9yYWdlIGNvbnRhaW5lcnMgd2hlbiBub3QgaW4gdXNlLiBQcmFjdGljZSBnb29kIGhvdXNla2VlcGluZyB3aXRoIGVxdWlwbWVudCBhbmQgd29yayBhcmVhcy4gTG9nIG9mZiBzeXN0ZW1zIGJlZm9yZSBsZWF2aW5nIGEgY29tcHV0ZXIgdW5hdHRlbmRlZC4gUmVmcmFpbiBmcm9tIHRoZSBpbGxlZ2FsIHJlcHJvZHVjdGlvbiBvciB1c2Ugb2YgY29weXJpZ2h0ZWQgYW5kIGxpY2Vuc2VkIHNvZnR3YXJlLiBVdGlsaXplIHRoZSBkYXRhIG9ubHkgdG8gdGhlIGV4dGVudCBuZWNlc3NhcnkgdG8gcGVyZm9ybSB0aGUgcmVxdWlyZW1lbnRzIG9mIHRoaXMgY29udHJhY3QuPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3IgdW5kZXJzdGFuZHMgYW5kIGFncmVlcyB0aGF0IHRoZSBtZWRpY2FsIHJlY29yZHMgb2YgYSBwYXRpZW50IGFuZCByYWRpb2xvZ3kgcmVwb3J0cyBnZW5lcmF0ZWQgYXJlIHN0cmljdGx5IGNvbmZpZGVudGlhbC4gRWFjaCBwZXJzb24gYXNzaWduZWQgdG8gdGhpcyBjb250cmFjdCBzaGFsbCBiZSByZXF1aXJlZCB0byBzaWduIGEgY29uZmlkZW50aWFsaXR5IHN0YXRlbWVudC4gRWFjaCBwZXJzb24gYWxsb3dlZCBhY2Nlc3MgdG8gdGhlIFZpc3RBIHN5c3RlbSBzaGFsbCBzaWduIGFuIEF1dG9tYXRlZCBJbmZvcm1hdGlvbiBTZWN1cml0eSBBZ3JlZW1lbnQgYW5udWFsbHkuPC9wPlxuXG4gICAgPHA+PHN0cm9uZz5IZWFsdGggSW5zdXJhbmNlIFBvcnRhYmlsaXR5IGFuZCBBY2NvdW50YWJpbGl0eSAoSElQQUEpOjwvc3Ryb25nPiBJbiBhY2NvcmRhbmNlIHdpdGggNDUgQ0ZSIDE2NC41MDI5ZSksIHRoZSBQcml2YWN5IFJ1bGUgaW5jbHVkZXMgYW4gZXhjZXB0aW9uIHRvIHRoZSBCdXNpbmVzcyBBc3NvY2lhdGUgQWdyZWVtZW50IGluIG9yZGVyIGZvciB0aGUgQ292ZXJlZCBFbnRpdHkgdG8gZGlzY2xvc2UgUHJvdGVjdGVkIEhlYWx0aCBJbmZvcm1hdGlvbiB0byBhIGhlYWx0aCBjYXJlIHByb3ZpZGVyIGZvciB0cmVhdG1lbnQuIEJhc2VkIG9uIHRoaXMgZXhjZXB0aW9uLCBhIEJ1c2luZXNzIEFzc29jaWF0ZSBBZ3JlZW1lbnQgaXMgbm90IHJlcXVpcmVkIGZvciB0aGlzIGNvbnRyYWN0LjwvcD5cblxuICAgIDxwPlRoZSBjb250cmFjdG9yIHNoYWxsIG1haW50YWluIGFuIEVycm9ycyBhbmQgT21pc3Npb25zIGxpYWJpbGl0eSBpbnN1cmFuY2UgcG9saWN5IHdoaWNoIGluc3VyZXMgYWdhaW5zdCBhIG5lZ2xpZ2VudCBhY3QsIGVycm9yLCBvciBvbWlzc2lvbiBhbmQgdGhlIG9yYWwgb3Igd3JpdHRlbiBwdWJsaWNhdGlvbiBvZiBtYXRlcmlhbCB0aGF0IHZpb2xhdGVkIGEgcGVyc29u4oCZcyByaWdodHMgb2YgcHJpdmFjeS4gVGhlIGNvbnRyYWN0b3Igc2hhbGwgYWxzbyBtYWludGFpbiBhIGNvbW1lcmNpYWwgZ2VuZXJhbCBsaWFiaWxpdHkgcG9saWN5LiBFdmlkZW5jZSBvZiBjb3ZlcmFnZSBzaGFsbCBiZSBwcm92aWRlZCB0byB0aGUgVkEgY3JlZGVudGlhbGluZyBkZXBhcnRtZW50IHVwb24gcmVxdWVzdC48L3A+XG5cbiAgICA8cD5JbiBhY2NvcmRhbmNlIHdpdGggdGhlIEhlYWx0aCBJbnN1cmFuY2UgUG9ydGFiaWxpdHkgYW5kIEFjY291bnRhYmlsaXR5IEFjdCAoSElQQUEpIGFuZCB0aGUgQmFsYW5jZWQgQnVkZ2V0IEFjdCAoQkJBKSBvZiAxOTc3LCB0aGUgT2ZmaWNlIG9mIEluc3BlY3RvciBHZW5lcmFsIChPSUcpIGhhcyBlc3RhYmxpc2hlZCBhIGxpc3Qgb2YgcGFydGllcyBhbmQgZW50aXRpZXMgZXhjbHVkZWQgZnJvbSBmZWRlcmFsIGhlYWx0aCBjYXJlIHByb2dyYW1zLiBTcGVjaWZpY2FsbHksIHRoZSBsaXN0ZWQgcGFydGllcyBhbmQgZW50aXRpZXMgb24gdGhlIE9JRyBMaXN0IG9mIEV4Y2x1ZGVkIEluZGl2aWR1YWxzL0VudGl0aWVzIG1heSBub3QgcmVjZWl2ZSBmZWRlcmFsIGhlYWx0aCBjYXJlIHByb2dyYW0gcGF5bWVudHMgZHVlIHRvIGZyYXVkIGFuZC9vciBhYnVzZSBvZiB0aGUgTWVkaWNhcmUgYW5kIE1lZGljYWlkIHByb2dyYW1zLjwvcD5cblxuICAgIDxwPlRoZXJlZm9yZSwgYWxsIG9mZmVyb3JzIHNoYWxsIHJldmlldyB0aGUgT0lHIExpc3Qgb2YgRXhjbHVkZWQgSW5kaXZpZHVhbHMvRW50aXRpZXMgb24gdGhlIE9JRyB3ZWJzaXRlIGF0IDxhIGhyZWY9J2h0dHBzOi8vd3d3Lmhocy5nb3Yvb2lnJyB0YXJnZXQ9J19ibGFuayc+d3d3Lmhocy5nb3Yvb2lnPC9hPiB0byBlbnN1cmUgdGhhdCB0aGUgcHJvcG9zZWQgY2FuZGlkYXRlKHMpIGFuZC9vciBmaXJtKHMpIGFyZSBub3QgbGlzdGVkLiBPZmZlcm9ycyBzaG91bGQgbm90ZSB0aGF0IGFueSBleGNsdWRlZCBpbmRpdmlkdWFsIG9yIGVudGl0eSB0aGF0IHN1Ym1pdHMgYSBjbGFpbSBmb3IgcmVpbWJ1cnNlbWVudCB0byBhIGZlZGVyYWwgaGVhbHRoIGNhcmUgcHJvZ3JhbSwgb3IgY2F1c2VzIHN1Y2ggYSBjbGFpbSB0byBiZSBzdWJtaXR0ZWQsIG1heSBiZSBzdWJqZWN0IHRvIGEgY2l2aWwgbW9uZXRhcnkgcGVuYWx0eSAoQ01QKSBvZiAkMTAsMDAwIGZvciBlYWNoIGl0ZW0gb3Igc2VydmljZSBmdXJuaXNoZWQgZHVyaW5nIGEgcGVyaW9kIHRoYXQgdGhlIHBlcnNvbiBvciBlbnRpdHkgd2FzIGV4Y2x1ZGVkIGFuZCBtYXkgYWxzbyBiZSBzdWJqZWN0IHRvIHRyZWJsZSBkYW1hZ2VzIGZvciB0aGUgYW1vdW50IGNsYWltZWQgZm9yIGVhY2ggaXRlbSBvciBzZXJ2aWNlLiBDTVBzIG1heSBhbHNvIGJlIGltcG9zZWQgYWdhaW5zdCBoZWFsdGggY2FyZSBwcm92aWRlcnMgYW5kIGVudGl0aWVzIHRoYXQgZW1wbG95IG9yIGVudGVyIGludG8gY29udHJhY3RzIHdpdGggZXhjbHVkZWQgaW5kaXZpZHVhbHMgb3IgZW50aXRpZXMgdG8gcHJvdmlkZSBpdGVtcyBvciBzZXJ2aWNlcyB0byBmZWRlcmFsIHByb2dyYW0gYmVuZWZpY2lhcmllcy48L3A+XG5cbiAgICA8cD5CeSBzaWduaW5nIHRoZSBvZmZlci9iaWQsIHRoZSBjb250cmFjdG9yIGNlcnRpZmllcyB0aGF0IGhlL3NoZSBoYXMgcmV2aWV3ZWQgdGhlIE9JRyBMaXN0IG9mIEV4Y2x1ZGVkIEluZGl2aWR1YWxzL0VudGl0aWVzIGFuZCB0aGF0IHRoZSBwcm9wb3NlZCBjYW5kaWRhdGUocykgYW5kL29yIGZpcm0gYXJlIG5vdCBsaXN0ZWQgYXMgb2YgdGhlIGRhdGUgdGhlIG9mZmVyL2JpZCB3YXMgc2lnbmVkLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+TUFJTlRFTkFOQ0UgQU5EIFRFQ0hOSUNBTCBTVVBQT1JUOjwvc3Ryb25nPiBQcm92aWRlIG1haW50ZW5hbmNlIG9uIGFsbCBjb250cmFjdG9yLXByb3ZpZGVkIGVxdWlwbWVudCBhbmQgaW5zdGFsbGVkIHN5c3RlbXMuIFRoZSBjb250cmFjdG9yIHNoYWxsIG1ha2UgcHJvdmlzaW9ucyBmb3IgdGhlIHByb3BlciBtYWludGVuYW5jZSBhbmQgZnVuY3Rpb25pbmcgb2YgYXNzb2NpYXRlZCBlcXVpcG1lbnQsIGZhY2lsaXRpZXMsIGFuZCBmaXh0dXJlcyBhcyBtYXkgcmVhc29uYWJseSBiZSByZXF1aXJlZCBieSBwaGFybWFjaXN0cyB0byBwZXJmb3JtIHNlcnZpY2VzIGhlcmV1bmRlci4gUHJvdmlkZSBhZnRlci1ob3VycyBzdXBwb3J0IGZvciBwcm9ibGVtcyB3aXRoIGNhbGwtYmFjayBwZXJpb2RzIG5vdCB0byBleGNlZWQgMzAgbWludXRlcyBmcm9tIHRoZSBwbGFjZW1lbnQgb2YgYSBjYWxsIGZvciBhc3Npc3RhbmNlLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+VVBUSU1FOjwvc3Ryb25nPiBQcm92aWRlIGEgc3lzdGVtIHRoYXQgbWFpbnRhaW5zIGF0IGxlYXN0IGEgOTklIHVwdGltZSBwZXJmb3JtYW5jZSByYXRlLiBWQSBwZXJzb25uZWwgc2hhbGwgYmUgbm90aWZpZWQgaW1tZWRpYXRlbHkgb2YgYW55IGVxdWlwbWVudCBtYWxmdW5jdGlvbiB0aGF0IHdvdWxkIGhpbmRlciB0aGUgdHJhbnNtaXNzaW9uIG9mIGltYWdlcyBvciBvdGhlciBkYXRhLiBJbiB0aGUgZXZlbnQgb2YgYSBzeXN0ZW0gZmFpbHVyZSwgdGhlIGNvbnRyYWN0b3Igc2hhbGwgd29yayBjb29wZXJhdGl2ZWx5IHdpdGggdGhlIFZBIGZhY2lsaXR5IHRvIHJlbWVkeSB0aGUgc2l0dWF0aW9uIGFzIHF1aWNrbHkgYXMgcG9zc2libGUuIFRoZSBjb250cmFjdG9yIG1heSBjb250YWN0IHRoZSBDVkFNQydzIENJTyBkdXJpbmcgbm9ybWFsIGJ1c2luZXNzIGhvdXJzIGF0IDYxMC0zODQtNzcxMSB4IDQ1NTUgb3IgdGhlIEFPRCBhdCA2MTAtMzg0LTc3MTEgeCA1MDYwIG9yIDQyOTAgb24gZXZlbmluZ3MvaG9saWRheXMvd2Vla2VuZHMuPC9wPlxuXG4gICAgPHA+PHN0cm9uZz5QTEFOTklORyBBTkQgSU5TVEFMTEFUSU9OOjwvc3Ryb25nPjwvcD5cblxuICAgIDxwPlRoZSBjb250cmFjdG9yIHNoYWxsIGRldmVsb3AgYSBwcm9qZWN0IGltcGxlbWVudGF0aW9uIHN0cmF0ZWd5IHdpdGggQ1ZBTUMgdG8gaW5jbHVkZSB0aGUgcHJlcGFyYXRpb24gb2YgYnVpbGRpbmdzLCBlc3RhYmxpc2hpbmcgdGVsZWNvbW11bmljYXRpb25zLCBldGMuLCBpZiBuZWNlc3NhcnkuPC9wPiBcblxuICAgIDxwPlRoZSBzZXJ2aWNlIHByb3ZpZGVyIHNoYWxsIGJlIHJlcXVpcmVkIHRvIHV0aWxpemUgYSBwb2ludC10by1wb2ludCBWUE4gYmV0d2VlbiB0aGVtc2VsdmVzIGFuZCBDVkFNQyBpZiBuZWNlc3NhcnkgdG8gZGlhbCBpbnRvIHRoZSBzeXN0ZW0gZm9yIGRpYWdub3N0aWMgb3IgdXBncmFkZSBwdXJwb3Nlcy4gQWxsIHNlY3VyaXR5IHJlcXVpcmVtZW50cyBuZWVkIHRvIGJlIG1ldC48L3A+XG5cbiAgICA8cD5UaGUgY29udHJhY3RvciBzaGFsbCBwcm92aWRlIGEgc3lzdGVtIHRoYXQgbWFpbnRhaW5zIGEgbWluaW11bSBvZiA5OSUgdXB0aW1lIHBlcmZvcm1hbmNlIHJhdGUuIEZhaWx1cmUgdG8gcHJvdmlkZSB0aGlzIHNoYWxsIHJlc3VsdCBpbiBhIGRlZHVjdGlvbiBvbiB0aGUgY29udHJhY3QgYnkgMS8zMHRoIGZvciBlYWNoIGRheSBkb3duIGFuZCBwb3NzaWJseSBjb250cmFjdCB0ZXJtaW5hdGlvbi48L3A+XG5cbiAgICA8cD5UaGUgY29udHJhY3RvciBzaGFsbCBwcm92aWRlIGhhcmR3YXJlIG5lY2Vzc2FyeSB0byBjb25uZWN0IHJlbW90ZWx5IHRvIENWQU1DIHRvIGJlIHV0aWxpemVkIGF0IHRoZSBjb250cmFjdG9yIHNpdGUuPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3Igc2hhbGwgcHJvdmlkZSBmYWNzaW1pbGUsIHRlbGVwaG9uZSwgY29tcHV0ZXIvbGFwdG9wcywgbmV0d29ya2luZywgYW5kIG90aGVyIHRlbGVjb21tdW5pY2F0aW9uIGVxdWlwbWVudCB0byBiZSB1dGlsaXplZCBhdCB0aGUgY29udHJhY3RvciBmYWNpbGl0eS48L3A+XG5cbiAgICA8cD5UaGUgY29udHJhY3RvciBzaGFsbCBwcm92aWRlIGFsbCBzdXBwbGllcywgc2VydmljZXMsIG1haW50ZW5hbmNlLCByZXBhaXJzLCBhbmQgdXBncmFkZXMgcmVxdWlyZWQgYXQgdGhlIGNvbnRyYWN0b3IgZmFjaWxpdHkgdG8gcHJvdmlkZSBzZXJ2aWNlcyBhcyBkZXNjcmliZWQgYWJvdmUuPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3LigJlzIGVxdWlwbWVudCwgaGFyZHdhcmUsIHNvZnR3YXJlLCBhbmQgc3VwcGxpZXMgc2hhbGwgYmUgY29tcGF0aWJsZSB3aXRoIHRoZSBWQeKAmXMgc29mdHdhcmUgYW5kIGhhcmR3YXJlIHVzZWQgZHVyaW5nIHRoZSBwZXJmb3JtYW5jZSBvZiB0aGlzIGNvbnRyYWN0LCBpbmNsdWRpbmcgY3JpdGljYWwgcGF0Y2hlcyBhbmQgYW50aXZpcnVzIHVwZGF0ZXMuIFRoZSBjb250cmFjdG9yIHNoYWxsIHByb3ZpZGUgcHJvb2Ygb2YgaW5zdGFsbGF0aW9uIG9mIGNyaXRpY2FsIHBhdGNoZXMgYW5kL29yIGFudGl2aXJ1cyB1cGRhdGVzIHRvIHRoZSBWQSB1cG9uIHJlcXVlc3QuPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3LigJlzIG5ldHdvcmsgYW5kIHNlY3VyaXR5IHN5c3RlbSBzaGFsbCBiZSBjb21wYXRpYmxlIHdpdGggdGhlIFZB4oCZcyBuZXR3b3JrIGFuZCBzZWN1cml0eSBzeXN0ZW0uPC9wPlxuXG4gICAgPHA+VGhlIGNvbnRyYWN0b3Igc2hhbGwgdXNlIGFueSBWQSBmdXJuaXNoZWQgaXRlbXMgaW4gY29uanVuY3Rpb24gd2l0aCwgYW5kIGV4Y2x1c2l2ZWx5IGZvciwgcGVyZm9ybWFuY2UgdW5kZXIgdGhpcyBjb250cmFjdC48L3A+XG5cbiAgICA8cD48c3Ryb25nPkFmdGVyIGF3YXJkIG9mIGNvbnRyYWN0LCBhbGwgaW5xdWlyaWVzIGFuZCBjb3JyZXNwb25kZW5jZSByZWxhdGl2ZSB0byB0aGUgYWRtaW5pc3RyYXRpb24gb2YgdGhlIGNvbnRyYWN0IHNoYWxsIGJlIGFkZHJlc3NlZCB0bzo8L3N0cm9uZz4gQ29udHJhY3RpbmcgT2ZmaWNlciAoQ08pPC9wPlxuXG4gICAgPHA+PHN0cm9uZz4oRW5kIG9mIFNPVyk8L3N0cm9uZz48L3A+XG5cbiAgICA8cD5UaGUgZnVsbCB0ZXh0IG9mIEZBUiBwcm92aXNpb25zIG9yIGNsYXVzZXMgbWF5IGJlIGFjY2Vzc2VkIGVsZWN0cm9uaWNhbGx5IGF0IDxhIGhyZWY9J2h0dHA6Ly9hY3F1aXNpdGlvbi5nb3YvY29tcC9mYXIvaW5kZXguaHRtbCcgdGFyZ2V0PSdfYmxhbmsnPmh0dHA6Ly9hY3F1aXNpdGlvbi5nb3YvY29tcC9mYXIvaW5kZXguaHRtbDwvYT4uPC9wPlxuXG4gICAgPHA+PHN0cm9uZz5UaGUgZm9sbG93aW5nIHNvbGljaXRhdGlvbiBwcm92aXNpb25zIGFwcGx5IHRvIHRoaXMgYWNxdWlzaXRpb246PC9zdHJvbmc+PC9wPlxuICAgIDx1bD5cbiAgICAgICAgPGxpPkZBUiA1Mi4yMDMtMTcsIENvbnRyYWN0b3IgRW1wbG95ZWUgV2hpc3RsZWJsb3dlciBSaWdodHMgKE5vdiAyMDIzKTwvbGk+XG4gICAgICAgIDxsaT5GQVIgNTIuMjA0LTEzLCBTeXN0ZW0gZm9yIEF3YXJkIE1hbmFnZW1lbnQgTWFpbnRlbmFuY2UgKE9jdCAyMDE4KTwvbGk+XG4gICAgICAgIDxsaT5GQVIgNTIuMjA0LTI3LCBQcm9oaWJpdGlvbiBvbiBhIEJ5dGVEYW5jZSBDb3ZlcmVkIEFwcGxpY2F0aW9uIChKdW4gMjAyMyk8L2xpPlxuICAgICAgICA8bGk+RkFSIDUyLjIxMi0xLCBJbnN0cnVjdGlvbnMgdG8gT2ZmZXJvcnMgQ29tbWVyY2lhbCBQcm9kdWN0cyBhbmQgQ29tbWVyY2lhbCBTZXJ2aWNlcyAoU2VwIDIwMjMpPC9saT5cbiAgICAgICAgPGxpPkFEREVORFVNIHRvIEZBUiA1Mi4yMTItMSBJTlNUUlVDVElPTlMgVE8gT0ZGRVJPUlMgQ09NTUVSQ0lBTCBQUk9EVUNUUyBBTkQgQ09NTUVSQ0lBTCBTRVJWSUNFUyAoTk9WIDIwMjEpPC9saT5cbiAgICA8L3VsPlxuXG4gICAgPHA+UHJvdmlzaW9ucyB0aGF0IGFyZSBpbmNvcnBvcmF0ZWQgYnkgcmVmZXJlbmNlIChieSBDaXRhdGlvbiBOdW1iZXIsIFRpdGxlLCBhbmQgRGF0ZSkgaGF2ZSB0aGUgc2FtZSBmb3JjZSBhbmQgZWZmZWN0IGFzIGlmIHRoZXkgd2VyZSBnaXZlbiBpbiBmdWxsIHRleHQuIFVwb24gcmVxdWVzdCwgdGhlIENvbnRyYWN0aW5nIE9mZmljZXIgd2lsbCBtYWtlIHRoZWlyIGZ1bGwgdGV4dCBhdmFpbGFibGUuIFRoZSB2ZXJzaW9uIG9mIEZBUiA1Mi4yMTItMSBpbiB0aGUgYWRkZW5kdW0gaXMgdGFpbG9yZWQgZm9yIFNpbXBsaWZpZWQgQWNxdWlzaXRpb24gUHJvY2VkdXJlcyBhbmQgc3VwZXJzZWRlcyB0aGUgY3VycmVudCB2ZXJzaW9uIG9mIEZBUiA1Mi4yMTItMSBjb250YWluZWQgaW4gdGhlIEZBUi48L3A+XG4gICAgXG4gICAgPHA+PHN0cm9uZz5UaGUgZm9sbG93aW5nIHByb3Zpc2lvbiBpcyBpbmNvcnBvcmF0ZWQgaW50byA1Mi4yMTItMSBhcyBhbiBhZGRlbmR1bSB0byB0aGlzIHNvbGljaXRhdGlvbjo8L3N0cm9uZz48L3A+XG4gICAgXG4gICAgPHA+RkFSIDUyLjIxMi0xIEluc3RydWN0aW9ucyB0byBPZmZlcm9ycyBDb21tZXJjaWFsIFByb2R1Y3RzIGFuZCBDb21tZXJjaWFsIFNlcnZpY2VzIChOb3YgMjAyMSk8L3A+XG4gICAgPHA+PHN0cm9uZz4oYSkgTm9ydGggQW1lcmljYW4gSW5kdXN0cnkgQ2xhc3NpZmljYXRpb24gU3lzdGVtIChOQUlDUykgY29kZSBhbmQgc21hbGwgYnVzaW5lc3Mgc2l6ZSBzdGFuZGFyZDo8L3N0cm9uZz4gVGhlIE5BSUNTIGNvZGUocykgYW5kIHNtYWxsIGJ1c2luZXNzIHNpemUgc3RhbmRhcmQocykgZm9yIHRoaXMgYWNxdWlzaXRpb24gYXBwZWFyIGVsc2V3aGVyZSBpbiB0aGUgUmVxdWVzdCBmb3IgUXVvdGUgKFJGUSkuIEhvd2V2ZXIsIHRoZSBzbWFsbCBidXNpbmVzcyBzaXplIHN0YW5kYXJkIGZvciBhIGNvbmNlcm4gdGhhdCBzdWJtaXRzIGEgcXVvdGUsIG90aGVyIHRoYW4gb24gYSBjb25zdHJ1Y3Rpb24gb3Igc2VydmljZSBhY3F1aXNpdGlvbiwgYnV0IHByb3Bvc2VzIHRvIGZ1cm5pc2ggYW4gZW5kIGl0ZW0gdGhhdCBpdCBkaWQgbm90IGl0c2VsZiBtYW51ZmFjdHVyZSwgcHJvY2Vzcywgb3IgcHJvZHVjZSBpcyA1MDAgZW1wbG95ZWVzIGlmIHRoZSBhY3F1aXNpdGlvbiBpcyBzZXQgYXNpZGUgZm9yIHNtYWxsIGJ1c2luZXNzIGFuZCBoYXMgYSB2YWx1ZSBhYm92ZSB0aGUgc2ltcGxpZmllZCBhY3F1aXNpdGlvbiB0aHJlc2hvbGQ7IG9yPC9wPlxuICAgIFxuICAgIDxwPlVzZXMgdGhlIEhVQlpvbmUgcHJpY2UgZXZhbHVhdGlvbiBwcmVmZXJlbmNlIHJlZ2FyZGxlc3Mgb2YgZG9sbGFyIHZhbHVlLCB1bmxlc3MgdGhlIHF1b3RlciB3YWl2ZXMgdGhlIHByaWNlIGV2YWx1YXRpb24gcHJlZmVyZW5jZTsgb3I8L3A+XG5cbiAgICA8cD5JcyBhbiA4KGEpLCBIVUJab25lLCBzZXJ2aWNlLWRpc2FibGVkIHZldGVyYW4tb3duZWQsIGVjb25vbWljYWxseSBkaXNhZHZhbnRhZ2VkIHdvbWVuLW93bmVkLCBvciB3b21lbi1vd25lZCBzbWFsbCBidXNpbmVzcyBzZXQtYXNpZGUgb3Igc29sZS1zb3VyY2UgYXdhcmQgcmVnYXJkbGVzcyBvZiBkb2xsYXIgdmFsdWUuPC9wPlxuXG4gICAgPHA+PHN0cm9uZz4oYikgU3VibWlzc2lvbiBvZiBRdW90ZXM6PC9zdHJvbmc+IFN1Ym1pdCBzaWduZWQgYW5kIGRhdGVkIHF1b3RlcyB0byB0aGUgb2ZmaWNlIHNwZWNpZmllZCBpbiB0aGlzIFJlcXVlc3QgZm9yIFF1b3RlIChSRlEpIGF0IG9yIGJlZm9yZSB0aGUgZXhhY3QgdGltZSBzcGVjaWZpZWQuIFF1b3RlcyBtYXkgYmUgc3VibWl0dGVkIG9uIGxldHRlcmhlYWQgc3RhdGlvbmVyeSwgb3IgYXMgb3RoZXJ3aXNlIHNwZWNpZmllZCBpbiB0aGUgUkZRLiBBcyBhIG1pbmltdW0sIHF1b3RlcyBtdXN0IHNob3c6PC9wPlxuICAgXG4gICAgPHVsPlxuICAgICAgICA8bGk+VGhlIHNvbGljaXRhdGlvbiBudW1iZXI7PC9saT5cbiAgICAgICAgPGxpPlRoZSB0aW1lIHNwZWNpZmllZCBpbiB0aGUgc29saWNpdGF0aW9uIGZvciByZWNlaXB0IG9mIHF1b3RhdGlvbnM7PC9saT5cbiAgICAgICAgPGxpPlRoZSBuYW1lLCBhZGRyZXNzLCBhbmQgdGVsZXBob25lIG51bWJlciBvZiB0aGUgcXVvdGVyOzwvbGk+XG4gICAgICAgIDxsaT5BIHRlY2huaWNhbCBkZXNjcmlwdGlvbiBvZiB0aGUgaXRlbXMgYmVpbmcgcXVvdGVkIGluIHN1ZmZpY2llbnQgZGV0YWlsIHRvIGV2YWx1YXRlIGNvbXBsaWFuY2Ugd2l0aCB0aGUgcmVxdWlyZW1lbnRzIGluIHRoZSBzb2xpY2l0YXRpb24uIFRoaXMgbWF5IGluY2x1ZGUgcHJvZHVjdCBsaXRlcmF0dXJlLCBvciBvdGhlciBkb2N1bWVudHMsIGlmIG5lY2Vzc2FyeTs8L2xpPlxuICAgICAgICA8bGk+VGVybXMgb2YgYW55IGV4cHJlc3Mgd2FycmFudHk7PC9saT5cbiAgICAgICAgPGxpPlByaWNlIGFuZCBhbnkgZGlzY291bnQgdGVybXM7PC9saT5cbiAgICAgICAgPGxpPlJlbWl0IHRvIGFkZHJlc3MsIGlmIGRpZmZlcmVudCB0aGFuIG1haWxpbmcgYWRkcmVzczs8L2xpPlxuICAgICAgICA8bGk+QSBjb21wbGV0ZWQgY29weSBvZiB0aGUgcmVwcmVzZW50YXRpb25zIGFuZCBjZXJ0aWZpY2F0aW9ucyBhdCBGZWRlcmFsIEFjcXVpc2l0aW9uIFJlZ3VsYXRpb24gKEZBUikgNTIuMjEyLTMgKHNlZSBGQVIgNTIuMjEyLTMoYikgZm9yIHRob3NlIHJlcHJlc2VudGF0aW9ucyBhbmQgY2VydGlmaWNhdGlvbnMgdGhhdCB0aGUgcXVvdGVyIHNoYWxsIGNvbXBsZXRlIGVsZWN0cm9uaWNhbGx5KTs8L2xpPlxuICAgICAgICA8bGk+QWNrbm93bGVkZ21lbnQgb2YgUmVxdWVzdCBmb3IgUXVvdGF0aW9uIGFtZW5kbWVudHM7PC9saT5cbiAgICAgICAgPGxpPlBhc3QgcGVyZm9ybWFuY2Ugd2lsbCBub3QgYmUgY29uc2lkZXJlZCBpbiBzaW1wbGlmaWVkIGFjcXVpc2l0aW9uIHByb2N1cmVtZW50cy48L2xpPlxuICAgICAgICA8bGk+VGhlIHF1b3RlIHNob3VsZCBpbmNsdWRlIGEgc3RhdGVtZW50IHNwZWNpZnlpbmcgdGhlIGV4dGVudCBvZiBhZ3JlZW1lbnQgd2l0aCBhbGwgdGVybXMsIGNvbmRpdGlvbnMsIGFuZCBwcm92aXNpb25zIGluY2x1ZGVkIGluIHRoZSBzb2xpY2l0YXRpb24uIFF1b3RlcyB0aGF0IGZhaWwgdG8gZnVybmlzaCByZXF1aXJlZCByZXByZXNlbnRhdGlvbnMgYW5kIGNlcnRpZmljYXRpb25zLCBpbmZvcm1hdGlvbiByZXF1ZXN0ZWQsIGFuZCBhY2NlcHQgdGhlIHRlcm1zIGFuZCBjb25kaXRpb25zIG9mIHRoZSBzb2xpY2l0YXRpb24gbWF5IGJlIGV4Y2x1ZGVkIGZyb20gY29uc2lkZXJhdGlvbi48L2xpPlxuICAgIDwvdWw+XG5cbiAgICA8cD48c3Ryb25nPihjKSBQZXJpb2QgZm9yIGFjY2VwdGFuY2Ugb2YgUXVvdGVzOjwvc3Ryb25nPiBUaGUgcXVvdGVyIGFncmVlcyB0byBob2xkIHRoZSBwcmljZXMgaW4gaXRzIHF1b3RlIGZpcm0gZm9yIDMwIGNhbGVuZGFyIGRheXMgZnJvbSB0aGUgZGF0ZSBzcGVjaWZpZWQgZm9yIHJlY2VpcHQgb2YgcXVvdGVzIHVubGVzcyBhbm90aGVyIHRpbWUgcGVyaW9kIGlzIHNwZWNpZmllZCBpbiBhbiBhZGRlbmR1bSB0byB0aGUgc29saWNpdGF0aW9uLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+KGQpIFByb2R1Y3Qgc2FtcGxlczo8L3N0cm9uZz4gV2hlbiByZXF1aXJlZCBieSB0aGUgc29saWNpdGF0aW9uLCBwcm9kdWN0IHNhbXBsZXMgc2hhbGwgYmUgc3VibWl0dGVkIGF0IG9yIHByaW9yIHRvIHRoZSB0aW1lIHNwZWNpZmllZCBmb3IgcmVjZWlwdCBvZiBxdW90ZXMuIFVubGVzcyBvdGhlcndpc2Ugc3BlY2lmaWVkIGluIHRoaXMgc29saWNpdGF0aW9uLCB0aGVzZSBzYW1wbGVzIHNoYWxsIGJlIHN1Ym1pdHRlZCBhdCBubyBleHBlbnNlIHRvIHRoZSBHb3Zlcm5tZW50IGFuZCByZXR1cm5lZCBhdCB0aGUgc2VuZGVy4oCZcyByZXF1ZXN0IGFuZCBleHBlbnNlIHVubGVzcyB0aGV5IGFyZSBkZXN0cm95ZWQgZHVyaW5nIEFDVElWRV9SRUNPUkRfRU5DUllQVElPTl9ERVRFUk1JTklTVElDX0tFWWluZy48L3A+XG5cbiAgICA8cD48c3Ryb25nPihlKSBNdWx0aXBsZSBRdW90ZXM6PC9zdHJvbmc+IFF1b3RlcnMgYXJlIGVuY291cmFnZWQgdG8gc3VibWl0IG11bHRpcGxlIHF1b3RlcyBwcmVzZW50aW5nIGFsdGVybmF0aXZlIGxpbmUgaXRlbXMgKHByb3ZpZGVkIHRoYXQgdGhlIGFsdGVybmF0aXZlIGxpbmUgaXRlbXMgYXJlIGNvbnNpc3RlbnQgd2l0aCBGQVIgc3VicGFydCA0LjEwKSwgb3IgYWx0ZXJuYXRpdmUgY29tbWVyY2lhbCBwcm9kdWN0cyBvciBjb21tZXJjaWFsIHNlcnZpY2VzIGZvciBzYXRpc2Z5aW5nIHRoZSByZXF1aXJlbWVudHMgb2YgdGhpcyBzb2xpY2l0YXRpb24uIEVhY2ggcXVvdGUgc3VibWl0dGVkIHdpbGwgYmUgZXZhbHVhdGVkIHNlcGFyYXRlbHkuPC9wPlxuXG4gICAgPHA+PHN0cm9uZz4oZikgTGF0ZSBzdWJtaXNzaW9ucywgcmV2aXNpb25zLCBhbmQgd2l0aGRyYXdhbHMgb2YgcXVvdGVzOjwvc3Ryb25nPjwvcD5cbiAgICA8dWw+XG4gICAgICAgIDxsaT5RdW90ZXJzIGFyZSByZXNwb25zaWJsZSBmb3Igc3VibWl0dGluZyBxdW90ZXMgc28gYXMgdG8gcmVhY2ggdGhlIEdvdmVybm1lbnQgb2ZmaWNlIGRlc2lnbmF0ZWQgaW4gdGhlIHNvbGljaXRhdGlvbiBieSB0aGUgdGltZSBzcGVjaWZpZWQgaW4gdGhlIHNvbGljaXRhdGlvbi4gSWYgbm8gdGltZSBpcyBzcGVjaWZpZWQgaW4gdGhlIHNvbGljaXRhdGlvbiwgdGhlIHRpbWUgZm9yIHJlY2VpcHQgaXMgNDozMCBwLm0uLCBsb2NhbCB0aW1lLCBmb3IgdGhlIGRlc2lnbmF0ZWQgR292ZXJubWVudCBvZmZpY2Ugb24gdGhlIGRhdGUgdGhhdCBxdW90ZXMgYXJlIGR1ZS48L2xpPlxuICAgICAgICA8bGk+QW55IHF1b3RhdGlvbiByZWNlaXZlZCBhdCB0aGUgR292ZXJubWVudCBvZmZpY2UgZGVzaWduYXRlZCBpbiB0aGUgc29saWNpdGF0aW9uIGFmdGVyIHRoZSBleGFjdCB0aW1lIHNwZWNpZmllZCBmb3IgcmVjZWlwdCBvZiBxdW90ZXMgaXMgbGF0ZSBhbmQgbWF5IG5vdCBiZSBjb25zaWRlcmVkIHVubGVzcyBpdCBpcyByZWNlaXZlZCBiZWZvcmUgdGhlIHB1cmNoYXNlIG9yZGVyIGlzc3VhbmNlIGFuZCB0aGUgQ29udHJhY3RpbmcgT2ZmaWNlciAoQ08pIGRldGVybWluZXMgdGhhdCBhY2NlcHRpbmcgdGhlIGxhdGUgcXVvdGF0aW9uIHdvdWxkIG5vdCB1bmR1bHkgZGVsYXkgdGhlIGFjcXVpc2l0aW9uLjwvbGk+XG4gICAgICAgIDxsaT5JZiBhbiBlbWVyZ2VuY3kgb3IgdW5hbnRpY2lwYXRlZCBldmVudCBpbnRlcnJ1cHRzIG5vcm1hbCBHb3Zlcm5tZW50IHByb2Nlc3NlcyBzbyB0aGF0IHF1b3RhdGlvbnMgY2Fubm90IGJlIHJlY2VpdmVkIGF0IHRoZSBHb3Zlcm5tZW50IG9mZmljZSBkZXNpZ25hdGVkIGZvciByZWNlaXB0IG9mIHF1b3RlcyBieSB0aGUgZXhhY3QgdGltZSBzcGVjaWZpZWQgaW4gdGhlIHNvbGljaXRhdGlvbiwgYW5kIHVyZ2VudCBHb3Zlcm5tZW50IHJlcXVpcmVtZW50cyBwcmVjbHVkZSBhIG5vdGljZSBvZiBhbiBleHRlbnNpb24gb2YgdGhlIGNsb3NpbmcgZGF0ZSwgdGhlIHRpbWUgc3BlY2lmaWVkIGZvciByZWNlaXB0IG9mIHF1b3RlcyB3aWxsIGJlIGRlZW1lZCB0byBiZSBleHRlbmRlZCB0byB0aGUgc2FtZSB0aW1lIG9mIGRheSBzcGVjaWZpZWQgaW4gdGhlIHNvbGljaXRhdGlvbiBvbiB0aGUgZmlyc3Qgd29yayBkYXkgb24gd2hpY2ggbm9ybWFsIEdvdmVybm1lbnQgcHJvY2Vzc2VzIHJlc3VtZS48L2xpPlxuICAgIDwvdWw+XG5cbiAgICA8cD48c3Ryb25nPihnKSBJc3N1YW5jZSBvZiBQdXJjaGFzZSBPcmRlcjo8L3N0cm9uZz4gVGhlIEdvdmVybm1lbnQgbWF5IGlzc3VlIGEgcHVyY2hhc2Ugb3JkZXIgdG8gb25lIG9yIG1vcmUgcXVvdGVycyBhcyBpZGVudGlmaWVkIGluIHRoZSBSZXF1ZXN0IGZvciBRdW90ZSAoUkZRKS4gVGhlcmVmb3JlLCB0aGUgcXVvdGVyJ3MgaW5pdGlhbCBxdW90ZSBzaG91bGQgY29udGFpbiB0aGUgYmVzdCB0ZXJtcyBmcm9tIGEgcHJpY2UgYW5kIHRlY2huaWNhbCBzdGFuZHBvaW50LiBIb3dldmVyLCB0aGUgR292ZXJubWVudCBtYXkgcmVqZWN0IGFueSBvciBhbGwgcXVvdGVzIGlmIHN1Y2ggYWN0aW9uIGlzIGluIHRoZSBwdWJsaWMncyBiZXN0IGludGVyZXN0LiBUaGUgQ29udHJhY3RpbmcgT2ZmaWNlciAoQ08pIG1heSBpc3N1ZSBhIHB1cmNoYXNlIG9yZGVyIHRvIG90aGVyIHRoYW4gdGhlIHF1b3RlciB3aXRoIHRoZSBsb3dlc3QgcHJpY2VkIHF1b3RhdGlvbi48L3A+XG5cbiAgICA8cD48c3Ryb25nPihoKSBNdWx0aXBsZSBhd2FyZHM6PC9zdHJvbmc+IFRoZSBHb3Zlcm5tZW50IG1heSBpc3N1ZSBhIHB1cmNoYXNlIG9yZGVyIGZvciBhbnkgaXRlbSBvciBncm91cCBvZiBpdGVtcyBvZiBhIHF1b3RhdGlvbiwgdW5sZXNzIHRoZSBxdW90ZXIgcXVhbGlmaWVzIHRoZSBxdW90YXRpb24gYnkgc3BlY2lmaWMgbGltaXRhdGlvbnMuIFVubGVzcyBvdGhlcndpc2UgcHJvdmlkZWQgaW4gdGhlIFNjaGVkdWxlLCBxdW90YXRpb25zIG1heSBub3QgYmUgc3VibWl0dGVkIGZvciBxdWFudGl0aWVzIGxlc3MgdGhhbiB0aG9zZSBzcGVjaWZpZWQuIFRoZSBHb3Zlcm5tZW50IHJlc2VydmVzIHRoZSByaWdodCB0byBpc3N1ZSBhIHB1cmNoYXNlIG9yZGVyIGZvciBhIHF1YW50aXR5IGxlc3MgdGhhbiB0aGUgcXVhbnRpdHkgcXVvdGVkLCBhdCB0aGUgdW5pdCBwcmljZXMgcXVvdGVkLCB1bmxlc3MgdGhlIHF1b3RlciBzcGVjaWZpZXMgb3RoZXJ3aXNlIGluIHRoZSBxdW90YXRpb24uPC9wPlxuICAgIFxuICAgIDxwPjxzdHJvbmc+KGkpIEF2YWlsYWJpbGl0eSBvZiByZXF1aXJlbWVudHMgZG9jdW1lbnRzIGNpdGVkIGluIHRoZSBzb2xpY2l0YXRpb246PC9zdHJvbmc+PC9wPlxuICAgIFxuICAgIDxwPlRoZSBHU0EgSW5kZXggb2YgRmVkZXJhbCBTcGVjaWZpY2F0aW9ucywgU3RhbmRhcmRzIGFuZCBDb21tZXJjaWFsIEl0ZW0gRGVzY3JpcHRpb25zLCBGUE1SIFBhcnQgMTAxLTI5LCBhbmQgY29waWVzIG9mIHNwZWNpZmljYXRpb25zLCBzdGFuZGFyZHMsIGFuZCBjb21tZXJjaWFsIGl0ZW0gZGVzY3JpcHRpb25zIGNpdGVkIGluIHRoaXMgc29saWNpdGF0aW9uIG1heSBiZSBvYnRhaW5lZCBmb3IgYSBmZWUgYnkgc3VibWl0dGluZyBhIHJlcXVlc3QgdG86IEdTQSBGZWRlcmFsIFN1cHBseSBTZXJ2aWNlIFNwZWNpZmljYXRpb25zIFNlY3Rpb24gU3VpdGUgODEwMCA0NzAgRWFzdCBM4oCZRW5mYW50IFBsYXphLCBTVyBXYXNoaW5ndG9uLCBEQyAyMDQwNyBUZWxlcGhvbmUgKDIwMikgNjE5LTg5MjUsIEZhY3NpbWlsZSAoMjAyKSA2MTktODk3OC48L3A+XG5cbiAgICA8cD48c3Ryb25nPihqKSBVbmlxdWUgZW50aXR5IGlkZW50aWZpZXIgKFVFSSk6PC9zdHJvbmc+IEFwcGxpZXMgdG8gYWxsIHF1b3RlcyB0aGF0IGV4Y2VlZCB0aGUgbWljcm8tcHVyY2hhc2UgdGhyZXNob2xkLCBhbmQgcXVvdGVzIGF0IG9yIGJlbG93IHRoZSBtaWNyby1wdXJjaGFzZSB0aHJlc2hvbGQgaWYgdGhlIHNvbGljaXRhdGlvbiByZXF1aXJlcyB0aGUgY29udHJhY3RvciB0byBiZSByZWdpc3RlcmVkIGluIHRoZSBTeXN0ZW0gZm9yIEF3YXJkIE1hbmFnZW1lbnQgKFNBTSkuIFRoZSBxdW90ZXIgbXVzdCBlbnRlciwgaW4gdGhlIGJsb2NrIHdpdGggaXRzIG5hbWUgYW5kIGFkZHJlc3Mgb24gdGhlIGNvdmVyIHBhZ2Ugb2YgaXRzIHF1b3RlLCB0aGUgYW5ub3RhdGlvbiBVbmlxdWUgRW50aXR5IElkZW50aWZpZXIgZm9sbG93ZWQgYnkgdGhlIHVuaXF1ZSBlbnRpdHkgaWRlbnRpZmllciB0aGF0IGlkZW50aWZpZXMgdGhlIHF1b3RlcidzIG5hbWUgYW5kIGFkZHJlc3MuIFRoZSBxdW90ZXIgYWxzbyBtdXN0IGVudGVyIGl0cyBFbGVjdHJvbmljIEZ1bmRzIFRyYW5zZmVyIChFRlQpIGluZGljYXRvciwgaWYgYXBwbGljYWJsZS4gVGhlIEVGVCBpbmRpY2F0b3IgaXMgYSBmb3VyLWNoYXJhY3RlciBzdWZmaXggdG8gdGhlIFVFSS4gVGhlIHN1ZmZpeCBpcyBhc3NpZ25lZCBhdCB0aGUgZGlzY3JldGlvbiBvZiB0aGUgcXVvdGVyIHRvIGVzdGFibGlzaCBhZGRpdGlvbmFsIFNBTSByZWNvcmRzIGZvciBpZGVudGlmeWluZyBhbHRlcm5hdGl2ZSBFRlQgYWNjb3VudHMgKHNlZSBGQVIgc3VicGFydCAzMi4xMSkgZm9yIHRoZSBzYW1lIGVudGl0eS4gSWYgdGhlIHF1b3RlciBkb2VzIG5vdCBoYXZlIGEgVUVJLCBpdCBzaG91bGQgY29udGFjdCB0aGUgZW50aXR5IGRlc2lnbmF0ZWQgYXQgPGEgaHJlZj0nd3d3LnNhbS5nb3YnIHRhcmdldD0nX2JsYW5rJz53d3cuc2FtLmdvdjwvYT4gZm9yIFVFSSBlc3RhYmxpc2htZW50IGRpcmVjdGx5IHRvIG9idGFpbiBvbmUuIFRoZSBxdW90ZXIgc2hvdWxkIGluZGljYXRlIHRoYXQgaXQgaXMgYSBxdW90ZXIgZm9yIGEgZ292ZXJubWVudCBjb250cmFjdCB3aGVuIGNvbnRhY3RpbmcgdGhlIGVudGl0eSBkZXNpZ25hdGVkIGF0IDxhIGhyZWY9J3d3dy5zYW0uZ292JyB0YXJnZXQ9J19ibGFuayc+d3d3LnNhbS5nb3Y8L2E+IGZvciBlc3RhYmxpc2hpbmcgdGhlIFVFSS48L3A+XG5cbiAgICA8cD48c3Ryb25nPihrKSBbUmVzZXJ2ZWRdPC9zdHJvbmc+PC9wPlxuICAgIFxuICAgIDxwPjxzdHJvbmc+KGwpIFJlcXVlc3RzIGZvciBpbmZvcm1hdGlvbjo8L3N0cm9uZz4gVGhlIENPIHdpbGwgbm90IG5vdGlmeSB1bnN1Y2Nlc3NmdWwgcXVvdGVycyB0aGF0IHJlc3BvbmRlZCB0byB0aGlzIFJlcXVlc3QgZm9yIFF1b3RhdGlvbiAoUkZRKS4gSG93ZXZlciwgcXVvdGVycyBtYXkgcmVxdWVzdCBpbmZvcm1hdGlvbiBvbiBwdXJjaGFzZSBvcmRlcihzKSByZXN1bHRpbmcgZnJvbSB0aGlzIHNvbGljaXRhdGlvbiB3aXRoIHRoZSBDTy48L3A+XG5cbiAgICA8cD48c3Ryb25nPihFbmQgb2YgUHJvdmlzaW9uKTwvc3Ryb25nPjwvcD5cblxuICAgIDxwPkZBUiA1Mi4yMTItMywgT2ZmZXJvcnMgUmVwcmVzZW50YXRpb25zIGFuZCBDZXJ0aWZpY2F0aW9ucyBDb21tZXJjaWFsIFByb2R1Y3RzIGFuZCBDb21tZXJjaWFsIFNlcnZpY2VzIChNYXkgMjAyNCk8L3A+XG5cbiAgICA8cD5PZmZlcm9ycyBtdXN0IGNvbXBsZXRlIGFubnVhbCByZXByZXNlbnRhdGlvbnMgYW5kIGNlcnRpZmljYXRpb25zIGVsZWN0cm9uaWNhbGx5IHZpYSB0aGUgU3lzdGVtIGZvciBBd2FyZCBNYW5hZ2VtZW50IChTQU0pIHdlYnNpdGUgbG9jYXRlZCBhdCA8YSBocmVmPSdodHRwczovL3d3dy5zYW0uZ292L3BvcnRhbCcgdGFyZ2V0PSdfYmxhbmsnPmh0dHBzOi8vd3d3LnNhbS5nb3YvcG9ydGFsPC9hPiBpbiBhY2NvcmRhbmNlIHdpdGggRkFSIDUyLjIxMi0zLCBPZmZlcm9ycyBSZXByZXNlbnRhdGlvbnMgYW5kIENlcnRpZmljYXRpb25zIENvbW1lcmNpYWwgUHJvZHVjdHMgYW5kIENvbW1lcmNpYWwgU2VydmljZXMuIElmIHBhcmFncmFwaCAoaikgb2YgdGhlIHByb3Zpc2lvbiBpcyBhcHBsaWNhYmxlLCBhIHdyaXR0ZW4gc3VibWlzc2lvbiBpcyByZXF1aXJlZC48L3A+XG5cbiAgICA8cD5GQVIgNTIuMjEyLTQsIENvbnRyYWN0IFRlcm1zIGFuZCBDb25kaXRpb25zIENvbW1lcmNpYWwgUHJvZHVjdHMgYW5kIENvbW1lcmNpYWwgU2VydmljZXMgKE5vdiAyMDIzKTwvcD5cbiAgICBcbiAgICA8cD5GQVIgNTIuMjEyLTUsIENvbnRyYWN0IFRlcm1zIGFuZCBDb25kaXRpb25zIFJlcXVpcmVkIHRvIEltcGxlbWVudCBTdGF0dXRlcyBvciBFeGVjdXRpdmUgT3JkZXJzIENvbW1lcmNpYWwgUHJvZHVjdHMgYW5kIENvbW1lcmNpYWwgU2VydmljZXMgKE1heSAyMDI0KTwvcD5cblxuICAgIDxwPkZBUiA1Mi4yMjUtMSwgQnV5IEFtZXJpY2FuIFN1cHBsaWVzIChPY3QgMjAyMik8L3A+XG5cbiAgICA8cD5WQUFSIDg1Mi4yMTItNzEsIEdyZXkgTWFya2V0IGFuZCBDb3VudGVyZmVpdCBJdGVtcyAoRmViIDIwMjMpPC9wPlxuXG4gICAgPHA+VkFBUiA4NTIuMjEyLTcyLCBHcmV5IE1hcmtldCBhbmQgQ291bnRlcmZlaXQgSXRlbXMgSW5mb3JtYXRpb24gVGVjaG5vbG9neSBNYWludGVuYW5jZSBBbGxvd2luZyBPdGhlci10aGFuLU5ldy1QYXJ0cyAoRmViIDIwMjMpPC9wPlxuXG4gICAgPHA+VkFBUiA4NTIuMjE5LTc2LCBWQSBOb3RpY2Ugb2YgTGltaXRhdGlvbnMgb24gU3ViY29udHJhY3RpbmcgQ2VydGlmaWNhdGUgb2YgQ29tcGxpYW5jZSBmb3IgU3VwcGxpZXMgYW5kIFByb2R1Y3RzIChOb3YgMjAyMik8L3A+XG5cbiAgICA8cD48c3Ryb25nPjg1Mi4yMTktNzYgVkEgTm90aWNlIG9mIExpbWl0YXRpb25zIG9uIFN1YmNvbnRyYWN0aW5nIC0gQ2VydGlmaWNhdGUgb2YgQ29tcGxpYW5jZSBmb3IgU3VwcGxpZXMgYW5kIFByb2R1Y3RzOjwvc3Ryb25nPjwvcD5cbiAgICBcbiAgICA8cD5BcyBwcmVzY3JpYmVkIGluIDgxOS43MDExKGMpLCBpbnNlcnQgdGhlIGZvbGxvd2luZyBjbGF1c2UuIFRoZSBjb250cmFjdGluZyBvZmZpY2VyIHNoYWxsIHRhaWxvciB0aGUgY2xhdXNlIGluIHBhcmFncmFwaCAoYSkoMikoaWlpKSBhcyBhcHByb3ByaWF0ZTo8L3A+XG5cbiAgICA8cD5WQSBOb3RpY2Ugb2YgTGltaXRhdGlvbnMgb24gU3ViY29udHJhY3RpbmcgLSBDZXJ0aWZpY2F0ZSBvZiBDb21wbGlhbmNlIGZvciBTdXBwbGllcyBhbmQgUHJvZHVjdHMgKE5PViAyMDIyKTwvcD5cblxuICAgIDxwPihhKSBQdXJzdWFudCB0byAzOCBVLlMuQy4gODEyNyhrKSgyKSwgdGhlIG9mZmVyb3IgY2VydGlmaWVzIHRoYXQgLTwvcD5cbiAgICA8dWw+XG4gICAgICAgIDxsaT5JZiBhd2FyZGVkIGEgY29udHJhY3QgKHNlZSBGQVIgMi4xMDEgZGVmaW5pdGlvbiksIGl0IHdpbGwgY29tcGx5IHdpdGggdGhlIGxpbWl0YXRpb25zIG9uIHN1YmNvbnRyYWN0aW5nIHJlcXVpcmVtZW50IGFzIHByb3ZpZGVkIGluIHRoZSBzb2xpY2l0YXRpb24gYW5kIHRoZSByZXN1bHRhbnQgY29udHJhY3QsIGFzIGZvbGxvd3M6IFtPZmZlcm9yIGNoZWNrIHRoZSBhcHByb3ByaWF0ZSBib3hdPC9saT5cbiAgICAgICAgPGxpPkluIHRoZSBjYXNlIG9mIGEgY29udHJhY3QgZm9yIHN1cHBsaWVzIG9yIHByb2R1Y3RzIChvdGhlciB0aGFuIGZyb20gYSBub24tbWFudWZhY3R1cmVyIG9mIHN1Y2ggc3VwcGxpZXMpLCBpdCB3aWxsIG5vdCBwYXkgbW9yZSB0aGFuIDUwJSBvZiB0aGUgYW1vdW50IHBhaWQgYnkgdGhlIGdvdmVybm1lbnQgdG8gaXQgdG8gZmlybXMgdGhhdCBhcmUgbm90IFZJUC1saXN0ZWQgU0RWT1NCcyBhcyBzZXQgZm9ydGggaW4gODUyLjIxOS03MyBvciBWT1NCcyBhcyBzZXQgZm9ydGggaW4gODUyLjIxOS03NC4gQW55IHdvcmsgdGhhdCBhIHNpbWlsYXJseSBzaXR1YXRlZCBWSVAtbGlzdGVkIHN1YmNvbnRyYWN0b3IgZnVydGhlciBzdWJjb250cmFjdHMgd2lsbCBjb3VudCB0b3dhcmRzIHRoZSA1MCUgc3ViY29udHJhY3QgYW1vdW50IHRoYXQgY2Fubm90IGJlIGV4Y2VlZGVkLiBDb3N0IG9mIG1hdGVyaWFscyBhcmUgZXhjbHVkZWQgYW5kIG5vdCBjb25zaWRlcmVkIHRvIGJlIHN1YmNvbnRyYWN0ZWQuPC9saT5cbiAgICA8L3VsPlxuICAgIDxwPkluIHRoZSBjYXNlIG9mIGEgY29udHJhY3QgZm9yIHN1cHBsaWVzIGZyb20gYSBub25tYW51ZmFjdHVyZXIsIGl0IHdpbGwgc3VwcGx5IHRoZSBwcm9kdWN0IG9mIGEgZG9tZXN0aWMgc21hbGwgYnVzaW5lc3MgbWFudWZhY3R1cmVyIG9yIHByb2Nlc3NvciwgdW5sZXNzIGEgd2FpdmVyIGFzIGRlc2NyaWJlZCBpbiAxMyBDRlIgMTIxLjQwNihiKSg1KSBpcyBncmFudGVkLiBUaGUgb2ZmZXJvciB1bmRlcnN0YW5kcyB0aGF0LCBhcyBwcm92aWRlZCBpbiAxMyBDRlIgMTIxLjQwNihiKSg3KSwgc3VjaCBhIHdhaXZlciBoYXMgbm8gZWZmZWN0IG9uIHJlcXVpcmVtZW50cyBleHRlcm5hbCB0byB0aGUgU21hbGwgQnVzaW5lc3MgQWN0LCBzdWNoIGFzIHRoZSBCdXkgQW1lcmljYW4gQWN0IG9yIHRoZSBUcmFkZSBBZ3JlZW1lbnRzIEFjdC48L3A+XG5cbiAgICA8cD4oMikgTWFudWZhY3R1cmVyIG9yIG5vbm1hbnVmYWN0dXJlciByZXByZXNlbnRhdGlvbiBhbmQgY2VydGlmaWNhdGlvbi4gW09mZmVyb3IgZmlsbC1pbiAtIGNoZWNrIGVhY2ggYXBwbGljYWJsZSBib3ggYmVsb3cuIFRoZSBvZmZlcm9yIG11c3Qgc2VsZWN0IHRoZSBhcHBsaWNhYmxlIHByb3Zpc2lvbiBiZWxvdywgaWRlbnRpZnlpbmcgaXRzZWxmIGFzIGVpdGhlciBhIG1hbnVmYWN0dXJlciBvciBub25tYW51ZmFjdHVyZXJdOjwvcD5cbiAgICBcbiAgICA8cD4oaSkgTWFudWZhY3R1cmVyIG9yIHByb2R1Y2VyLiBUaGUgb2ZmZXJvciBjZXJ0aWZpZXMgdGhhdCBpdCBpcyB0aGUgbWFudWZhY3R1cmVyIG9yIHByb2R1Y2VyIG9mIHRoZSBlbmQgaXRlbSBiZWluZyBwcm9jdXJlZCwgYW5kIHRoZSBlbmQgaXRlbSBpcyBtYW51ZmFjdHVyZWQgb3IgcHJvZHVjZWQgaW4gdGhlIFVuaXRlZCBTdGF0ZXMsIGluIGFjY29yZGFuY2Ugd2l0aCBwYXJhZ3JhcGggKGEpKDEpKGkpLjwvcD5cbiAgICBcbiAgICA8cD4oaWkpIE5vbm1hbnVmYWN0dXJlci4gVGhlIG9mZmVyb3IgY2VydGlmaWVzIHRoYXQgaXQgcXVhbGlmaWVzIGFzIGEgbm9ubWFudWZhY3R1cmVyIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgcmVxdWlyZW1lbnRzIG9mIDEzIENGUiAxMjEuNDA2KGIpIGFuZCBwYXJhZ3JhcGggKGEpKDEpKGlpKS4gVGhlIG9mZmVyb3IgZnVydGhlciBjZXJ0aWZpZXMgaXQgbWVldHMgZWFjaCBlbGVtZW50IGJlbG93IGFzIHJlcXVpcmVkIGluIG9yZGVyIHRvIHF1YWxpZnkgYXMgYSBub25tYW51ZmFjdHVyZXIuIFtPZmZlcm9yIGZpbGwtaW4gLSBjaGVjayBlYWNoIGJveCBiZWxvdy5dPC9wPlxuICAgIFxuICAgIDx1bD5cbiAgICAgICAgPGxpPlRoZSBvZmZlcm9yIGNlcnRpZmllcyB0aGF0IGl0IGRvZXMgbm90IGV4Y2VlZCA1MDAgZW1wbG95ZWVzIChvciAxNTAgZW1wbG95ZWVzIGZvciB0aGUgSW5mb3JtYXRpb24gVGVjaG5vbG9neSBWYWx1ZSBBZGRlZCBSZXNlbGxlciBleGNlcHRpb24gdG8gTkFJQ1MgY29kZSA1NDE1MTksIHdoaWNoIGlzIGZvdW5kIGF0IDEzIENGUiAxMjEuMjAxLCBmb290bm90ZSAxOCkuPC9saT5cbiAgICAgICAgPGxpPlRoZSBvZmZlcm9yIGNlcnRpZmllcyB0aGF0IGl0IGlzIHByaW1hcmlseSBlbmdhZ2VkIGluIHJldGFpbCBvciB3aG9sZXNhbGUgdHJhZGUgYW5kIG5vcm1hbGx5IHNlbGxzIHRoZSB0eXBlIG9mIGl0ZW0gYmVpbmcgc3VwcGxpZWQuPC9saT5cbiAgICAgICAgPGxpPlRoZSBvZmZlcm9yIGNlcnRpZmllcyB0aGF0IGl0IHdpbGwgdGFrZSBvd25lcnNoaXAgb3IgcG9zc2Vzc2lvbiBvZiB0aGUgaXRlbShzKSB3aXRoIGl0cyBwZXJzb25uZWwsIGVxdWlwbWVudCwgb3IgZmFjaWxpdGllcyBpbiBhIG1hbm5lciBjb25zaXN0ZW50IHdpdGggaW5kdXN0cnkgcHJhY3RpY2UuPC9saT5cbiAgICA8L3VsPlxuICAgIFxuICAgIDxwPihpaWkpIElmIHRoaXMgaXMgYSBtdWx0aXBsZSBpdGVtIGFjcXVpc2l0aW9uLCB0aGUgb2ZmZXJvciBjZXJ0aWZpZXMgdGhhdCBhdCBsZWFzdCA1MCUgb2YgdGhlIGVzdGltYXRlZCBjb250cmFjdCB2YWx1ZSBpcyBjb21wb3NlZCBvZiBpdGVtcyB0aGF0IGFyZSBtYW51ZmFjdHVyZWQgYnkgc21hbGwgYnVzaW5lc3MgY29uY2VybnMuPC9wPlxuXG4gICAgPHA+KDMpIFRoZSBvZmZlcm9yIGFja25vd2xlZGdlcyB0aGF0IHRoaXMgY2VydGlmaWNhdGlvbiBjb25jZXJucyBhIG1hdHRlciB3aXRoaW4gdGhlIGp1cmlzZGljdGlvbiBvZiBhbiBBZ2VuY3kgb2YgdGhlIFVuaXRlZCBTdGF0ZXMuIFRoZSBvZmZlcm9yIGZ1cnRoZXIgYWNrbm93bGVkZ2VzIHRoYXQgdGhpcyBjZXJ0aWZpY2F0aW9uIGlzIHN1YmplY3QgdG8gVGl0bGUgMTgsIFVuaXRlZCBTdGF0ZXMgQ29kZSwgU2VjdGlvbiAxMDAxLCBhbmQsIGFzIHN1Y2gsIGEgZmFsc2UsIGZpY3RpdGlvdXMsIG9yIGZyYXVkdWxlbnQgY2VydGlmaWNhdGlvbiBtYXkgcmVuZGVyIHRoZSBvZmZlcm9yIHN1YmplY3QgdG8gY3JpbWluYWwsIGNpdmlsLCBvciBhZG1pbmlzdHJhdGl2ZSBwZW5hbHRpZXMsIGluY2x1ZGluZyBwcm9zZWN1dGlvbi48L3A+XG5cbiAgICA8cD4oNCkgSWYgVkEgZGV0ZXJtaW5lcyB0aGF0IGFuIFNEVk9TQi9WT1NCIGF3YXJkZWQgYSBjb250cmFjdCBwdXJzdWFudCB0byAzOCBVLlMuQy4gODEyNyBkaWQgbm90IGFjdCBpbiBnb29kIGZhaXRoLCBzdWNoIFNEVk9TQi9WT1NCIHNoYWxsIGJlIHN1YmplY3QgdG8gYW55IG9yIGFsbCBvZiB0aGUgZm9sbG93aW5nOjwvcD5cbiAgICA8dWw+XG4gICAgICAgIDxsaT5SZWZlcnJhbCB0byB0aGUgVkEgU3VzcGVuc2lvbiBhbmQgRGViYXJtZW50IENvbW1pdHRlZTs8L2xpPlxuICAgICAgICA8bGk+QSBmaW5lIHVuZGVyIHNlY3Rpb24gMTYoZykoMSkgb2YgdGhlIFNtYWxsIEJ1c2luZXNzIEFjdCAoMTUgVS5TLkMuIDY0NShnKSgxKSk7IGFuZDwvbGk+XG4gICAgICAgIDxsaT5Qcm9zZWN1dGlvbiBmb3IgdmlvbGF0aW5nIHNlY3Rpb24gMTAwMSBvZiB0aXRsZSAxOC48L2xpPlxuICAgIDwvdWw+XG5cbiAgICA8cD4oYikgVGhlIG9mZmVyb3IgcmVwcmVzZW50cyBhbmQgdW5kZXJzdGFuZHMgdGhhdCBieSBzdWJtaXNzaW9uIG9mIGl0cyBvZmZlciBhbmQgYXdhcmQgb2YgYSBjb250cmFjdCBpdCBtYXkgYmUgcmVxdWlyZWQgdG8gcHJvdmlkZSBjb3BpZXMgb2YgZG9jdW1lbnRzIG9yIHJlY29yZHMgdG8gVkEgdGhhdCBWQSBtYXkgcmV2aWV3IHRvIGRldGVybWluZSB3aGV0aGVyIHRoZSBvZmZlcm9yIGNvbXBsaWVkIHdpdGggdGhlIGxpbWl0YXRpb25zIG9uIHN1YmNvbnRyYWN0aW5nIHJlcXVpcmVtZW50IHNwZWNpZmllZCBpbiB0aGUgY29udHJhY3Qgb3IgdG8gZGV0ZXJtaW5lIHdoZXRoZXIgdGhlIG9mZmVyb3IgcXVhbGlmaWVzIGFzIGEgbWFudWZhY3R1cmVyIG9yIG5vbm1hbnVmYWN0dXJlciBpbiBjb21wbGlhbmNlIHdpdGggdGhlIGxpbWl0YXRpb25zIG9uIHN1YmNvbnRyYWN0aW5nIHJlcXVpcmVtZW50LiBDb250cmFjdGluZyBvZmZpY2VycyBtYXksIGF0IHRoZWlyIGRpc2NyZXRpb24sIHJlcXVpcmUgdGhlIGNvbnRyYWN0b3IgdG8gZGVtb25zdHJhdGUgaXRzIGNvbXBsaWFuY2Ugd2l0aCB0aGUgbGltaXRhdGlvbnMgb24gc3ViY29udHJhY3RpbmcgYXQgYW55IHRpbWUgZHVyaW5nIHBlcmZvcm1hbmNlIGFuZCB1cG9uIGNvbXBsZXRpb24gb2YgYSBjb250cmFjdCBpZiB0aGUgaW5mb3JtYXRpb24gcmVnYXJkaW5nIHN1Y2ggY29tcGxpYW5jZSBpcyBub3QgYWxyZWFkeSBhdmFpbGFibGUgdG8gdGhlIGNvbnRyYWN0aW5nIG9mZmljZXIuIEV2aWRlbmNlIG9mIGNvbXBsaWFuY2UgaW5jbHVkZXMsIGJ1dCBpcyBub3QgbGltaXRlZCB0bywgaW52b2ljZXMsIGNvcGllcyBvZiBzdWJjb250cmFjdHMsIG9yIGEgbGlzdCBvZiB0aGUgdmFsdWUgb2YgdGFza3MgcGVyZm9ybWVkLjwvcD5cblxuICAgIDxwPihjKSBUaGUgb2ZmZXJvciBmdXJ0aGVyIGFncmVlcyB0byBjb29wZXJhdGUgZnVsbHkgYW5kIG1ha2UgYXZhaWxhYmxlIGFueSBkb2N1bWVudHMgb3IgcmVjb3JkcyBhcyBtYXkgYmUgcmVxdWlyZWQgdG8gZW5hYmxlIFZBIHRvIGRldGVybWluZSBjb21wbGlhbmNlLiBUaGUgb2ZmZXJvciB1bmRlcnN0YW5kcyB0aGF0IGZhaWx1cmUgdG8gcHJvdmlkZSBkb2N1bWVudHMgYXMgcmVxdWVzdGVkIGJ5IFZBIG1heSByZXN1bHQgaW4gcmVtZWRpYWwgYWN0aW9uIGFzIHRoZSBHb3Zlcm5tZW50IGRlZW1zIGFwcHJvcHJpYXRlLjwvcD5cblxuICAgIDxwPihkKSBPZmZlcm9yIGNvbXBsZXRlZCBjZXJ0aWZpY2F0aW9uL2ZpbGwtaW4gcmVxdWlyZWQuIFRoZSBmb3JtYWwgY2VydGlmaWNhdGlvbiBtdXN0IGJlIGNvbXBsZXRlZCwgc2lnbmVkLCBhbmQgcmV0dXJuZWQgd2l0aCB0aGUgb2ZmZXJvcidzIGJpZCwgcXVvdGF0aW9uLCBvciBwcm9wb3NhbC4gVGhlIEdvdmVybm1lbnQgd2lsbCBub3QgY29uc2lkZXIgb2ZmZXJzIGZvciBhd2FyZCBmcm9tIG9mZmVyb3JzIHRoYXQgZG8gbm90IHByb3ZpZGUgdGhlIGNlcnRpZmljYXRpb24sIGFuZCBhbGwgc3VjaCByZXNwb25zZXMgd2lsbCBiZSBkZWVtZWQgaW5lbGlnaWJsZSBmb3IgZXZhbHVhdGlvbiBhbmQgYXdhcmQuPC9wPlxuXG4gICAgPHA+PHN0cm9uZz5DZXJ0aWZpY2F0aW9uPC9zdHJvbmc+PC9wPlxuICAgIDxwPkkgaGVyZWJ5IGNlcnRpZnkgdGhhdCBpZiBhd2FyZGVkIHRoZSBjb250cmFjdCwgW2luc2VydCBuYW1lIG9mIG9mZmVyb3JdIHdpbGwgY29tcGx5IHdpdGggdGhlIGxpbWl0YXRpb25zIG9uIHN1YmNvbnRyYWN0aW5nIHNwZWNpZmllZCBpbiB0aGlzIGNsYXVzZSBhbmQgaW4gdGhlIHJlc3VsdGFudCBjb250cmFjdC4gSSBmdXJ0aGVyIGNlcnRpZnkgdGhhdCBJIGFtIGF1dGhvcml6ZWQgdG8gZXhlY3V0ZSB0aGlzIGNlcnRpZmljYXRpb24gb24gYmVoYWxmIG9mIFtpbnNlcnQgbmFtZSBvZiBvZmZlcm9yXS48L3A+XG5cbiAgICA8cD5QcmludGVkIE5hbWUgb2YgU2lnbmVlOjwvcD5cbiAgICA8cD5QcmludGVkIFRpdGxlIG9mIFNpZ25lZTo8L3A+XG4gICAgPHA+U2lnbmF0dXJlOjwvcD5cbiAgICA8cD5EYXRlOjwvcD5cbiAgICA8cD5Db21wYW55IE5hbWUgYW5kIEFkZHJlc3M6PC9wPlxuXG4gICAgPHA+PHN0cm9uZz4oRW5kIG9mIGNsYXVzZSk8L3N0cm9uZz48L3A+XG5cbiAgICA8cD5WQUFSIDg1Mi4yMzktNzEsIEluZm9ybWF0aW9uIFN5c3RlbSBTZWN1cml0eSBQbGFuIGFuZCBBY2NyZWRpdGF0aW9uIChGZWIgMjAyMyk8L3A+XG5cbiAgICA8cD5WQUFSIDg1Mi4yMzktNzUsIEluZm9ybWF0aW9uIGFuZCBDb21tdW5pY2F0aW9uIFRlY2hub2xvZ3kgQWNjZXNzaWJpbGl0eSBOb3RpY2UgKEZlYiAyMDIzKTwvcD5cblxuICAgIDxwPlZBQVIgODUyLjIzOS03NiwgSW5mb3JtYXRpb24gYW5kIENvbW11bmljYXRpb24gVGVjaG5vbG9neSBBY2Nlc3NpYmlsaXR5IChGZWIgMjAyMyk8L3A+XG5cbiAgICA8cD5WQUFSIDg1Mi4yNzMtNzAsIExhdGUgT2ZmZXJzIChOb3YgMjAyMSk8L3A+XG5cbiAgICA8cD5BbGwgcXVvdGVycyBzaGFsbCBzdWJtaXQgdGhlIGZvbGxvd2luZzogQ2VydGlmaWNhdGUgb2YgQ29tcGxpYW5jZSBmb3IgU3VwcGxpZXMgYW5kIFByb2R1Y3RzLCBwcmljaW5nIHF1b3RlLCBhIGNvcHkgb2YgT0VN4oCZcyBBdXRob3JpemVkIERpc3RyaWJ1dG9yIGxldHRlciAoaWYgYXBwbGljYWJsZSksIGFuZCBlc3RpbWF0ZWQgc2NoZWR1bGUgZm9yIGRlbGl2ZXJ5LjwvcD5cblxuICAgIDxwPkRlbGl2ZXJ5IHNoYWxsIGJlIHByb3ZpZGVkIG5vIGxhdGVyIHRoYW4gNjAgZGF5cyBhZnRlciByZWNlaXB0IG9mIG9yZGVyIChBUk8pIHVubGVzcyBub3RpZmljYXRpb24gb2YgZGVsYXlzIGlzIHByb3ZpZGVkIHRvIHRoZSBDb250cmFjdGluZyBPZmZpY2VyL1NwZWNpYWxpc3QuIEZPQiBkZXN0aW5hdGlvbi48L3A+XG5cbiAgICA8cD48c3Ryb25nPlBsYWNlIG9mIFBlcmZvcm1hbmNlL1BsYWNlIG9mIERlbGl2ZXJ5Ojwvc3Ryb25nPjwvcD5cbiAgICA8cD48c3Ryb25nPkFkZHJlc3M6PC9zdHJvbmc+IDMyMDAgVmluZSBTdHJlZXQ8L3A+XG4gICAgPHA+PHN0cm9uZz5Qb3N0YWwgQ29kZTo8L3N0cm9uZz4gNDUyMjAtMjIxMzwvcD5cbiAgICA8cD48c3Ryb25nPkNvdW50cnk6PC9zdHJvbmc+IFVOSVRFRCBTVEFURVM8L3A+XG5cbiAgICA8cD5Bd2FyZCB3aWxsIGJlIGJhc2VkIHVwb24gYSBjb21wYXJhdGl2ZSBldmFsdWF0aW9uIG9mIHF1b3RlcyBpbiBhY2NvcmRhbmNlIHdpdGggdGhlIFNpbXBsaWZpZWQgQWNxdWlzaXRpb24gUHJvY2VkdXJlcyBvZiBGQVIgMTMuIENvbXBhcmF0aXZlIGV2YWx1YXRpb24gaXMgdGhlIHNpZGUtYnktc2lkZSBwYWlyd2lzZSBjb21wYXJpc29uIG9mIHF1b3RlcyBiYXNlZCBvbiBmYWN0b3JzIHJlc3VsdGluZyBpbiBhIENvbnRyYWN0aW5nIE9mZmljZXIgZGVjaXNpb24gZm9yIHRoZSBxdW90ZSBtb3N0IGZhdm9yYWJsZSB0byB0aGUgR292ZXJubWVudC48L3A+XG5cbiAgICA8cD48c3Ryb25nPlRoZSBmb2xsb3dpbmcgYXJlIHRoZSBkZWNpc2lvbiBmYWN0b3JzOjwvc3Ryb25nPiBQcmljZSwgdGVjaG5pY2FsIGNhcGFiaWxpdGllcywgcHJvZHVjdCBzdXBwb3J0LCB3YXJyYW50eS9leHRlbmRlZCB3YXJyYW50eSwgYW5kIHNwZWVkIG9mIGRlbGl2ZXJ5LjwvcD5cblxuICAgIDxwPlRoZSBhd2FyZCB3aWxsIGJlIG1hZGUgdG8gdGhlIHJlc3BvbnNlIG1vc3QgYWR2YW50YWdlb3VzIHRvIHRoZSBHb3Zlcm5tZW50LiBSZXNwb25zZXMgc2hvdWxkIGNvbnRhaW4geW91ciBiZXN0IHRlcm1zLCBjb25kaXRpb25zLjwvcD5cblxuICAgIDxwPlRvIGZhY2lsaXRhdGUgdGhlIGF3YXJkIHByb2Nlc3MsIGFsbCBxdW90ZXMgbXVzdCBpbmNsdWRlIGEgc3RhdGVtZW50IHJlZ2FyZGluZyB0aGUgdGVybXMgYW5kIGNvbmRpdGlvbnMgaGVyZWluIGFzIGZvbGxvd3M6PC9wPlxuICAgIDxwPlRoZSB0ZXJtcyBhbmQgY29uZGl0aW9ucyBpbiB0aGUgc29saWNpdGF0aW9uIGFyZSBhY2NlcHRhYmxlIHRvIGJlIGluY2x1ZGVkIGluIHRoZSBhd2FyZCBkb2N1bWVudCB3aXRob3V0IG1vZGlmaWNhdGlvbiwgZGVsZXRpb24sIG9yIGFkZGl0aW9uLiA8c3Ryb25nPk9SPC9zdHJvbmc+IFRoZSB0ZXJtcyBhbmQgY29uZGl0aW9ucyBpbiB0aGUgc29saWNpdGF0aW9uIGFyZSBhY2NlcHRhYmxlIHRvIGJlIGluY2x1ZGVkIGluIHRoZSBhd2FyZCBkb2N1bWVudCB3aXRoIHRoZSBleGNlcHRpb24sIGRlbGV0aW9uLCBvciBhZGRpdGlvbiBvZiB0aGUgZm9sbG93aW5nOiBRdW90ZXJzIHNoYWxsIGxpc3QgZXhjZXB0aW9uKHMpIGFuZCByYXRpb25hbGUgZm9yIHRoZSBleGNlcHRpb24ocyksIGlmIGFueS48L3A+XG5cbiAgICA8cD5TdWJtaXNzaW9uIG9mIHlvdXIgcmVzcG9uc2Ugc2hhbGwgYmUgcmVjZWl2ZWQgbm90IGxhdGVyIHRoYW4gNDowMCBQTSBFU1Qgb24gTW9uZGF5LCBTZXB0ZW1iZXIgMTYsIDIwMjQsIGF0IDxhIGhyZWY9J21haWx0bzpCYXJiYXJhLlJvYmVydHNvbkB2YS5nb3YnPkJhcmJhcmEuUm9iZXJ0c29uQHZhLmdvdjwvYT4uIE5vIHN1Ym1pc3Npb24gcmVjZWl2ZWQgYWZ0ZXIgdGhlIGFib3ZlLW1lbnRpb25lZCBkYXRlIGFuZCB0aW1lIHdpbGwgYmUgYWNjZXB0ZWQuPC9wPlxuXG4gICAgPHA+TGF0ZSBzdWJtaXNzaW9ucyBzaGFsbCBiZSB0cmVhdGVkIGluIGFjY29yZGFuY2Ugd2l0aCB0aGUgc29saWNpdGF0aW9uIHByb3Zpc2lvbiBhdCBGQVIgNTIuMjEyLTEoZikuPC9wPlxuXG4gICAgPHA+QW55IHF1ZXN0aW9ucyBvciBjb25jZXJucyByZWdhcmRpbmcgdGhpcyBzb2xpY2l0YXRpb24gc2hvdWxkIGJlIGZvcndhcmRlZCBpbiB3cml0aW5nIHZpYSBlLW1haWwgdG8gdGhlIFBvaW50IG9mIENvbnRhY3QgbGlzdGVkIGJlbG93IGJ5IDEyOjAwIFBNIG9uIFRodXJzZGF5LCBTZXB0ZW1iZXIgMTIsIDIwMjQuIFJlc3BvbnNlcyB3aWxsIGJlIHBvc3RlZCBieSA1OjAwIFBNIG9uIFRodXJzZGF5LCBTZXB0ZW1iZXIgMTIsIDIwMjQuIE5vIHRlbGVwaG9uZSBjYWxscyB3aWxsIGJlIGFjY2VwdGVkLjwvcD5cblxuICAgIDxwPjxzdHJvbmc+UG9pbnQgb2YgQ29udGFjdDo8L3N0cm9uZz4gQmFyYmFyYSBSb2JlcnRzb24sIEVtYWlsOiA8YSBocmVmPSdtYWlsdG86QmFyYmFyYS5Sb2JlcnRzb25AdmEuZ292Jz5CYXJiYXJhLlJvYmVydHNvbkB2YS5nb3Y8L2E+PC9wPlxuPC9kaXY+Iiwicm9sZSI6ImFzc2lzdGFudCJ9fV0sImNyZWF0ZWQiOjE3MjY3NzY2NTAsIm1vZGVsIjoiZ3B0LTRvLW1pbmkiLCJvYmplY3QiOiJjaGF0LmNvbXBsZXRpb24iLCJzeXN0ZW1fZmluZ2VycHJpbnQiOiJmcF84MGExYmFkNGM3IiwidXNhZ2UiOnsiY29tcGxldGlvbl90b2tlbnMiOjg2MjEsInByb21wdF90b2tlbnMiOjgxMTYsInRvdGFsX3Rva2VucyI6MTY3Mzd9LCJwcm9tcHRfZmlsdGVyX3Jlc3VsdHMiOlt7InByb21wdF9pbmRleCI6MCwiY29udGVudF9maWx0ZXJfcmVzdWx0cyI6eyJoYXRlIjp7ImZpbHRlcmVkIjpmYWxzZSwic2V2ZXJpdHkiOiJzYWZlIn0sInNlbGZfaGFybSI6eyJmaWx0ZXJlZCI6ZmFsc2UsInNldmVyaXR5Ijoic2FmZSJ9LCJzZXh1YWwiOnsiZmlsdGVyZWQiOmZhbHNlLCJzZXZlcml0eSI6InNhZmUifSwidmlvbGVuY2UiOnsiZmlsdGVyZWQiOmZhbHNlLCJzZXZlcml0eSI6InNhZmUifX19XX0=
+  recorded_at: Thu, 19 Sep 2024 20:12:05 GMT
+recorded_with: VCR 6.2.0

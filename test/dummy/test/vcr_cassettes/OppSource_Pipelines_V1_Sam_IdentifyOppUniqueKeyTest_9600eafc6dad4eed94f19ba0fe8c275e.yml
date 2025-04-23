@@ -1,0 +1,348 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/opps/v2/opportunities/9600eafc6dad4eed94f19ba0fe8c275e
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hal+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:33:58 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, Cache-Control,
+        Pragma, Expires, Location
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Location
+      Access-Control-Max-Age:
+      - '3600'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 59ab6a1e5447dd7485b18ac23ce46190.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 107.175.152.82, 15.158.34.17, 10.177.27.47,107.175.152.82, 10.177.48.27, 10.177.51.164,
+        10.177.51.164
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - ORD56-P5
+      X-Amz-Cf-Id:
+      - SzFj4nkUpFWx0H0IFzsi1dOMVIzJinuXY3jvAbfL4E1bohm6UaDa8A==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data2":{"type":"s","award":{},"naics":[{"code":["541519"],"type":"primary"}],"title":"Notice
+        of Intent to Sole Source - FAMS IGATE","archive":{"date":"2024-07-24","type":"autocustom"},"version":"2","permissions":{"IVL":{"read":true,"create":false,"delete":false,"update":false}},"solicitation":{"deadlines":{"response":"2024-07-23T09:00:00-05:00","responseTz":"America/Chicago"}},"organizationId":"100500172","pointOfContact":[{"fax":"","type":"primary","email":"eabaker@fbi.gov","phone":"","title":null,"fullName":"Emma
+        Baker"}],"classificationCode":"DF10","placeOfPerformance":{"city":{"code":"50000","name":"Washington"},"state":{"code":"DC","name":"District
+        of Columbia"},"country":{"code":"USA","name":"UNITED STATES"}},"solicitationNumber":"","additionalReporting":["none"]},"additionalInfo":{"sections":[{"id":"header","status":"updated"},{"id":"general","status":"updated"},{"id":"classification","status":"updated"},{"id":"description","status":"updated"},{"id":"attachments-links","status":"updated"},{"id":"contact","status":"updated"}]},"parent":{},"related":{},"status":{"code":"published","value":"Published"},"archived":false,"cancelled":false,"latest":true,"deleted":false,"postedDate":"2024-07-08T16:58:34.118+00:00","modifiedDate":"2024-07-08T16:58:34.123+00:00","createdDate":"2024-07-08T16:56:24.384+00:00","modifiedBy":"eabaker@fbi.gov","createdBy":"eabaker@fbi.gov","description":[{"opportunityId":"9600eafc6dad4eed94f19ba0fe8c275e","descriptionId":"5827271a6da943cfaa4dc709ce9cd022","modifiedOn":"2024-07-08T16:58:34.126+00:00","body":"<p>This
+        announcement is not a request for competitive quotations.&nbsp; A solicitation
+        will not be available for this requirement.&nbsp; The intent of this announcement
+        is for informational purposes only.&nbsp; However, any information received
+        within seven (7) days after the posting date of this notice will be considered
+        by the Government. Information may be sent to Emma A. Baker, Contract Specialist,
+        via email at eabaker@fbi.gov.&nbsp; A determination by the Government not
+        to compete this action is solely within the discretion of the Government.
+        Telephonic questions or requests will not be considered.</p>\n"}],"totalCount":1,"_links":{"self":{"href":"/opps/v2/opportunities/9600eafc6dad4eed94f19ba0fe8c275e"},"opportunity:publish:latest":{"href":"/opps/v2/opportunities/9600eafc6dad4eed94f19ba0fe8c275e"}},"opportunityId":"9600eafc6dad4eed94f19ba0fe8c275e","id":"9600eafc6dad4eed94f19ba0fe8c275e"}'
+  recorded_at: Tue, 23 Jul 2024 23:33:58 GMT
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/opps/v2/opportunities/9600eafc6dad4eed94f19ba0fe8c275e/history?random=1721777638615
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hal+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:33:59 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, Cache-Control,
+        Pragma, Expires, Location
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Location
+      Access-Control-Max-Age:
+      - '3600'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 b443e95df9ebe2dc5180dc5fb6ed1a9c.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 146.148.179.170, 15.158.15.241, 10.177.27.47,146.148.179.170, 10.177.48.178,
+        10.177.51.164, 10.177.51.164
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - LAX50-P4
+      X-Amz-Cf-Id:
+      - Yeb8cdnrl7xheNih78Z5rsNne7A76RMU0eWYz9g43LoZKfrzfo6OBw==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_links":{"self":{"href":"https://86samdotgovopportunitiesmodern.prod.apps-internal.prod-iae.bsp.gsa.gov/opps/v2/opportunities/9600eafc6dad4eed94f19ba0fe8c275e/history{?postedFrom}","templated":true}},"history":[{"parentOpportunityId":null,"requestType":"submit","index":"1","title":"Notice
+        of Intent to Sole Source - FAMS IGATE","solicitationNumber":"","postedDate":"2024-07-08T16:58:34.118+00","actionType":"publish","revisionReason":null,"opportunityId":"9600eafc6dad4eed94f19ba0fe8c275e","deleted":"0","cancelNotice":"0","relatedOpportunityId":null,"archiveNotice":"0","actionDate":"2024-07-08T16:58:34.122+00","procurementType":"s","latest":"1"}]}'
+  recorded_at: Tue, 23 Jul 2024 23:33:59 GMT
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/federalorganizations/v1/organizations/100500172?random=1721777639681&sort=name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:34:01 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3600'
+      Set-Cookie:
+      - MYSESSIONID=A6501A0EC8C06CE7192657C6E6BB8812; Path=/; Secure; HttpOnly
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 454b04b563cd5c3b9a4496e3ea346390.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 104.160.17.101, 3.172.17.117, 10.177.27.101,104.160.17.101, 10.177.48.178,
+        10.177.51.164, 10.177.51.164
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - ARN53-P2
+      X-Amz-Cf-Id:
+      - KwwKVbawK9ZlwK-nWlGcbbi2nsJkAXoNE5NEhZgSC5PcyVxJxLjQHA==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_embedded":[{"org":{"orgKey":100500172,"name":"FEDERAL BUREAU OF
+        INVESTIGATION","type":"AGENCY","parentOrgKey":100011955,"fullParentPath":"100011955.100500172","lastModifiedBy":"FPDS_START_DATE_FIX","lastModifiedDate":"2019-11-22T04:05:54.038+00:00","fullParentPathName":"JUSTICE,
+        DEPARTMENT OF.FEDERAL BUREAU OF INVESTIGATION","startDate":"1957-07-01T04:00:00.000+00:00","agencyName":"Federal
+        Bureau of Investigation","fpdsCode":"1549","cfdaCode":"16","a11TacCode":"10","modStatus":"ACTIVE","cgac":"015","level":2,"l1ShortName":"DOJ","ombBureauCode":"
+        10","cfdaBur":10,"cfdaOmb":11,"description":"Investigates all violation of
+        Federal laws with the exception of those which have been assigned by legislative
+        enactment or otherwise to some other Federal agency.  The FBI''s jurisdiction
+        includes a wide range of responsibilities in the criminal, civil, and security
+        fields.  Among these are espionage, sabotage, and other domestic security
+        matters; kidnapping; extortion; bank robbery; interstate transportation of
+        stolen property; civil rights matters; interstate gambling violations; fraud
+        against the Government; and assault or killing the President or a Federal
+        officer.  Cooperative services of the FBI for other duly authorized law enforcement
+        agencies include fingerprint identification, laboratory services, police training,
+        the National Crime Information Center.  Uniform crime reports, and National
+        Instant Criminal Background Check System.","shortName":"FBI","sourceCfdaPk":"b570eb04f91a05ef76e1e26d28238b5c","sourceParentCfdaPk":"8cd503b18b45ae19892e182525929b1e","summary":"Investigates
+        all violation of Federal laws with the exception of those which have been
+        assigned by legislative enactment or otherwise to some other Federal agency.  The
+        FBI''s jurisdiction includes a wide range of responsibilities in the criminal,
+        civil, and security fields.  Among these are espionage, sabotage, and other
+        domestic security matters; kidnapping; extortion; bank robbery; interstate
+        transportation of stolen property; civil rights matters; interstate gambling
+        violations; fraud against the Government; and assault or killing the President
+        or a Federal officer.  Cooperative services of the FBI for other duly authorized
+        law enforcement agencies include fingerprint identification, laboratory services,
+        police training, the National Crime Information Center.  Uniform crime reports,
+        and National Instant Criminal Background Check System.","code":"1549","codeHierarchy":"1500.1549","hierarchy":[],"orgLegacyList":[{"org_ANTHROPIC_KEY":100500172,"legacy_id":"b570eb04f91a05ef76e1e26d28238b5c","legacy_name":"FEDERAL
+        BUREAU OF INVESTIGATION","created_by":"IAE-DATATeam","created_date":"2018-09-17T19:16:15.284308","last_modified_by":"IAE_DATETeam","last_modified_date":"2018-09-17T19:16:15.284308","legacy_system_name":"CFDA","legacy_ANTHROPIC_KEY":1415,"source":null},
+        {"org_ANTHROPIC_KEY":100500172,"legacy_id":"b570eb04f91a05ef76e1e26d28238b5c","legacy_name":"FEDERAL
+        BUREAU OF INVESTIGATION","created_by":"FH_FBO_DEPT_AGENCY_MAPPING","created_date":"2019-10-16T19:52:25.28808","last_modified_by":"FH_FBO_DEPT_AGENCY_MAPPING","last_modified_date":"2019-10-16T19:52:25.28808","legacy_system_name":"FBO","legacy_ANTHROPIC_KEY":4641,"source":null}],"parentOrg":"JUSTICE,
+        DEPARTMENT OF","l1OrgKey":100011955,"l2OrgKey":100500172,"l1Name":"JUSTICE,
+        DEPARTMENT OF","l2Name":"FEDERAL BUREAU OF INVESTIGATION","links":[],"isSourceCfda":true,"isSourceCwCfda":true},"_link":{"self":{"href":"https://api.sam.gov/prod/federalorganizations/v2/organizations/100500172"}}}]}'
+  recorded_at: Tue, 23 Jul 2024 23:34:01 GMT
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/opps/v3/opportunities/9600eafc6dad4eed94f19ba0fe8c275e/resources?excludeDeleted=false&random=1721777641282&withScanResult=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hal+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:34:01 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, Cache-Control,
+        Pragma, Expires, Location
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Location
+      Access-Control-Max-Age:
+      - '3600'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 c23316eff62652b2e8644c0dc11e7c66.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 192.3.215.133, 15.158.34.50, 10.177.27.101,192.3.215.133, 10.177.48.155, 10.177.51.164,
+        10.177.51.164
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - ORD56-P5
+      X-Amz-Cf-Id:
+      - LQRxxgfwjDIll6yNovMwjSIf6FuoTxQVmexgosU65mubV_EAhfeZtA==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_embedded":{"opportunityAttachmentList":[{"opportunityId":"9600eafc6dad4eed94f19ba0fe8c275e","attachments":[{"attachmentId":"3972e170184a40e5b9f96f0ef2974369","resourceId":"82249bf5197f41ab94e46c101da5f202","attachmentOrder":1,"fileExists":"1","name":"Notice
+        of Intent to Award a Sole Source Contract- FAMS IGATE.pdf","type":"file","postedDate":"2024-07-08T16:58:34.118+00:00","accessLevel":"public","exportControlled":"0","explicitAccess":"0","mimeType":".pdf","size":151188,"deletedDate":"","deletedFlag":"0","accessStatus":"public"}]}]},"_links":{"self":{"href":"https://86samdotgovopportunitiesmodern.prod.apps-internal.prod-iae.bsp.gsa.gov/opps/v3/opportunities/9600eafc6dad4eed94f19ba0fe8c275e/resources?withScanResult=false&excludeDeleted=false"},"opportunity:publish:latest":{"href":"https://86samdotgovopportunitiesmodern.prod.apps-internal.prod-iae.bsp.gsa.gov/opps/v3/opportunities/9600eafc6dad4eed94f19ba0fe8c275e/resources?withScanResult=false&excludeDeleted=false"}}}'
+  recorded_at: Tue, 23 Jul 2024 23:34:01 GMT
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/opps/v2/opportunities/9600eafc6dad4eed94f19ba0fe8c275e/history?random=1721777641971
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hal+json
+      Content-Length:
+      - '653'
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:34:02 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, Cache-Control,
+        Pragma, Expires, Location
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Location
+      Access-Control-Max-Age:
+      - '3600'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 6328d32449cd285f3f7c7b3c41dbe9ac.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 192.177.117.18, 70.132.61.137, 10.177.27.101,192.177.117.18, 10.177.48.231,
+        10.177.51.164, 10.177.51.164
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - SFO5-C3
+      X-Amz-Cf-Id:
+      - yDQCoj49s7R7Y9IXQU8u93I56wVByme-h5qw-djV7tb6rC69I_8oYw==
+      Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: '{"_links":{"self":{"href":"https://86samdotgovopportunitiesmodern.prod.apps-internal.prod-iae.bsp.gsa.gov/opps/v2/opportunities/9600eafc6dad4eed94f19ba0fe8c275e/history{?postedFrom}","templated":true}},"history":[{"parentOpportunityId":null,"requestType":"submit","index":"1","title":"Notice
+        of Intent to Sole Source - FAMS IGATE","solicitationNumber":"","postedDate":"2024-07-08T16:58:34.118+00","actionType":"publish","revisionReason":null,"opportunityId":"9600eafc6dad4eed94f19ba0fe8c275e","deleted":"0","cancelNotice":"0","relatedOpportunityId":null,"archiveNotice":"0","actionDate":"2024-07-08T16:58:34.122+00","procurementType":"s","latest":"1"}]}'
+  recorded_at: Tue, 23 Jul 2024 23:34:02 GMT
+recorded_with: VCR 6.2.0

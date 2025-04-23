@@ -1,0 +1,100 @@
+<div class="bg-white shadow rounded-lg overflow-hidden">
+  <!-- Tab navigation -->
+  <div class="border-b border-gray-200">
+    <div class="flex">
+      <a href="<%= prompt_vcr.cassettes_path(type: 'prompts') %>" class="<%= params[:type].nil? || params[:type] == 'prompts' ? 'border-b-2 border-indigo-500 text-indigo-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300' %> px-4 py-3 text-sm font-medium">
+        Prompt Cassettes
+      </a>
+      <a href="<%= prompt_vcr.cassettes_path(type: 'standard') %>" class="<%= params[:type] == 'standard' ? 'border-b-2 border-indigo-500 text-indigo-600' : 'text-gray-500 hover:text-gray-700 hover:border-gray-300' %> px-4 py-3 text-sm font-medium ml-8">
+        Standard Cassettes
+      </a>
+    </div>
+  </div>
+
+  <% if @cassette_groups.nil? || (params[:type] == 'prompts' && @cassette_groups[:prompts].blank?) || (params[:type] == 'standard' && @cassette_groups[:others].blank?) || (@cassette_groups[:prompts].blank? && @cassette_groups[:others].blank?) %>
+    <div class="py-8 text-center p-6">
+      <p class="text-gray-500 mb-4">No cassettes found</p>
+      <p class="text-sm text-gray-400">Add VCR cassettes to test/vcr_cassettes in your application.</p>
+    </div>
+  <% else %>
+    <% if @cassette_groups[:prompts].present? && (params[:type].nil? || params[:type] == 'prompts') %>
+      <!-- Prompt Cassettes Section -->
+      <div class="py-3 px-6 border-b border-gray-200 bg-gray-50">
+        <h2 class="text-lg font-medium text-gray-700">AI Prompts</h2>
+        <p class="text-xs text-gray-500 mt-1">Recorded AI prompt interactions</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Model</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Created</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <% @cassette_groups[:prompts].each do |cassette| %>
+              <% metadata = @cassette_metadata[cassette] %>
+              <% display_name = metadata[:name] || cassette.split("/").last.humanize %>
+              <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm font-medium text-gray-900"><%= display_name %></div>
+                  <div class="text-xs text-gray-500"><%= cassette %></div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <%= metadata[:model] %>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <%= metadata[:created_at] ? metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <%= link_to "View", prompt_vcr.cassette_path(cassette, cassette_type: 'prompt'), class: "text-indigo-600 hover:text-indigo-900" %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% end %>
+
+    <% if @cassette_groups[:others].present? && params[:type] == 'standard' %>
+      <!-- Standard VCR Cassettes Section -->
+      <div class="py-3 px-6 border-b border-gray-200 bg-gray-50">
+        <h2 class="text-lg font-medium text-gray-700">Standard VCR Cassettes</h2>
+        <p class="text-xs text-gray-500 mt-1">Regular VCR recorded HTTP interactions</p>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Created</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <% @cassette_groups[:others].each do |cassette| %>
+              <% metadata = @cassette_metadata[cassette] %>
+              <% display_name = cassette.split("/").last.humanize %>
+              <tr class="hover:bg-gray-50">
+                <td class="px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm font-medium text-gray-900"><%= display_name %></div>
+                  <div class="text-xs text-gray-500"><%= cassette %></div>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                  <%= metadata[:created_at] ? metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %>
+                </td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                  <%= link_to "View", prompt_vcr.cassette_path(cassette, cassette_type: 'standard'), class: "text-indigo-600 hover:text-indigo-900" %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    <% end %>
+  <% end %>
+</div>

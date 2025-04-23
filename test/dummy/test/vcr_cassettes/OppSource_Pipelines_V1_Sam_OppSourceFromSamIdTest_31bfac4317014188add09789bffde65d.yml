@@ -1,0 +1,311 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/opps/v2/opportunities/31bfac4317014188add09789bffde65d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hal+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:11:44 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, Cache-Control,
+        Pragma, Expires, Location
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Location
+      Access-Control-Max-Age:
+      - '3600'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 6f7697552e0139e5421fb42084c9ead2.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 23.82.28.169, 70.132.61.101, 10.177.27.47,23.82.28.169, 10.177.48.178, 10.177.51.209,
+        10.177.51.209
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - SFO5-C3
+      X-Amz-Cf-Id:
+      - QpGZGAvreNkVvuwFa2GEoVdkhiXsWKtIbWUkqqyBsWoDQPIcUEssDg==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data2":{"type":"s","award":{},"naics":[{"code":["334516"],"type":"primary"}],"title":"TECHNOLOGY/BUSINESS
+        OPPORTUNITY Trace Gas Detection with 2P3C Ring-Down Spectroscopy","archive":{"date":"2023-05-01","type":"autocustom"},"version":"2","permissions":{"IVL":{"read":true,"create":true,"delete":true,"update":true}},"solicitation":{"deadlines":{"response":"2023-03-29T00:00:00-07:00","responseTz":"America/Los_Angeles"}},"organizationId":"500048439","pointOfContact":[{"fax":"","type":"primary","email":"mempin1@llnl.gov","phone":"9254231121","title":null,"fullName":"Genaro
+        Mempin"},{"fax":"","type":"secondary","email":"eng23@llnl.gov","phone":"9254221905","title":null,"fullName":"Charlotte
+        Eng"}],"placeOfPerformance":{"city":{"code":"41992","name":"Livermore"},"state":{"code":"CA","name":"California"},"country":{"code":"USA","name":"UNITED
+        STATES"}},"solicitationNumber":"IL-13644","additionalReporting":["none"]},"additionalInfo":{"sections":[{"id":"header","status":"updated"},{"id":"general","status":"updated"},{"id":"classification","status":"updated"},{"id":"description","status":"updated"},{"id":"attachments-links","status":"updated"},{"id":"contact","status":"updated"}]},"parent":{"opportunityId":"e7cc3971dd4b4e4e95421e244abf9f62"},"related":{},"status":{"code":"published","value":"Published"},"archived":true,"cancelled":false,"latest":false,"deleted":false,"postedDate":"2023-03-29T00:08:36.314+00:00","modifiedDate":"2023-05-17T03:58:42.971+00:00","createdDate":"2023-03-29T00:08:17.516+00:00","modifiedBy":"eng23@llnl.gov","createdBy":"eng23@llnl.gov","description":[{"opportunityId":"31bfac4317014188add09789bffde65d","descriptionId":"fb35979657a74fb79d9fe96dc32d468c","modifiedOn":"2023-03-29T00:08:36.324+00:00","body":"<p><strong><u>Opportunity</u></strong><strong>:
+        </strong></p>\n\n<p>Lawrence Livermore National Laboratory (LLNL), operated
+        by the Lawrence Livermore National Security (LLNS), LLC under contract no.
+        DE-AC52-07NA27344 (Contract 44) with the U.S. Department of Energy (DOE),
+        is offering the opportunity to enter into a collaboration to further develop
+        its Trace Gas Detection with 2P3C Ring-Down Spectroscopy technology.</p>\n\n<p></p>\n\n<p><strong><u>Background</u></strong><strong>:
+        </strong></p>\n\n<p>Cavity Ring-Down Spectroscopy (CRDS) can be used to detect
+        minute quantities of gaseous species in a gas sample by first introducing
+        the sample into an optical cavity, typically between highly reflective mirrors.&nbsp;
+        A pulse of laser light is then trapped in the gas-containing cavity, which
+        will circulate between the mirrors, slowly decreasing in intensity as it gets
+        absorbed (sample gets excited), scatters and leaks from the cavity. The ring-down
+        (decay) time is measured and compared to the baseline decay time when there
+        is no sample in the cavity; results can be used to calculate the concentration
+        of the gaseous species.&nbsp; One of the drawbacks of CRDS involves baseline
+        variations which limits sensitivity and accuracy.&nbsp; LLNL researchers have
+        been able to develop a novel two photon, two color cavity (2P3C) ring down
+        spectroscopic method that can overcome this challenge, providing high sensitivity
+        even under non-ideal experimental conditions.</p>\n\n<p></p>\n\n<p><strong><u>Description</u></strong><strong>:
+        </strong></p>\n\n<p>LLNL&rsquo;s novel approach combines 2-color spectroscopy
+        with CRDS, a combination not previously utilized. This second-generation CRDS
+        system is comprised of two light sources (a &ldquo;pump&rdquo; laser and a
+        &ldquo;probe&rdquo; laser), a three-mirror high-finesse optical cavity and
+        a detector.&nbsp; The &ldquo;pump&rdquo; laser is used to turn the target
+        gas absorption &ldquo;off&rdquo; and &ldquo;on&rdquo; while the &ldquo;probe&rdquo;
+        laser is used to measure the population of excited target gas molecules with
+        CRDS.&nbsp; When the &ldquo;pump&rdquo; laser is turned off, the &ldquo;probe&rdquo;
+        laser can be used to measure the background signal.&nbsp; This is advantageous
+        as it solves inherent sensitivity flaws of traditional CRDS due to baseline
+        variations.</p>\n\n<p></p>\n\n<p><strong><u>Advantages/Benefits</u></strong><strong>:&nbsp;
+        </strong></p>\n\n<ul>\n\t<li>Increased sensitivity measurements without the
+        exacting experimental conditions.</li>\n\t<li>Ability to detect ultra-trace
+        species such as less abundant isotopologues and radioisotopes.</li>\n\t<li>Can
+        be deployed outside a lab environment.</li>\n</ul>\n\n<p></p>\n\n<p><strong><u>Potential
+        Applications</u></strong><strong>:&nbsp; </strong></p>\n\n<p>Trace gas sensing
+        applications</p>\n\n<p></p>\n\n<p><strong><u>Development Status:</u></strong>&nbsp;</p>\n\n<p>U.S.
+        Patent No. 11,585,753<em> Trace Gas Detection with 2-Photon, 2-Color, Cavity
+        Ring-Down Spectroscopy</em> issued 2/21/2023</p>\n\n<p>Current stage of technology
+        development:&nbsp; TRL 4</p>\n\n<p>LLNL is seeking industry partners with
+        a demonstrated ability to bring such inventions to the market. Moving critical
+        technology beyond the Laboratory to the commercial world helps our licensees
+        gain a competitive edge in the marketplace. All licensing activities are conducted
+        under policies relating to the strict nondisclosure of company proprietary
+        information.&nbsp;</p>\n\n<p>Please visit the IPO website at https://ipo.llnl.gov/resources
+        for more information on working with LLNL and the industrial partnering and
+        technology transfer process.</p>\n\n<p></p>\n\n<p><strong>Note:</strong>&nbsp;
+        <strong>THIS IS NOT A PROCUREMENT</strong>.&nbsp; Companies interested in
+        commercializing LLNL&#39;s Trace Gas Detection with 2P3C Ring-Down Spectroscopy
+        technology should provide a written statement of interest, which includes
+        the following:</p>\n\n<p></p>\n\n<p>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Company Name and address.</p>\n\n<p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        The name, address, and telephone number of a point of contact.</p>\n\n<p>3.&nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;A description of corporate expertise and/or facilities
+        relevant to commercializing this technology.</p>\n\n<p></p>\n\n<p>Written
+        responses should be directed to:</p>\n\n<p>Lawrence Livermore National Laboratory</p>\n\n<p>Innovation
+        and Partnerships Office</p>\n\n<p>P.O. Box 808, L-779</p>\n\n<p>Livermore,
+        CA&nbsp; 94551-0808</p>\n\n<p>Attention:&nbsp;&nbsp; IL-13644</p>\n\n<p></p>\n\n<p>Please
+        provide your written statement within thirty (30) days from the date this
+        announcement is published to ensure consideration of your interest in LLNL&#39;s
+        Trace Gas Detection with 2P3C Ring-Down Spectroscopy technology.</p>\n"}],"totalCount":1,"_links":{"self":{"href":"/opps/v2/opportunities/31bfac4317014188add09789bffde65d"},"opportunity:publish:latest":{"href":"/opps/v2/opportunities/36087e9b91a148d68f234cd293d7b3c4"},"opportunity:previous":{"href":"/opps/v2/opportunities/e7cc3971dd4b4e4e95421e244abf9f62"}},"opportunityId":"31bfac4317014188add09789bffde65d","id":"31bfac4317014188add09789bffde65d"}'
+  recorded_at: Tue, 23 Jul 2024 23:11:44 GMT
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/opps/v2/opportunities/31bfac4317014188add09789bffde65d/history?random=1721776304592
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hal+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:11:45 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, Cache-Control,
+        Pragma, Expires, Location
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Location
+      Access-Control-Max-Age:
+      - '3600'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 30de691070e389ba432fa13d828041cc.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 192.210.147.44, 15.158.34.50, 10.177.27.47,192.210.147.44, 10.177.48.137,
+        10.177.51.209, 10.177.51.209
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - ORD56-P5
+      X-Amz-Cf-Id:
+      - jbW-N9O7Fb_pKETeXtxqWl11eDUuBSgHhUr_botOhrNkCZ8cgqrgcQ==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_links":{"self":{"href":"https://86samdotgovopportunitiesmodern.prod.apps-internal.prod-iae.bsp.gsa.gov/opps/v2/opportunities/31bfac4317014188add09789bffde65d/history{?postedFrom}","templated":true}},"history":[{"parentOpportunityId":"e7cc3971dd4b4e4e95421e244abf9f62","requestType":"submit","index":"4","title":"TECHNOLOGY/BUSINESS
+        OPPORTUNITY Trace Gas Detection with 2P3C Ring-Down Spectroscopy","solicitationNumber":"IL-13644","postedDate":"2023-04-06T03:36:09.372+00","actionType":"publish","revisionReason":null,"opportunityId":"36087e9b91a148d68f234cd293d7b3c4","deleted":"0","cancelNotice":"0","relatedOpportunityId":null,"archiveNotice":"1","actionDate":"2023-05-17T03:58:45.388874+00","procurementType":"s","latest":"1"},{"parentOpportunityId":"e7cc3971dd4b4e4e95421e244abf9f62","requestType":"modify","index":"2","title":"TECHNOLOGY/BUSINESS
+        OPPORTUNITY Trace Gas Detection with 2P3C Ring-Down Spectroscopy","solicitationNumber":"IL-13644","postedDate":"2023-03-29T00:08:36.314+00","actionType":"publish","revisionReason":null,"opportunityId":"31bfac4317014188add09789bffde65d","deleted":"0","cancelNotice":"0","relatedOpportunityId":null,"archiveNotice":"1","actionDate":"2023-03-29T00:08:36.32+00","procurementType":"s","latest":"0"},{"parentOpportunityId":null,"requestType":"submit","index":"1","title":"TECHNOLOGY/BUSINESS
+        OPPORTUNITY Trace Gas Detection with 2P3C Ring-Down Spectroscopy","solicitationNumber":"IL-13644","postedDate":"2023-03-29T00:06:19.216+00","actionType":"publish","revisionReason":null,"opportunityId":"e7cc3971dd4b4e4e95421e244abf9f62","deleted":"0","cancelNotice":"0","relatedOpportunityId":null,"archiveNotice":"1","actionDate":"2023-03-29T00:06:19.219+00","procurementType":"s","latest":"0"}]}'
+  recorded_at: Tue, 23 Jul 2024 23:11:45 GMT
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/federalorganizations/v1/organizations/500048439?random=1721776305233&sort=name
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:11:45 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '3600'
+      Set-Cookie:
+      - MYSESSIONID=1EEC5867D428C0568E5110F7CD469F32; Path=/; Secure; HttpOnly
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      - Access-Control-Request-Headers
+      - Access-Control-Request-Method
+      - Origin
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 d2be1b26c5a6cc91c138e7fd8c002e1c.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 96.8.120.229, 15.158.34.17, 10.177.27.47,96.8.120.229, 10.177.48.155, 10.177.51.209,
+        10.177.51.209
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - ORD56-P5
+      X-Amz-Cf-Id:
+      - HAHfl5JDyNiRPji-xu_e6eOAvKmoFvtTNau0eJtZntRRGDLEjovH6Q==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJfZW1iZWRkZWQiOlt7Im9yZyI6eyJvcmdLZXkiOjUwMDA0ODQzOSwibmFtZSI6IkxMTlMg4oCTIERPRSBDT05UUkFDVE9SIiwidHlwZSI6Ik9GRklDRSIsInBhcmVudE9yZ0tleSI6MTAwMDExOTgxLCJmdWxsUGFyZW50UGF0aCI6IjEwMDAxMTk4MC4xMDAwMTE5ODEuNTAwMDQ4NDM5IiwiY3JlYXRlZEJ5IjoiSmVubmlmZXIsQmVhbGUiLCJjcmVhdGVkRGF0ZSI6IjIwMTktMTItMTFUMTI6NDI6NTcuOTUyKzAwOjAwIiwibGFzdE1vZGlmaWVkQnkiOiJKZW5uaWZlcixCZWFsZSIsImxhc3RNb2RpZmllZERhdGUiOiIyMDE5LTEyLTExVDEyOjQyOjU3Ljk1MiswMDowMCIsImZ1bGxQYXJlbnRQYXRoTmFtZSI6IkVORVJHWSwgREVQQVJUTUVOVCBPRi5FTkVSR1ksIERFUEFSVE1FTlQgT0YuTExOUyDigJMgRE9FIENPTlRSQUNUT1IiLCJhYWNDb2RlIjoiODk5MDExIiwic3RhcnREYXRlIjoiMjAxOS0xMi0xMFQwNTowMDowMC4wMDArMDA6MDAiLCJmcGRzQ29kZSI6Ijg5MDAiLCJtb2RTdGF0dXMiOiJBQ1RJVkUiLCJjZ2FjIjoiMDg5IiwibGV2ZWwiOjMsImZwZHNPcmdJZCI6Ijg5OTAxMSIsImwxU2hvcnROYW1lIjoiRE9FIiwicmVnaW9uQ29kZSI6IiIsInNob3J0TmFtZSI6Ikxhd3JlbmNlIExpdmVybW9yZSBOYXRpb25hbCBTZWN1cml0eSDigJMgRE9FIENvbnRyYWN0b3IiLCJjb2RlIjoiODk5MDExIiwiY29kZUhpZXJhcmNoeSI6Ijg5MDAuODkwMC44OTkwMTEiLCJoaWVyYXJjaHkiOltdLCJvcmdBZGRyZXNzZXMiOlt7ImFkZHJlc3NfQU5USFJPUElDX0tFWSI6NTAwMTM4NDAwLCJvcmdfQU5USFJPUElDX0tFWSI6NTAwMDQ4NDM5LCJzdHJlZXRfYWRkcmVzcyI6IjcwMDAgRWFzdCBBdmVudWUiLCJzdHJlZXRfYWRkcmVzc18yIjoiIiwiY2l0eSI6IkxpdmVybW9yZSIsInN0YXRlIjoiQ0EiLCJ6aXBjb2RlIjoiOTQ1NTEiLCJjb3VudHJ5X2NvZGUiOiJVU0EiLCJjcmVhdGVkX2J5IjoiSmVubmlmZXIsQmVhbGUiLCJjcmVhdGVkX2RhdGUiOiIyMDE5LTEyLTExVDA3OjQyOjU3LjY4NzM0NCIsImxhc3RfbW9kaWZpZWRfYnkiOiJKZW5uaWZlcixCZWFsZSIsImxhc3RfbW9kaWZpZWRfZGF0ZSI6IjIwMTktMTItMTFUMDc6NDI6NTcuNjg3MzQ0IiwibW9kX3N0YXR1cyI6ImFjdGl2ZSIsImlzX3NvdXJjZV9mcGRzIjpudWxsLCJpc19zb3VyY2VfY2ZkYSI6bnVsbCwiaXNfc291cmNlX2ZoX2FwcCI6bnVsbCwidHlwZSI6Ik0ifV0sImwzTmFtZSI6IkxMTlMg4oCTIERPRSBDT05UUkFDVE9SIiwicGFyZW50T3JnIjoiRU5FUkdZLCBERVBBUlRNRU5UIE9GIiwibDFOYW1lIjoiRU5FUkdZLCBERVBBUlRNRU5UIE9GIiwibDJOYW1lIjoiRU5FUkdZLCBERVBBUlRNRU5UIE9GIiwibDFPcmdLZXkiOjEwMDAxMTk4MCwibDJPcmdLZXkiOjEwMDAxMTk4MSwibGlua3MiOltdfSwiX2xpbmsiOnsic2VsZiI6eyJocmVmIjoiaHR0cHM6Ly9hcGkuc2FtLmdvdi9wcm9kL2ZlZGVyYWxvcmdhbml6YXRpb25zL3YyL29yZ2FuaXphdGlvbnMvNTAwMDQ4NDM5In19fV19
+  recorded_at: Tue, 23 Jul 2024 23:11:45 GMT
+- request:
+    method: get
+    uri: https://sam.gov/api/prod/opps/v3/opportunities/31bfac4317014188add09789bffde65d/resources?excludeDeleted=false&random=1721776305845&withScanResult=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/hal+json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Tue, 23 Jul 2024 23:11:46 GMT
+      Server:
+      - nginx/1.25.3
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, X-Auth-Token, Cache-Control,
+        Pragma, Expires, Location
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Location
+      Access-Control-Max-Age:
+      - '3600'
+      Via:
+      - http/1.1 api-umbrella (ApacheTrafficServer [cMsSf ]), 1.1 ea7c4b0407882327307bae4ed233d142.cloudfront.net
+        (CloudFront)
+      X-Forwarded-For:
+      - 192.177.117.167, 70.132.61.137, 10.177.27.47,192.177.117.167, 10.177.48.89,
+        10.177.51.164, 10.177.51.164
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - SFO5-C3
+      X-Amz-Cf-Id:
+      - vzFPulW0M7e2FcLnFR9ThFZMiKrNQdPv2JeKNPstH59g2gQz-IJLLQ==
+      Age:
+      - '0'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"_links":{"self":{"href":"https://86samdotgovopportunitiesmodern.prod.apps-internal.prod-iae.bsp.gsa.gov/opps/v3/opportunities/31bfac4317014188add09789bffde65d/resources?withScanResult=false&excludeDeleted=false"},"opportunity:publish:latest":{"href":"https://86samdotgovopportunitiesmodern.prod.apps-internal.prod-iae.bsp.gsa.gov/opps/v3/opportunities/31bfac4317014188add09789bffde65d/resources?withScanResult=false&excludeDeleted=false"}}}'
+  recorded_at: Tue, 23 Jul 2024 23:11:46 GMT
+recorded_with: VCR 6.2.0
