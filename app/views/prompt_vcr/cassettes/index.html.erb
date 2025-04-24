@@ -2,108 +2,103 @@
   <!-- Tab navigation -->
   <div class="border-b border-gray-200 dark:border-gray-700">
     <div class="flex">
-      <a href="<%= prompt_vcr.cassettes_path(type: 'prompts') %>" class="<%= params[:type].nil? || params[:type] == 'prompts' ? 'border-b-2 border-slate-500 text-slate-600 dark:border-slate-400 dark:text-slate-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600' %> px-4 py-3 text-sm font-medium">
-        Prompt Cassettes
+      <a href="<%= prompt_vcr.cassettes_path(type: 'all') %>" class="<%= params[:type].nil? || params[:type] == 'all' ? 'border-b-2 border-slate-500 text-slate-600 dark:border-slate-400 dark:text-slate-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600' %> px-4 py-3 text-sm font-medium">
+        All
+      </a>
+      <a href="<%= prompt_vcr.cassettes_path(type: 'prompts') %>" class="<%= params[:type] == 'prompts' ? 'border-b-2 border-slate-500 text-slate-600 dark:border-slate-400 dark:text-slate-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600' %> px-4 py-3 text-sm font-medium ml-8">
+        Prompts
+      </a>
+      <a href="<%= prompt_vcr.cassettes_path(type: 'mixed') %>" class="<%= params[:type] == 'mixed' ? 'border-b-2 border-slate-500 text-slate-600 dark:border-slate-400 dark:text-slate-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600' %> px-4 py-3 text-sm font-medium ml-8">
+        Mixed
       </a>
       <a href="<%= prompt_vcr.cassettes_path(type: 'standard') %>" class="<%= params[:type] == 'standard' ? 'border-b-2 border-slate-500 text-slate-600 dark:border-slate-400 dark:text-slate-400' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600' %> px-4 py-3 text-sm font-medium ml-8">
-        Standard Cassettes
+        Standard
       </a>
     </div>
   </div>
 
-  <% if @cassette_groups.nil? || (params[:type] == 'prompts' && @cassette_groups[:prompts].blank?) || (params[:type] == 'standard' && @cassette_groups[:others].blank?) || (@cassette_groups[:prompts].blank? && @cassette_groups[:others].blank?) %>
+  <% if @filtered_cassettes.blank? %>
     <div class="py-8 text-center p-6">
       <p class="text-gray-500 dark:text-gray-400 mb-4">No cassettes found</p>
       <p class="text-sm text-gray-400 dark:text-gray-500">Add VCR cassettes to test/vcr_cassettes in your application.</p>
     </div>
   <% else %>
-    <% if @cassette_groups[:prompts].present? && (params[:type].nil? || params[:type] == 'prompts') %>
-      <!-- Prompt Cassettes Section -->
-      <div class="py-3 px-6 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-        <h2 class="text-lg font-medium text-gray-700 dark:text-gray-300">AI Prompts</h2>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Recorded AI prompt interactions</p>
-      </div>
+    <!-- Cassettes Section -->
+    <div class="py-3 px-6 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
+      <% if params[:type] == 'prompts' %>
+        <h2 class="text-lg font-medium text-gray-700 dark:text-gray-300">Prompts</h2>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Cassettes with only prompt interactions</p>
+      <% elsif params[:type] == 'mixed' %>
+        <h2 class="text-lg font-medium text-gray-700 dark:text-gray-300">Mixed Cassettes</h2>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Cassettes with both prompt and standard HTTP interactions</p>
+      <% elsif params[:type] == 'standard' %>
+        <h2 class="text-lg font-medium text-gray-700 dark:text-gray-300">Standard Requests</h2>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Cassettes with only standard HTTP interactions</p>
+      <% else %>
+        <h2 class="text-lg font-medium text-gray-700 dark:text-gray-300">All Cassettes</h2>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">All VCR recorded interactions</p>
+      <% end %>
+    </div>
 
-      <div class="overflow-x-auto">
-        <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-          <thead class="bg-gray-50 dark:bg-gray-800">
-            <tr>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Name</th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Model</th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Created</th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Actions</th>
+    <div class="overflow-x-auto">
+      <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+        <thead class="bg-gray-50 dark:bg-gray-800">
+          <tr>
+            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Name</th>
+            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Type</th>
+            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Model</th>
+            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Created</th>
+            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+          <!-- Each row has hover styling applied -->
+
+          <% @filtered_cassettes.each do |cassette| %>
+            <% metadata = @cassette_metadata[cassette[:name]] %>
+            <% display_name = cassette[:name].split("/").last.humanize %>
+            <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-150">
+              <td class="px-6 py-4 whitespace-nowrap">
+                <div class="text-sm font-medium text-gray-900 dark:text-white"><%= display_name %></div>
+                <div class="text-xs text-gray-500 dark:text-gray-400"><%= cassette[:name] %></div>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm">
+                <% if cassette[:is_mixed] %>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800 dark:bg-purple-800 dark:text-purple-100">
+                    Mixed
+                  </span>
+                <% elsif cassette[:has_prompts] %>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100">
+                    AI Prompt
+                  </span>
+                <% else %>
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100">
+                    Standard
+                  </span>
+                <% end %>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                <% if cassette[:has_prompts] && metadata&.dig(:model) %>
+                  <span class="font-mono text-xs"><%= metadata[:model] %></span>
+                <% else %>
+                  <span class="text-gray-400 dark:text-gray-500 text-xs">—</span>
+                <% end %>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                <%= metadata&.dig(:created_at) ? metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %>
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium dark:font-medium flex space-x-3">
+                <%= link_to "View", prompt_vcr.cassette_path(cassette[:name]), class: "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-300" %>
+                <%= button_to "Delete", prompt_vcr.cassette_path(cassette[:name]),
+                    method: :delete,
+                    class: "text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 text-sm font-medium",
+                    form: { class: "inline" },
+                    data: { confirm: "Are you sure you want to delete this cassette? This action cannot be undone." } %>
+              </td>
             </tr>
-          </thead>
-          <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-            <!-- Each row has hover styling applied -->
-
-            <% @cassette_groups[:prompts].each do |cassette| %>
-              <% metadata = @cassette_metadata[cassette] %>
-              <% display_name = metadata[:name] || cassette.split("/").last.humanize %>
-              <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-150">
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm font-medium text-gray-900 dark:text-white"><%= display_name %></div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400"><%= cassette %></div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                  <%= metadata[:model] %>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                  <%= metadata[:created_at] ? metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium dark:font-medium">
-                  <%= link_to "View", prompt_vcr.cassette_path(cassette, cassette_type: 'prompt'), class: "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-300" %>
-                </td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
-    <% end %>
-
-    <% if @cassette_groups[:others].present? && params[:type] == 'standard' %>
-      <!-- Standard VCR Cassettes Section -->
-      <div class="py-3 px-6 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
-        <h2 class="text-lg font-medium text-gray-700 dark:text-gray-300">Standard VCR Cassettes</h2>
-        <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Regular VCR recorded HTTP interactions</p>
-      </div>
-
-      <div class="overflow-x-auto">
-        <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-          <thead class="bg-gray-50 dark:bg-gray-800">
-            <tr>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Name</th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Created</th>
-              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Actions</th>
-            </tr>
-          </thead>
-          <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-            <!-- Each row has hover styling applied -->
-
-            <% @cassette_groups[:others].each do |cassette| %>
-              <% metadata = @cassette_metadata[cassette] %>
-              <% display_name = cassette.split("/").last.humanize %>
-              <tr class="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-150">
-                <td class="px-6 py-4 whitespace-nowrap">
-                  <div class="text-sm font-medium text-gray-900 dark:text-white"><%= display_name %></div>
-                  <div class="text-xs text-gray-500 dark:text-gray-400"><%= cassette %></div>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                  <%= metadata[:created_at] ? metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %>
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium dark:font-medium flex space-x-3">
-                  <%= link_to "View", prompt_vcr.cassette_path(cassette, cassette_type: 'standard'), class: "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-300" %>
-                  <%= button_to "Delete", prompt_vcr.cassette_path(cassette, cassette_type: 'standard'),
-                      method: :delete,
-                      class: "text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 text-sm font-medium",
-                      form: { class: "inline" },
-                      data: { confirm: "Are you sure you want to delete this cassette? This action cannot be undone." } %>
-                </td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
-    <% end %>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
   <% end %>
 </div>

@@ -1,0 +1,1111 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.firecrawl.dev/v1/scrape
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://bidopportunities.iowa.gov/","formats":["markdown","screenshot"]}'
+    headers:
+      User-Agent:
+      - Faraday v2.13.0
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer BEARER_TOKEN
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '21424'
+      Etag:
+      - W/"53b0-RYhPgG9Tt/PprHlH1slo6YSXUMY"
+      Date:
+      - Thu, 24 Apr 2025 00:06:33 GMT
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: '{"success":true,"data":{"markdown":"[iframe](javascript:void(0))\n\n[Official
+        State of Iowa Website](https://www.iowa.gov/official-website)\n\n[Agencies
+        A-Z](https://directory.iowa.gov/organization/index)\n\n[Programs & Services](https://directory.iowa.gov/service/index)\n\n![Back
+        to home page](https://bidopportunities.iowa.gov/Content/ia-custom/img/logo-iowa.svg)\n\nIowa
+        Department of Administrative Services\n\n# State of Iowa Bid Opportunities\n\n#
+        Active Bid Opportunities\n\n[Awarded Contracts](http://bidopportunities.iowa.gov/Home/AwardedContracts)\n\n[Closed
+        Bid Opportunities](http://bidopportunities.iowa.gov/Home/ClosedBidOpportunities)\n\n##
+        Search Active Bid Opportunity Listing\n\nAll Agencies5th Judicial District
+        DCSAdministrative Rules ReviewAdministrative Services, DeptAEA PurchasingAg-Corn
+        PromotionAg-Develop AuthAg-Egg CouncilAg-Loess HillsAg-Soil ConsvAg-Soybean
+        PromotionAg-State FairAg-State Fair-CapitalsAg-Turkey MarketingAging Resources
+        of Central IowaAging Resources of Central IowaAgriculture and Land StewardshipAlcoholic
+        BeveragesAll State AgenciesAnamosa-Farm AccountsAnamosa-Iowa Prison IndustriesAttorney
+        GeneralAttorney General Prosecuting AttorneyAuditor of StateBoard of ParoleCitizen
+        AideCity of AmesCivil Commitment Unit for Sexual OffendersCivil Rights CommissionClay
+        CountyCollege AidComm Based CorrCommerce-AdministrationCommerce-Banking DivisionCommerce-CapitalsCommerce-Credit
+        UnionCommerce-InsuranceCommerce-UtilitiesComputer SupportConsumer AdvocateCorrections
+        AnamosaCorrections CapitalsCorrections Central OfficeCorrections ClarindaCorrections
+        Fort DodgeCorrections Fort MadisonCorrections Iowa Medical and Classification
+        CenterCorrections MitchellvilleCorrections Mt PleasantCorrections NewtonCorrections
+        Rockwell CityCorrections-Training AcademyCultural Affairs, Dept OfDepartment
+        of Corrections - all districtsDepartment of Corrections - District IDepartment
+        of Corrections - District IIDepartment of Corrections - District IIIDepartment
+        of Corrections - District IVDepartment of Corrections - District VIDepartment
+        of Corrections - District VIIDepartment of Corrections - District VIIIDepartment
+        of Corrections - StatewideDepartment of Health and Human ServicesDepartment
+        of Management - ITDept For The BlindDept For The Blind - CapitalsDept of Homeland
+        Security and Emergency ManagementDes Moines Area Community CollegeDes Moines
+        UniversityEast Central Iowa Council of GovernmentsEconomic Development-CapitalsEducation,
+        Dept OfEducation, Iowa PBSEducation, Voc RehabElderbridge Agency on AgingEthics
+        and Campaign Disclosure BoardExecutive CouncilFinance AuthorityGeneral Services
+        CapitalsGeneral Services-Fleet and MailGovernorGovernor''s Office of Drug
+        Control PolicyHistorical Society CapitalsHouseHuman RightsIncome Offset- College
+        AidInformation TechnologyInformation Technology-PrintingInspection and AppealsIowa
+        Central Community CollegeIowa Communications NetworkIowa Comprehensive Petroleum
+        Underground Storage Tank Fund BoardIowa Department on AgingIowa Economic Development
+        AuthorityIowa Juvenile Home-ToledoIowa Lottery AuthorityIowa Seed CapitalIowa
+        State UniversityIowa State University - CapitalsIowa Veterans HomeIowa Veterans
+        Home CapitalsIowa Workforce Development - Vocational Rehab ServicesIPERSIPERS-
+        CapitolsJohnson CountyJointJudicialJudicial-capitalsLaw Enforcement AcademyLegislative
+        Fiscal BureauLegislative Service BureauMadison CountyManagementNatural Resources,
+        Dept OfNatural Resources, Dept OfNatural Resources-capNone Selected - AllOffice
+        of Energy IndependenceOther Governmental EntitiesPersonnelProfessional Licensing/RegPublic
+        Defender''s AdminstrationPublic Defense, Dept OfPublic Defense-CapPublic Employment
+        Relations BoardPublic Health, Dept OfPublic Information BoardPublic Safety,
+        Dept OfPublic Safety-capitolsRacing & Gaming CommissionRegentsRevenueSchool
+        - All Saints Catholic Schools-DavenportSchool - All Saints School-Cedar RapidsSchool
+        - Aquin Elementary SchoolSchool - Beckman High SchoolSchool - Bishop Garrigan
+        SchoolsSchool - Blessed Sacrament School-Sioux CitySchool - Bosco Catholic
+        School SystemSchool - Calmar Festina Spillville (CFS) Catholic SchoolSchool
+        - Catholic Schools of Sioux CitySchool - Cedar Valley Catholic School SystemSchool
+        - Central Lutheran SchoolSchool - Christ The King SchoolSchool - Community
+        Lutheran SchoolSchool - Council Bluffs Area Catholic Education SystemSchool
+        - Desales Grade SchoolSchool - Dowling High SchoolSchool - Emmetsburg Catholic
+        SchoolSchool - Gehlen Catholic SchoolsSchool - Holy Family School System-Cedar
+        RapidsSchool - Holy Family Schools-DSMSchool - Holy Family System zz -DubuqueSchool
+        - Holy Trinity Catholic Schools Inc.-Ft.MadisonSchool - Holy Trinity School-DSMSchool
+        - Hull Christian SchoolSchool - Inwood Christian SchoolSchool - Iowa Mennonite
+        SchoolSchool - Ireton Christian SchoolSchool - John F Kennedy Cath SchSchool
+        - Kuemper Catholic School SystemSchool - Lutheran Interparish SchoolSchool
+        - Mater Dei Catholic ParishSchool - Netherlands Reformed Christian SchoolSchool
+        - Newman Catholic School SystemSchool - North Iowa Christian SchoolSchool
+        - Notre Dame Elementary School-BurlingtonSchool - Notre Dame School System-CrescoSchool
+        - Orange City Christian SchoolSchool - Oskaloosa Christian SchoolSchool -
+        Pella Christian Grade SchoolSchool - Pella Christian High SchoolSchool - REGINA
+        CATHOLIC EDUC CNTSchool - Regis Middle SchoolSchool - Rock Valley Christian
+        SchoolSchool - Sac and Fox Tribe of the Mississippi in IowaSchool - Sacred
+        Heart Elementary School-OelweinSchool - Sacred Heart School-BooneSchool -
+        Sacred Heart School-MaquoketaSchool - Sacred Heart School-MonticelloSchool
+        - Sacred Heart School-Sioux CitySchool - Sacred Heart School-SpencerSchool
+        - Sacred Heart School-West DSMSchool - Sanborn Christian SchoolSchool - Seton
+        Catholic School SystemSchool - Shelby County Catholic School SystemSchool
+        - Sheldon Christian SchoolSchool - Sioux Center Christian SchoolSchool - Spalding
+        Catholic School System-GranvilleSchool - St Anthony School-DSMSchool - St
+        Athanasius SchoolSchool - St Augustin SchoolSchool - St Cecilia SchoolSchool
+        - St Edmond Catholic SchSchool - St Francis Catholic School - MarshalltownSchool
+        - St Francis of Assisi-WDsmSchool - St Francis Xavier SchoolSchool - St John
+        Elementary SchoolSchool - St Joseph Community Catholic School-New HamptonSchool
+        - St Joseph Elementary School-DsmSchool - St Josephs School-BellevueSchool
+        - St Josephs School-MarionSchool - St Malachy SchoolSchool - St Mary High
+        School-StormLakeSchool - St Mary School-HumboldtSchool - St Mary\\\\Catherine-RemsenSchool
+        - St Marys School-GuttenbergSchool - St Marys School-ManchesterSchool - St
+        Matthew SchoolSchool - St Michael SchoolSchool - St Patrick School-AnamosaSchool
+        - St Patrick School-Cedar FallsSchool - St Patrick School-PerrySchool - St
+        Patrick School-WaukonSchool - St Patricks School-SheldonSchool - St Pauls
+        Lutheran School-SiouxCitySchool - St Pius X School-Cedar RapidsSchool - St
+        Pius X School-UrbandaleSchool - St Rose Of Lima SchoolSchool - St Theresa
+        SchoolSchool - St Thomas Aquinas SchoolSchool - Timothy Christian SchoolSchool
+        - Trinity Catholic SchoolSchool - Trinity Lutheran School-BooneSchool - Trinity
+        Lutheran School-CedarRapidsSchool - Unity Christian High SchoolSchool - Xavier
+        High SchoolSchool - Zion Lutheran School-DenisonSchool - Zion-St John Lutheran
+        School-PaullinaSchool - Adair-Casey CSDSchool - Adel DeSoto Minburn CSDSchool
+        - AGWSR CSDSchool - AHSTW CSDSchool - Akron Westfield CSDSchool - Albert City-Truesdale
+        CSDSchool - Albia CSDSchool - Alburnett CSDSchool - Alden CSDSchool - Algona
+        CSDSchool - Allamakee CSDSchool - Alta-Aurelia CSDSchool - Ames CSDSchool
+        - Anamosa CSDSchool - Andrew CSDSchool - Ankeny CSDSchool - Aplington-Parkersburg
+        CSDSchool - Ar-We-Va CSDSchool - Atlantic CSDSchool - Audubon CSDSchool -
+        Ballard CSDSchool - Baxter CSDSchool - BCLUW CSDSchool - Bedford CSDSchool
+        - Belle Plaine CSDSchool - Bellevue CSDSchool - Belmond-Klemme CSDSchool -
+        Bennett CSDSchool - Benton CSDSchool - Bettendorf CSDSchool - Bondurant-Farrar
+        CSDSchool - Boone CSDSchool - Boyden-Hull CSDSchool - Boyer Valley CSDSchool
+        - Brooklyn-Guernsey-Malcom CSDSchool - Burlington CSDSchool - CAL CSDSchool
+        - Calamus-Wheatland CSDSchool - CAM CSDSchool - Camanche CSDSchool - Cardinal
+        CSDSchool - Carlisle CSDSchool - Carroll CSDSchool - Cedar Falls CSDSchool
+        - Cedar Rapids CSDSchool - Center Point-Urbana CSDSchool - Centerville CSDSchool
+        - Central City CSDSchool - Central CSDSchool - Central Decatur CSDSchool -
+        Central DeWitt CSDSchool - Central Lee CSDSchool - Central Lyon CSDSchool
+        - Central Springs CSDSchool - Chariton CSDSchool - Charles City CSDSchool
+        - Charter Oak-Ute CSDSchool - Cherokee CSDSchool - Clarinda CSDSchool - Clarion-Goldfield-Dows
+        CSDSchool - Clarke CSDSchool - Clarksville CSDSchool - Clay Central-Everly
+        CSDSchool - Clayton Ridge CSDSchool - Clear Creek Amana CSDSchool - Clear
+        Lake CSDSchool - Clinton CSDSchool - Colfax-Mingo CSDSchool - College CSDSchool
+        - Collins-Maxwell CSDSchool - Colo-NESCO CSDSchool - Columbus CSDSchool -
+        Coon Rapids-Bayard CSDSchool - Corning CSDSchool - Council Bluffs CSDSchool
+        - Creston CSDSchool - Dallas Center-Grimes CSDSchool - Danville CSDSchool
+        - Davenport CSDSchool - Davis County CSDSchool - Decorah Community CSDSchool
+        - Delwood CSDSchool - Denison CSDSchool - Denver CSDSchool - Des Moines Independent
+        SDSchool - Diagonal CSDSchool - Dike-New Hartford CSDSchool - Dubuque CSDSchool
+        - Dunkerton CSDSchool - Durant CSDSchool - Eagle Grove CSDSchool - Earlham
+        CSDSchool - East Buchanan CSDSchool - East Marshall CSDSchool - East Mills
+        CSDSchool - East Sac County CSDSchool - East Union CSDSchool - Eastern Allamakee
+        CSDSchool - Easton Valley CSDSchool - Eddyville-Blakesburg- CSDSchool - Edgewood-Colesburg
+        CSDSchool - Eldora-New Providence CSDSchool - Emmetsburg CSDSchool - English
+        Valleys CSDSchool - Essex CSDSchool - Estherville Lincoln CSDSchool - Exira-Elk
+        Horn- CSDSchool - Fairfield CSDSchool - Forest City CSDSchool - Fort Dodge
+        CSDSchool - Fort Madison CSDSchool - Fremont-Mills CSDSchool - Galva-Holstein
+        CSDSchool - Garner-Hayfield-Ventura CSDSchool - George-Little Rock CSDSchool
+        - Gilbert CSDSchool - Gilmore City-Bradgate CSDSchool - Gladbrook-Reinbeck
+        CSDSchool - Glenwood CSDSchool - Glidden-Ralston CSDSchool - GMG CSDSchool
+        - Graettinger-Terril CSDSchool - Greene County CSDSchool - Grinnell-Newburg
+        CSDSchool - Griswold CSDSchool - Grundy Center CSDSchool - Guthrie Center
+        CSDSchool - H-L-V CSDSchool - Hamburg CSDSchool - Hampton-Dumont CSDSchool
+        - Harlan CSDSchool - Harmony CSDSchool - Harris-Lake Park CSDSchool - Hartley-Melvin-Sanborn
+        CSDSchool - Highland CSDSchool - Hinton CSDSchool - Howard-Winneshiek CSDSchool
+        - Hubbard-Radcliffe CSDSchool - Hudson CSDSchool - Humboldt CSDSchool - IKM-Manning
+        CSDSchool - Independence CSDSchool - Indianola CSDSchool - Interstate 35 CSDSchool
+        - Iowa City CSDSchool - Iowa Falls CSDSchool - Iowa Valley CSDSchool - Janesville
+        Consolidated CSDSchool - Jesup CSDSchool - Johnston CSDSchool - Keokuk CSDSchool
+        - Keota CSDSchool - Kingsley-Pierson CSDSchool - Knoxville CSDSchool - Lake
+        Mills CSDSchool - Lamoni CSDSchool - Laurens-Marathon CSDSchool - Lawton-Bronson
+        CSDSchool - Le Mars CSDSchool - Lenox CSDSchool - Lewis Central CSDSchool
+        - Linn-Mar CSDSchool - Lisbon CSDSchool - Logan-Magnolia CSDSchool - Lone
+        Tree CSDSchool - Louisa-Muscatine CSDSchool - LuVerne CSDSchool - Lynnville-Sully
+        CSDSchool - Madrid CSDSchool - Manson Northwest Webster CSDSchool - Maple
+        Valley-Anthon Oto CSDSchool - Maquoketa CSDSchool - Maquoketa Valley CSDSchool
+        - Marcus-Meriden-Cleghorn CSDSchool - Marion Independent CSDSchool - Marshalltown
+        CSDSchool - Martensdale-St Marys CSDSchool - Mason City CSDSchool - Mediapolis
+        CSDSchool - Melcher-Dallas CSDSchool - MFL MarMac CSDSchool - Mid-Prairie
+        CSDSchool - Midland CSDSchool - Missouri Valley CSDSchool - MOC-Floyd Valley
+        CSDSchool - Montezuma CSDSchool - Monticello CSDSchool - Moravia CSDSchool
+        - Mormon Trail CSDSchool - Morning Sun CSDSchool - Moulton-Udell CSDSchool
+        - Mount Ayr CSDSchool - Mount Pleasant CSDSchool - Mount Vernon CSDSchool
+        - Murray CSDSchool - Muscatine CSDSchool - Nashua-Plainfield CSDSchool - Nevada
+        CSDSchool - New Hampton CSDSchool - New London CSDSchool - Newell-Fonda CSDSchool
+        - Newton CSDSchool - Nodaway Valley CSDSchool - North Butler CSDSchool - North
+        Cedar CSDSchool - North Fayette Valley CSDSchool - North Iowa CSDSchool -
+        North Kossuth CSDSchool - North Linn CSDSchool - North Mahaska CSDSchool -
+        North Polk CSDSchool - North Scott CSDSchool - North Tama County CSDSchool
+        - North Union CSDSchool - North Winneshiek CSDSchool - Northeast CSDSchool
+        - Northeast Hamilton CSDSchool - Northwood-Kensett CSDSchool - Norwalk CSDSchool
+        - Odebolt Arthur Battle Creek Ida Grove CSDSchool - Oelwein CSDSchool - Ogden
+        CSDSchool - Okoboji CSDSchool - Olin Consolidated CSDSchool - Orient-Macksburg
+        CSDSchool - Osage CSDSchool - Oskaloosa CSDSchool - Ottumwa CSDSchool - Panorama
+        CSDSchool - Paton-Churdan CSDSchool - PCM CSDSchool - Pekin CSDSchool - Pella
+        CSDSchool - Perry CSDSchool - Pleasant Valley CSDSchool - Pleasantville CSDSchool
+        - Pocahontas Area CSDSchool - Postville CSDSchool - Prairie Valley CSDSchool
+        - Red Oak CSDSchool - Remsen-Union CSDSchool - Riceville CSDSchool - River
+        Valley CSDSchool - Riverside CSDSchool - Rock Valley CSDSchool - Roland-Story
+        CSDSchool - Rudd-Rockford-Marble Rk CSDSchool - Ruthven-Ayrshire CSDSchool
+        - Saydel CSDSchool - Schaller-Crestland CSDSchool - Schleswig CSDSchool -
+        Sergeant Bluff-Luton CSDSchool - Seymour CSDSchool - Sheldon CSDSchool - Shenandoah
+        CSDSchool - Sibley-Ocheyedan CSDSchool - Sidney CSDSchool - Sigourney CSDSchool
+        - Sioux Center CSDSchool - Sioux Central CSDSchool - Sioux City CSDSchool
+        - Solon CSDSchool - South Central Calhoun CSDSchool - South Hamilton CSDSchool
+        - South O''Brien CSDSchool - South Page CSDSchool - South Tama County CSDSchool
+        - South Winneshiek CSDSchool - Southeast Polk CSDSchool - Southeast Warren
+        CSDSchool - Southeast Webster Grand CSDSchool - Spencer CSDSchool - Spirit
+        Lake CSDSchool - Springville CSDSchool - St Ansgar CSDSchool - Stanton CSDSchool
+        - Starmont CSDSchool - Storm Lake CSDSchool - Stratford CSDSchool - Sumner-Fredericksburg
+        CSDSchool - Tipton CSDSchool - Treynor CSDSchool - Tri-Center CSDSchool -
+        Tri-County CSDSchool - Tripoli CSDSchool - Turkey Valley CSDSchool - Twin
+        Cedars CSDSchool - Twin Rivers CSDSchool - Underwood CSDSchool - Union CSDSchool
+        - United CSDSchool - Urbandale CSDSchool - Van Buren CSDSchool - Van Meter
+        CSDSchool - Villisca CSDSchool - Vinton-Shellsburg CSDSchool - Waco CSDSchool
+        - Wapello CSDSchool - Wapsie Valley CSDSchool - Washington CSDSchool - Waterloo
+        CSDSchool - Waukee CSDSchool - Waverly-Shell Rock CSDSchool - Wayne CSDSchool
+        - Webster City CSDSchool - West Bend-Mallard CSDSchool - West Branch CSDSchool
+        - West Burlington Ind CSDSchool - West Central CSDSchool - West Central Valley
+        CSDSchool - West Delaware County CSDSchool - West Des Moines CSDSchool - West
+        Fork CSDSchool - West Hancock CSDSchool - West Harrison CSDSchool - West Liberty
+        CSDSchool - West Lyon CSDSchool - West Marshall CSDSchool - West Monona CSDSchool
+        - West Sioux CSDSchool - Western Dubuque CSDSchool - Westwood CSDSchool -
+        Whiting CSDSchool - Williamsburg CSDSchool - Wilton CSDSchool - Winfield-Mt
+        Union CSDSchool - Winterset CSDSchool - Woodbine CSDSchool - Woodbury Central
+        CSDSchool - Woodward-Granger CSDSecretary Of StateSenateSourcewellState &
+        Federal RegulationsState Accounting Trust AcctsState FairState LibraryTransportationTransportation-CapTreasurer
+        of StateUniform State LawsUniversity of IowaUniversity of Iowa - CapitalsUniversity
+        of Northern IowaUniversity of Northern Iowa - CapitalsVeterans AffairsVeterans
+        Affairs CapitalsVocational Rehabilitation-capitalsWallace TechWarren County,
+        IAWorkforce Development\n\nShow 152550100 entries\n\n|  | Bid Number | Agency
+        | Contact | Title | Effective Date | Expiration Date |  |  |\n| --- | ---
+        | --- | --- | --- | --- | --- | --- | --- |\n|  |  |  |  |  |  |  |  |  |\n|
+        --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1589-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=69a626c5-25c6-4d86-bb43-02d7ef5428e7)
+        | Administrative Services, Dept | Katelyn Howells | Landscaping and Tree Services
+        for Iowa School for the Deaf | 4/21/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1701-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=84f5e7e6-2321-4619-816c-06d8afc6c2fe)
+        | Administrative Services, Dept | Tami Skadeland | Picnic Tables for DNR |
+        4/21/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [645-RFB-1647-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=b1560d97-2c9d-48cf-97d3-45d5a20afd60)
+        | Transportation | Teri Schulz | Construction of new Pole Building and Salt
+        Structure at Boone Maintenance Garage | 4/20/2025 | 5/12/2025 |  |  |\n| ![Open
+        Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1707-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=7ad981ce-9640-41bc-a6f9-7e60c72421d7)
+        | Administrative Services, Dept | Randy Bennett | Peanut Butter for CDC Warehouse
+        | 4/19/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1708-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=0f79c4f4-36de-484f-a01c-ad3a97ca3750)
+        | Administrative Services, Dept | Randy Bennett | Food Items for CDC Warehouse
+        | 4/19/2025 | 5/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-185-1586-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=79515513-6547-4453-abe8-145d62502edd)
+        | Administrative Services, Dept | Central Procurement | Iowa Lottery Print
+        and Loyalty Services | 4/18/2025 | 6/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [B04182025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=7cf4e337-437a-4d9d-8157-6ef886273b9b)
+        | Corrections Mt Pleasant | Shelly Masterson | Polaris Ranger 1000 | 4/18/2025
+        | 5/9/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFP-1696-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=079c20bc-5acb-4ffd-8ef9-e5875f402825)
+        | Administrative Services, Dept | Craig Trotter | Electrician Licensing Exam
+        Services | 4/18/2025 | 5/2/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFB927940-01](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=40749356-c754-4e03-a4aa-194e2f6b2828)
+        | Administrative Services, Dept | Construction Procurement | WRC Decentralization
+        Phase 4 | 4/17/2025 | 5/14/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-185-1586-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=b946dd00-44b5-48c0-9f7c-7660023c1610)
+        | Department of Management - IT | Steve Dawson | Iowa Lottery Print and Loyalty
+        Services | 4/14/2025 | 6/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1694-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=05fa144b-9a42-4c7b-a1a5-8747d199513a)
+        | Administrative Services, Dept | Randy Bennett | Food Items for CDC Warehouse
+        | 4/14/2025 | 5/1/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-SEP-2025 4](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=fe203b20-fba3-4dbe-b86d-d3d2d14a53f1)
+        | School - Southeast Polk CSD | Amy A''Hearn | Equipment Repair and Maintenance
+        Southeast Polk Schools | 4/14/2025 | 5/14/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1681-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=888f53ba-b84b-451f-9032-5b785af2f1a4)
+        | Administrative Services, Dept | Rick Tucker | Ford F450 with 18'' box &
+        lift gate or Equivalent | 4/13/2025 | 4/24/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [JUV-26-TS-06-002](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=a321fee8-cb02-443e-9e2a-128df39e5ced)
+        | Judicial | Mary Loops | Youth Planning Services (YCPM) | 4/11/2025 | 5/28/2025
+        |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [IFB-SEP-2025 5](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=1d6b1b51-e5e5-4660-a6f3-3cbcaf47c0cd)
+        | School - Southeast Polk CSD | Amy A''Hearn | Combi Oven Purchase Southeast
+        Polk Schools - Willowbrook Elementary | 4/11/2025 | 5/8/2025 |  |  |\n\nShowing
+        1 to 15 of 55 entries\n\nPrevious1234Next","screenshot":"https://service.firecrawl.dev/storage/v1/object/public/media/screenshot-126618e7-7269-4281-955c-509c1d73d91c.png","metadata":{"favicon":"https://das.iowa.gov/misc/favicon.ico","title":"DAS
+        Bidding Opportunities | Iowa Department of Administrative Services","viewport":"width=device-width","language":"en","scrapeId":"469acaab-a234-4bc7-8305-5f2ee2268945","sourceURL":"https://bidopportunities.iowa.gov/","url":"https://bidopportunities.iowa.gov/","statusCode":200}}}'
+  recorded_at: Thu, 24 Apr 2025 00:06:33 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/responses
+    body:
+      encoding: UTF-8
+      string: '{"input":"    Based on the following webpage content, determine if
+        this is a government procurement portal or award listings page.\n\n    DAS
+        Bidding Opportunities | Iowa Department of Administrative ServicesURL: https://bidopportunities.iowa.gov/\n\n    A
+        government procurement portal typically:\n    - Lists contract opportunities,
+        solicitations, RFPs, or tenders\n    - May show awarded contracts or past
+        procurement decisions\n    - Is hosted by a government entity (federal, state,
+        local) or authorized procurement agency\n    - Contains information about
+        bidding, vendor registration, or procurement processes\n\n    Content:\n    [iframe](javascript:void(0))\n\n[Official
+        State of Iowa Website](https://www.iowa.gov/official-website)\n\n[Agencies
+        A-Z](https://directory.iowa.gov/organization/index)\n\n[Programs \u0026 Services](https://directory.iowa.gov/service/index)\n\n![Back
+        to home page](https://bidopportunities.iowa.gov/Content/ia-custom/img/logo-iowa.svg)\n\nIowa
+        Department of Administrative Services\n\n# State of Iowa Bid Opportunities\n\n#
+        Active Bid Opportunities\n\n[Awarded Contracts](http://bidopportunities.iowa.gov/Home/AwardedContracts)\n\n[Closed
+        Bid Opportunities](http://bidopportunities.iowa.gov/Home/ClosedBidOpportunities)\n\n##
+        Search Active Bid Opportunity Listing\n\nAll Agencies5th Judicial District
+        DCSAdministrative Rules ReviewAdministrative Services, DeptAEA PurchasingAg-Corn
+        PromotionAg-Develop AuthAg-Egg CouncilAg-Loess HillsAg-Soil ConsvAg-Soybean
+        PromotionAg-State FairAg-State Fair-CapitalsAg-Turkey MarketingAging Resources
+        of Central IowaAging Resources of Central IowaAgriculture and Land StewardshipAlcoholic
+        BeveragesAll State AgenciesAnamosa-Farm AccountsAnamosa-Iowa Prison IndustriesAttorney
+        GeneralAttorney General Prosecuting AttorneyAuditor of StateBoard of ParoleCitizen
+        AideCity of AmesCivil Commitment Unit for Sexual OffendersCivil Rights CommissionClay
+        CountyCollege AidComm Based CorrCommerce-AdministrationCommerce-Banking DivisionCommerce-CapitalsCommerce-Credit
+        UnionCommerce-InsuranceCommerce-UtilitiesComputer SupportConsumer AdvocateCorrections
+        AnamosaCorrections CapitalsCorrections Central OfficeCorrections ClarindaCorrections
+        Fort DodgeCorrections Fort MadisonCorrections Iowa Medical and Classification
+        CenterCorrections MitchellvilleCorrections Mt PleasantCorrections NewtonCorrections
+        Rockwell CityCorrections-Training AcademyCultural Affairs, Dept OfDepartment
+        of Corrections - all districtsDepartment of Corrections - District IDepartment
+        of Corrections - District IIDepartment of Corrections - District IIIDepartment
+        of Corrections - District IVDepartment of Corrections - District VIDepartment
+        of Corrections - District VIIDepartment of Corrections - District VIIIDepartment
+        of Corrections - StatewideDepartment of Health and Human ServicesDepartment
+        of Management - ITDept For The BlindDept For The Blind - CapitalsDept of Homeland
+        Security and Emergency ManagementDes Moines Area Community CollegeDes Moines
+        UniversityEast Central Iowa Council of GovernmentsEconomic Development-CapitalsEducation,
+        Dept OfEducation, Iowa PBSEducation, Voc RehabElderbridge Agency on AgingEthics
+        and Campaign Disclosure BoardExecutive CouncilFinance AuthorityGeneral Services
+        CapitalsGeneral Services-Fleet and MailGovernorGovernor''s Office of Drug
+        Control PolicyHistorical Society CapitalsHouseHuman RightsIncome Offset- College
+        AidInformation TechnologyInformation Technology-PrintingInspection and AppealsIowa
+        Central Community CollegeIowa Communications NetworkIowa Comprehensive Petroleum
+        Underground Storage Tank Fund BoardIowa Department on AgingIowa Economic Development
+        AuthorityIowa Juvenile Home-ToledoIowa Lottery AuthorityIowa Seed CapitalIowa
+        State UniversityIowa State University - CapitalsIowa Veterans HomeIowa Veterans
+        Home CapitalsIowa Workforce Development - Vocational Rehab ServicesIPERSIPERS-
+        CapitolsJohnson CountyJointJudicialJudicial-capitalsLaw Enforcement AcademyLegislative
+        Fiscal BureauLegislative Service BureauMadison CountyManagementNatural Resources,
+        Dept OfNatural Resources, Dept OfNatural Resources-capNone Selected - AllOffice
+        of Energy IndependenceOther Governmental EntitiesPersonnelProfessional Licensing/RegPublic
+        Defender''s AdminstrationPublic Defense, Dept OfPublic Defense-CapPublic Employment
+        Relations BoardPublic Health, Dept OfPublic Information BoardPublic Safety,
+        Dept OfPublic Safety-capitolsRacing \u0026 Gaming CommissionRegentsRevenueSchool
+        - All Saints Catholic Schools-DavenportSchool - All Saints School-Cedar RapidsSchool
+        - Aquin Elementary SchoolSchool - Beckman High SchoolSchool - Bishop Garrigan
+        SchoolsSchool - Blessed Sacrament School-Sioux CitySchool - Bosco Catholic
+        School SystemSchool - Calmar Festina Spillville (CFS) Catholic SchoolSchool
+        - Catholic Schools of Sioux CitySchool - Cedar Valley Catholic School SystemSchool
+        - Central Lutheran SchoolSchool - Christ The King SchoolSchool - Community
+        Lutheran SchoolSchool - Council Bluffs Area Catholic Education SystemSchool
+        - Desales Grade SchoolSchool - Dowling High SchoolSchool - Emmetsburg Catholic
+        SchoolSchool - Gehlen Catholic SchoolsSchool - Holy Family School System-Cedar
+        RapidsSchool - Holy Family Schools-DSMSchool - Holy Family System zz -DubuqueSchool
+        - Holy Trinity Catholic Schools Inc.-Ft.MadisonSchool - Holy Trinity School-DSMSchool
+        - Hull Christian SchoolSchool - Inwood Christian SchoolSchool - Iowa Mennonite
+        SchoolSchool - Ireton Christian SchoolSchool - John F Kennedy Cath SchSchool
+        - Kuemper Catholic School SystemSchool - Lutheran Interparish SchoolSchool
+        - Mater Dei Catholic ParishSchool - Netherlands Reformed Christian SchoolSchool
+        - Newman Catholic School SystemSchool - North Iowa Christian SchoolSchool
+        - Notre Dame Elementary School-BurlingtonSchool - Notre Dame School System-CrescoSchool
+        - Orange City Christian SchoolSchool - Oskaloosa Christian SchoolSchool -
+        Pella Christian Grade SchoolSchool - Pella Christian High SchoolSchool - REGINA
+        CATHOLIC EDUC CNTSchool - Regis Middle SchoolSchool - Rock Valley Christian
+        SchoolSchool - Sac and Fox Tribe of the Mississippi in IowaSchool - Sacred
+        Heart Elementary School-OelweinSchool - Sacred Heart School-BooneSchool -
+        Sacred Heart School-MaquoketaSchool - Sacred Heart School-MonticelloSchool
+        - Sacred Heart School-Sioux CitySchool - Sacred Heart School-SpencerSchool
+        - Sacred Heart School-West DSMSchool - Sanborn Christian SchoolSchool - Seton
+        Catholic School SystemSchool - Shelby County Catholic School SystemSchool
+        - Sheldon Christian SchoolSchool - Sioux Center Christian SchoolSchool - Spalding
+        Catholic School System-GranvilleSchool - St Anthony School-DSMSchool - St
+        Athanasius SchoolSchool - St Augustin SchoolSchool - St Cecilia SchoolSchool
+        - St Edmond Catholic SchSchool - St Francis Catholic School - MarshalltownSchool
+        - St Francis of Assisi-WDsmSchool - St Francis Xavier SchoolSchool - St John
+        Elementary SchoolSchool - St Joseph Community Catholic School-New HamptonSchool
+        - St Joseph Elementary School-DsmSchool - St Josephs School-BellevueSchool
+        - St Josephs School-MarionSchool - St Malachy SchoolSchool - St Mary High
+        School-StormLakeSchool - St Mary School-HumboldtSchool - St Mary\\\\Catherine-RemsenSchool
+        - St Marys School-GuttenbergSchool - St Marys School-ManchesterSchool - St
+        Matthew SchoolSchool - St Michael SchoolSchool - St Patrick School-AnamosaSchool
+        - St Patrick School-Cedar FallsSchool - St Patrick School-PerrySchool - St
+        Patrick School-WaukonSchool - St Patricks School-SheldonSchool - St Pauls
+        Lutheran School-SiouxCitySchool - St Pius X School-Cedar RapidsSchool - St
+        Pius X School-UrbandaleSchool - St Rose Of Lima SchoolSchool - St Theresa
+        SchoolSchool - St Thomas Aquinas SchoolSchool - Timothy Christian SchoolSchool
+        - Trinity Catholic SchoolSchool - Trinity Lutheran School-BooneSchool - Trinity
+        Lutheran School-CedarRapidsSchool - Unity Christian High SchoolSchool - Xavier
+        High SchoolSchool - Zion Lutheran School-DenisonSchool - Zion-St John Lutheran
+        School-PaullinaSchool - Adair-Casey CSDSchool - Adel DeSoto Minburn CSDSchool
+        - AGWSR CSDSchool - AHSTW CSDSchool - Akron Westfield CSDSchool - Albert City-Truesdale
+        CSDSchool - Albia CSDSchool - Alburnett CSDSchool - Alden CSDSchool - Algona
+        CSDSchool - Allamakee CSDSchool - Alta-Aurelia CSDSchool - Ames CSDSchool
+        - Anamosa CSDSchool - Andrew CSDSchool - Ankeny CSDSchool - Aplington-Parkersburg
+        CSDSchool - Ar-We-Va CSDSchool - Atlantic CSDSchool - Audubon CSDSchool -
+        Ballard CSDSchool - Baxter CSDSchool - BCLUW CSDSchool - Bedford CSDSchool
+        - Belle Plaine CSDSchool - Bellevue CSDSchool - Belmond-Klemme CSDSchool -
+        Bennett CSDSchool - Benton CSDSchool - Bettendorf CSDSchool - Bondurant-Farrar
+        CSDSchool - Boone CSDSchool - Boyden-Hull CSDSchool - Boyer Valley CSDSchool
+        - Brooklyn-Guernsey-Malcom CSDSchool - Burlington CSDSchool - CAL CSDSchool
+        - Calamus-Wheatland CSDSchool - CAM CSDSchool - Camanche CSDSchool - Cardinal
+        CSDSchool - Carlisle CSDSchool - Carroll CSDSchool - Cedar Falls CSDSchool
+        - Cedar Rapids CSDSchool - Center Point-Urbana CSDSchool - Centerville CSDSchool
+        - Central City CSDSchool - Central CSDSchool - Central Decatur CSDSchool -
+        Central DeWitt CSDSchool - Central Lee CSDSchool - Central Lyon CSDSchool
+        - Central Springs CSDSchool - Chariton CSDSchool - Charles City CSDSchool
+        - Charter Oak-Ute CSDSchool - Cherokee CSDSchool - Clarinda CSDSchool - Clarion-Goldfield-Dows
+        CSDSchool - Clarke CSDSchool - Clarksville CSDSchool - Clay Central-Everly
+        CSDSchool - Clayton Ridge CSDSchool - Clear Creek Amana CSDSchool - Clear
+        Lake CSDSchool - Clinton CSDSchool - Colfax-Mingo CSDSchool - College CSDSchool
+        - Collins-Maxwell CSDSchool - Colo-NESCO CSDSchool - Columbus CSDSchool -
+        Coon Rapids-Bayard CSDSchool - Corning CSDSchool - Council Bluffs CSDSchool
+        - Creston CSDSchool - Dallas Center-Grimes CSDSchool - Danville CSDSchool
+        - Davenport CSDSchool - Davis County CSDSchool - Decorah Community CSDSchool
+        - Delwood CSDSchool - Denison CSDSchool - Denver CSDSchool - Des Moines Independent
+        SDSchool - Diagonal CSDSchool - Dike-New Hartford CSDSchool - Dubuque CSDSchool
+        - Dunkerton CSDSchool - Durant CSDSchool - Eagle Grove CSDSchool - Earlham
+        CSDSchool - East Buchanan CSDSchool - East Marshall CSDSchool - East Mills
+        CSDSchool - East Sac County CSDSchool - East Union CSDSchool - Eastern Allamakee
+        CSDSchool - Easton Valley CSDSchool - Eddyville-Blakesburg- CSDSchool - Edgewood-Colesburg
+        CSDSchool - Eldora-New Providence CSDSchool - Emmetsburg CSDSchool - English
+        Valleys CSDSchool - Essex CSDSchool - Estherville Lincoln CSDSchool - Exira-Elk
+        Horn- CSDSchool - Fairfield CSDSchool - Forest City CSDSchool - Fort Dodge
+        CSDSchool - Fort Madison CSDSchool - Fremont-Mills CSDSchool - Galva-Holstein
+        CSDSchool - Garner-Hayfield-Ventura CSDSchool - George-Little Rock CSDSchool
+        - Gilbert CSDSchool - Gilmore City-Bradgate CSDSchool - Gladbrook-Reinbeck
+        CSDSchool - Glenwood CSDSchool - Glidden-Ralston CSDSchool - GMG CSDSchool
+        - Graettinger-Terril CSDSchool - Greene County CSDSchool - Grinnell-Newburg
+        CSDSchool - Griswold CSDSchool - Grundy Center CSDSchool - Guthrie Center
+        CSDSchool - H-L-V CSDSchool - Hamburg CSDSchool - Hampton-Dumont CSDSchool
+        - Harlan CSDSchool - Harmony CSDSchool - Harris-Lake Park CSDSchool - Hartley-Melvin-Sanborn
+        CSDSchool - Highland CSDSchool - Hinton CSDSchool - Howard-Winneshiek CSDSchool
+        - Hubbard-Radcliffe CSDSchool - Hudson CSDSchool - Humboldt CSDSchool - IKM-Manning
+        CSDSchool - Independence CSDSchool - Indianola CSDSchool - Interstate 35 CSDSchool
+        - Iowa City CSDSchool - Iowa Falls CSDSchool - Iowa Valley CSDSchool - Janesville
+        Consolidated CSDSchool - Jesup CSDSchool - Johnston CSDSchool - Keokuk CSDSchool
+        - Keota CSDSchool - Kingsley-Pierson CSDSchool - Knoxville CSDSchool - Lake
+        Mills CSDSchool - Lamoni CSDSchool - Laurens-Marathon CSDSchool - Lawton-Bronson
+        CSDSchool - Le Mars CSDSchool - Lenox CSDSchool - Lewis Central CSDSchool
+        - Linn-Mar CSDSchool - Lisbon CSDSchool - Logan-Magnolia CSDSchool - Lone
+        Tree CSDSchool - Louisa-Muscatine CSDSchool - LuVerne CSDSchool - Lynnville-Sully
+        CSDSchool - Madrid CSDSchool - Manson Northwest Webster CSDSchool - Maple
+        Valley-Anthon Oto CSDSchool - Maquoketa CSDSchool - Maquoketa Valley CSDSchool
+        - Marcus-Meriden-Cleghorn CSDSchool - Marion Independent CSDSchool - Marshalltown
+        CSDSchool - Martensdale-St Marys CSDSchool - Mason City CSDSchool - Mediapolis
+        CSDSchool - Melcher-Dallas CSDSchool - MFL MarMac CSDSchool - Mid-Prairie
+        CSDSchool - Midland CSDSchool - Missouri Valley CSDSchool - MOC-Floyd Valley
+        CSDSchool - Montezuma CSDSchool - Monticello CSDSchool - Moravia CSDSchool
+        - Mormon Trail CSDSchool - Morning Sun CSDSchool - Moulton-Udell CSDSchool
+        - Mount Ayr CSDSchool - Mount Pleasant CSDSchool - Mount Vernon CSDSchool
+        - Murray CSDSchool - Muscatine CSDSchool - Nashua-Plainfield CSDSchool - Nevada
+        CSDSchool - New Hampton CSDSchool - New London CSDSchool - Newell-Fonda CSDSchool
+        - Newton CSDSchool - Nodaway Valley CSDSchool - North Butler CSDSchool - North
+        Cedar CSDSchool - North Fayette Valley CSDSchool - North Iowa CSDSchool -
+        North Kossuth CSDSchool - North Linn CSDSchool - North Mahaska CSDSchool -
+        North Polk CSDSchool - North Scott CSDSchool - North Tama County CSDSchool
+        - North Union CSDSchool - North Winneshiek CSDSchool - Northeast CSDSchool
+        - Northeast Hamilton CSDSchool - Northwood-Kensett CSDSchool - Norwalk CSDSchool
+        - Odebolt Arthur Battle Creek Ida Grove CSDSchool - Oelwein CSDSchool - Ogden
+        CSDSchool - Okoboji CSDSchool - Olin Consolidated CSDSchool - Orient-Macksburg
+        CSDSchool - Osage CSDSchool - Oskaloosa CSDSchool - Ottumwa CSDSchool - Panorama
+        CSDSchool - Paton-Churdan CSDSchool - PCM CSDSchool - Pekin CSDSchool - Pella
+        CSDSchool - Perry CSDSchool - Pleasant Valley CSDSchool - Pleasantville CSDSchool
+        - Pocahontas Area CSDSchool - Postville CSDSchool - Prairie Valley CSDSchool
+        - Red Oak CSDSchool - Remsen-Union CSDSchool - Riceville CSDSchool - River
+        Valley CSDSchool - Riverside CSDSchool - Rock Valley CSDSchool - Roland-Story
+        CSDSchool - Rudd-Rockford-Marble Rk CSDSchool - Ruthven-Ayrshire CSDSchool
+        - Saydel CSDSchool - Schaller-Crestland CSDSchool - Schleswig CSDSchool -
+        Sergeant Bluff-Luton CSDSchool - Seymour CSDSchool - Sheldon CSDSchool - Shenandoah
+        CSDSchool - Sibley-Ocheyedan CSDSchool - Sidney CSDSchool - Sigourney CSDSchool
+        - Sioux Center CSDSchool - Sioux Central CSDSchool - Sioux City CSDSchool
+        - Solon CSDSchool - South Central Calhoun CSDSchool - South Hamilton CSDSchool
+        - South O''Brien CSDSchool - South Page CSDSchool - South Tama County CSDSchool
+        - South Winneshiek CSDSchool - Southeast Polk CSDSchool - Southeast Warren
+        CSDSchool - Southeast Webster Grand CSDSchool - Spencer CSDSchool - Spirit
+        Lake CSDSchool - Springville CSDSchool - St Ansgar CSDSchool - Stanton CSDSchool
+        - Starmont CSDSchool - Storm Lake CSDSchool - Stratford CSDSchool - Sumner-Fredericksburg
+        CSDSchool - Tipton CSDSchool - Treynor CSDSchool - Tri-Center CSDSchool -
+        Tri-County CSDSchool - Tripoli CSDSchool - Turkey Valley CSDSchool - Twin
+        Cedars CSDSchool - Twin Rivers CSDSchool - Underwood CSDSchool - Union CSDSchool
+        - United CSDSchool - Urbandale CSDSchool - Van Buren CSDSchool - Van Meter
+        CSDSchool - Villisca CSDSchool - Vinton-Shellsburg CSDSchool - Waco CSDSchool
+        - Wapello CSDSchool - Wapsie Valley CSDSchool - Washington CSDSchool - Waterloo
+        CSDSchool - Waukee CSDSchool - Waverly-Shell Rock CSDSchool - Wayne CSDSchool
+        - Webster City CSDSchool - West Bend-Mallard CSDSchool - West Branch CSDSchool
+        - West Burlington Ind CSDSchool - West Central CSDSchool - West Central Valley
+        CSDSchool - West Delaware County CSDSchool - West Des Moines CSDSchool - West
+        Fork CSDSchool - West Hancock CSDSchool - West Harrison CSDSchool - West Liberty
+        CSDSchool - West Lyon CSDSchool - West Marshall CSDSchool - West Monona CSDSchool
+        - West Sioux CSDSchool - Western Dubuque CSDSchool - Westwood CSDSchool -
+        Whiting CSDSchool - Williamsburg CSDSchool - Wilton CSDSchool - Winfield-Mt
+        Union CSDSchool - Winterset CSDSchool - Woodbine CSDSchool - Woodbury Central
+        CSDSchool - Woodward-Granger CSDSecretary Of StateSenateSourcewellState \u0026
+        Federal RegulationsState Accounting Trust AcctsState FairState LibraryTransportationTransportation-CapTreasurer
+        of StateUniform State LawsUniversity of IowaUniversity of Iowa - CapitalsUniversity
+        of Northern IowaUniversity of Northern Iowa - CapitalsVeterans AffairsVeterans
+        Affairs CapitalsVocational Rehabilitation-capitalsWallace TechWarren County,
+        IAWorkforce Development\n\nShow 152550100 entries\n\n|  | Bid Number | Agency
+        | Contact | Title | Effective Date | Expiration Date |  |  |\n| --- | ---
+        | --- | --- | --- | --- | --- | --- | --- |\n|  |  |  |  |  |  |  |  |  |\n|
+        --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1589-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=69a626c5-25c6-4d86-bb43-02d7ef5428e7)
+        | Administrative Services, Dept | Katelyn Howells | Landscaping and Tree Services
+        for Iowa School for the Deaf | 4/21/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1701-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=84f5e7e6-2321-4619-816c-06d8afc6c2fe)
+        | Administrative Services, Dept | Tami Skadeland | Picnic Tables for DNR |
+        4/21/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [645-RFB-1647-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=b1560d97-2c9d-48cf-97d3-45d5a20afd60)
+        | Transportation | Teri Schulz | Construction of new Pole Building and Salt
+        Structure at Boone Maintenance Garage | 4/20/2025 | 5/12/2025 |  |  |\n| ![Open
+        Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1707-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=7ad981ce-9640-41bc-a6f9-7e60c72421d7)
+        | Administrative Services, Dept | Randy Bennett | Peanut Butter for CDC Warehouse
+        | 4/19/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1708-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=0f79c4f4-36de-484f-a01c-ad3a97ca3750)
+        | Administrative Services, Dept | Randy Bennett | Food Items for CDC Warehouse
+        | 4/19/2025 | 5/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-185-1586-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=79515513-6547-4453-abe8-145d62502edd)
+        | Administrative Services, Dept | Central Procurement | Iowa Lottery Print
+        and Loyalty Services | 4/18/2025 | 6/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [B04182025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=7cf4e337-437a-4d9d-8157-6ef886273b9b)
+        | Corrections Mt Pleasant | Shelly Masterson | Polaris Ranger 1000 | 4/18/2025
+        | 5/9/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFP-1696-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=079c20bc-5acb-4ffd-8ef9-e5875f402825)
+        | Administrative Services, Dept | Craig Trotter | Electrician Licensing Exam
+        Services | 4/18/2025 | 5/2/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFB927940-01](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=40749356-c754-4e03-a4aa-194e2f6b2828)
+        | Administrative Services, Dept | Construction Procurement | WRC Decentralization
+        Phase 4 | 4/17/2025 | 5/14/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-185-1586-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=b946dd00-44b5-48c0-9f7c-7660023c1610)
+        | Department of Management - IT | Steve Dawson | Iowa Lottery Print and Loyalty
+        Services | 4/14/2025 | 6/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1694-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=05fa144b-9a42-4c7b-a1a5-8747d199513a)
+        | Administrative Services, Dept | Randy Bennett | Food Items for CDC Warehouse
+        | 4/14/2025 | 5/1/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-SEP-2025 4](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=fe203b20-fba3-4dbe-b86d-d3d2d14a53f1)
+        | School - Southeast Polk CSD | Amy A''Hearn | Equipment Repair and Maintenance
+        Southeast Polk Schools | 4/14/2025 | 5/14/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1681-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=888f53ba-b84b-451f-9032-5b785af2f1a4)
+        | Administrative Services, Dept | Rick Tucker | Ford F450 with 18'' box \u0026
+        lift gate or Equivalent | 4/13/2025 | 4/24/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [JUV-26-TS-06-002](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=a321fee8-cb02-443e-9e2a-128df39e5ced)
+        | Judicial | Mary Loops | Youth Planning Services (YCPM) | 4/11/2025 | 5/28/2025
+        |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [IFB-SEP-2025 5](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=1d6b1b51-e5e5-4660-a6f3-3cbcaf47c0cd)
+        | School - Southeast Polk CSD | Amy A''Hearn | Combi Oven Purchase Southeast
+        Polk Schools - Willowbrook Elementary | 4/11/2025 | 5/8/2025 |  |  |\n\nShowing
+        1 to 15 of 55 entries\n\nPrevious1234Next\n\n    Respond with YES if this
+        appears to be a government procurement portal or NO if not.\n    After your
+        YES/NO answer, provide a brief explanation of your reasoning.\n","previous_response_id":null,"model":"gpt-4.1","tools":[],"tool_choice":"auto","text":{"format":{"type":"json_schema","name":"ProcurementPortalBasicEval","strict":true,"schema":{"type":"object","additionalProperties":false,"required":["reasoning","is_portal","has_opportunities","has_awards"],"properties":{"reasoning":{"type":"string","description":"A
+        brief explanation of your reasoning no longer than 50 words."},"is_portal":{"type":"boolean","description":"YES/NO
+        answer to whether this is a government procurement portal or award listings
+        page."},"has_opportunities":{"type":"boolean","description":"YES/NO answer
+        to whether this portal has active opportunities listed."},"has_awards":{"type":"boolean","description":"YES/NO
+        answer to whether this portal explicitly has awards listed."}}}}}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer BEARER_TOKEN
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 Apr 2025 00:06:38 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Openai-Version:
+      - '2020-10-01'
+      Openai-Organization:
+      - govly
+      X-Request-Id:
+      - req_e56a28ce9186e0ed9dcea5f5ecfa3517
+      Openai-Processing-Ms:
+      - '4114'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=uqGCCWQLGRccDrH4AEbTQ8cebezn6LA5c1Zks.8j8IM-1745453198-1.0.1.1-naqkcZXpouu.uCTHo2wqEEm8WIMSF.dY_GiX2C9RKrg5jyqseXAHco9Fv.IGw351Gx5NfnhbqDkgWNaJpE4hMVW8a3S1t1nrh6v5FVNm6rM;
+        path=/; expires=Thu, 24-Apr-25 00:36:38 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=KjR1Ce24cwGANzKb6DN2Rg7ZzZOxjRMebI2.7DXK9g0-1745453198187-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 93515afe49ad08e8-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "id": "resp_6809808a0b8881918549746533fb6c2e0c2c7e31a056d077",
+          "object": "response",
+          "created_at": 1745453194,
+          "status": "completed",
+          "error": null,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": null,
+          "model": "gpt-4.1-2025-04-14",
+          "output": [
+            {
+              "id": "msg_6809808b270c8191a0a2414c0980b67e0c2c7e31a056d077",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "text": "{\"reasoning\":\"The site is operated by the Iowa Department of Administrative Services, lists active bid opportunities, and has sections for awarded contracts and closed opportunities, matching features of a government procurement portal.\",\"is_portal\":true,\"has_opportunities\":true,\"has_awards\":true}"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "previous_response_id": null,
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "ProcurementPortalBasicEval",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "reasoning",
+                  "is_portal",
+                  "has_opportunities",
+                  "has_awards"
+                ],
+                "properties": {
+                  "reasoning": {
+                    "type": "string",
+                    "description": "A brief explanation of your reasoning no longer than 50 words."
+                  },
+                  "is_portal": {
+                    "type": "boolean",
+                    "description": "YES/NO answer to whether this is a government procurement portal or award listings page."
+                  },
+                  "has_opportunities": {
+                    "type": "boolean",
+                    "description": "YES/NO answer to whether this portal has active opportunities listed."
+                  },
+                  "has_awards": {
+                    "type": "boolean",
+                    "description": "YES/NO answer to whether this portal explicitly has awards listed."
+                  }
+                }
+              },
+              "strict": true
+            }
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 5829,
+            "input_tokens_details": {
+              "cached_tokens": 5742
+            },
+            "output_tokens": 58,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 5887
+          },
+          "user": null,
+          "metadata": {}
+        }
+  recorded_at: Thu, 24 Apr 2025 00:06:38 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/responses
+    body:
+      encoding: UTF-8
+      string: '{"input":"    Based on the following government procurement portal
+        content, extract the requested information:\n\n    DAS Bidding Opportunities
+        | Iowa Department of Administrative Services\n    URL: https://bidopportunities.iowa.gov/\n\n    Content:\n    [iframe](javascript:void(0))\n\n[Official
+        State of Iowa Website](https://www.iowa.gov/official-website)\n\n[Agencies
+        A-Z](https://directory.iowa.gov/organization/index)\n\n[Programs \u0026 Services](https://directory.iowa.gov/service/index)\n\n![Back
+        to home page](https://bidopportunities.iowa.gov/Content/ia-custom/img/logo-iowa.svg)\n\nIowa
+        Department of Administrative Services\n\n# State of Iowa Bid Opportunities\n\n#
+        Active Bid Opportunities\n\n[Awarded Contracts](http://bidopportunities.iowa.gov/Home/AwardedContracts)\n\n[Closed
+        Bid Opportunities](http://bidopportunities.iowa.gov/Home/ClosedBidOpportunities)\n\n##
+        Search Active Bid Opportunity Listing\n\nAll Agencies5th Judicial District
+        DCSAdministrative Rules ReviewAdministrative Services, DeptAEA PurchasingAg-Corn
+        PromotionAg-Develop AuthAg-Egg CouncilAg-Loess HillsAg-Soil ConsvAg-Soybean
+        PromotionAg-State FairAg-State Fair-CapitalsAg-Turkey MarketingAging Resources
+        of Central IowaAging Resources of Central IowaAgriculture and Land StewardshipAlcoholic
+        BeveragesAll State AgenciesAnamosa-Farm AccountsAnamosa-Iowa Prison IndustriesAttorney
+        GeneralAttorney General Prosecuting AttorneyAuditor of StateBoard of ParoleCitizen
+        AideCity of AmesCivil Commitment Unit for Sexual OffendersCivil Rights CommissionClay
+        CountyCollege AidComm Based CorrCommerce-AdministrationCommerce-Banking DivisionCommerce-CapitalsCommerce-Credit
+        UnionCommerce-InsuranceCommerce-UtilitiesComputer SupportConsumer AdvocateCorrections
+        AnamosaCorrections CapitalsCorrections Central OfficeCorrections ClarindaCorrections
+        Fort DodgeCorrections Fort MadisonCorrections Iowa Medical and Classification
+        CenterCorrections MitchellvilleCorrections Mt PleasantCorrections NewtonCorrections
+        Rockwell CityCorrections-Training AcademyCultural Affairs, Dept OfDepartment
+        of Corrections - all districtsDepartment of Corrections - District IDepartment
+        of Corrections - District IIDepartment of Corrections - District IIIDepartment
+        of Corrections - District IVDepartment of Corrections - District VIDepartment
+        of Corrections - District VIIDepartment of Corrections - District VIIIDepartment
+        of Corrections - StatewideDepartment of Health and Human ServicesDepartment
+        of Management - ITDept For The BlindDept For The Blind - CapitalsDept of Homeland
+        Security and Emergency ManagementDes Moines Area Community CollegeDes Moines
+        UniversityEast Central Iowa Council of GovernmentsEconomic Development-CapitalsEducation,
+        Dept OfEducation, Iowa PBSEducation, Voc RehabElderbridge Agency on AgingEthics
+        and Campaign Disclosure BoardExecutive CouncilFinance AuthorityGeneral Services
+        CapitalsGeneral Services-Fleet and MailGovernorGovernor''s Office of Drug
+        Control PolicyHistorical Society CapitalsHouseHuman RightsIncome Offset- College
+        AidInformation TechnologyInformation Technology-PrintingInspection and AppealsIowa
+        Central Community CollegeIowa Communications NetworkIowa Comprehensive Petroleum
+        Underground Storage Tank Fund BoardIowa Department on AgingIowa Economic Development
+        AuthorityIowa Juvenile Home-ToledoIowa Lottery AuthorityIowa Seed CapitalIowa
+        State UniversityIowa State University - CapitalsIowa Veterans HomeIowa Veterans
+        Home CapitalsIowa Workforce Development - Vocational Rehab ServicesIPERSIPERS-
+        CapitolsJohnson CountyJointJudicialJudicial-capitalsLaw Enforcement AcademyLegislative
+        Fiscal BureauLegislative Service BureauMadison CountyManagementNatural Resources,
+        Dept OfNatural Resources, Dept OfNatural Resources-capNone Selected - AllOffice
+        of Energy IndependenceOther Governmental EntitiesPersonnelProfessional Licensing/RegPublic
+        Defender''s AdminstrationPublic Defense, Dept OfPublic Defense-CapPublic Employment
+        Relations BoardPublic Health, Dept OfPublic Information BoardPublic Safety,
+        Dept OfPublic Safety-capitolsRacing \u0026 Gaming CommissionRegentsRevenueSchool
+        - All Saints Catholic Schools-DavenportSchool - All Saints School-Cedar RapidsSchool
+        - Aquin Elementary SchoolSchool - Beckman High SchoolSchool - Bishop Garrigan
+        SchoolsSchool - Blessed Sacrament School-Sioux CitySchool - Bosco Catholic
+        School SystemSchool - Calmar Festina Spillville (CFS) Catholic SchoolSchool
+        - Catholic Schools of Sioux CitySchool - Cedar Valley Catholic School SystemSchool
+        - Central Lutheran SchoolSchool - Christ The King SchoolSchool - Community
+        Lutheran SchoolSchool - Council Bluffs Area Catholic Education SystemSchool
+        - Desales Grade SchoolSchool - Dowling High SchoolSchool - Emmetsburg Catholic
+        SchoolSchool - Gehlen Catholic SchoolsSchool - Holy Family School System-Cedar
+        RapidsSchool - Holy Family Schools-DSMSchool - Holy Family System zz -DubuqueSchool
+        - Holy Trinity Catholic Schools Inc.-Ft.MadisonSchool - Holy Trinity School-DSMSchool
+        - Hull Christian SchoolSchool - Inwood Christian SchoolSchool - Iowa Mennonite
+        SchoolSchool - Ireton Christian SchoolSchool - John F Kennedy Cath SchSchool
+        - Kuemper Catholic School SystemSchool - Lutheran Interparish SchoolSchool
+        - Mater Dei Catholic ParishSchool - Netherlands Reformed Christian SchoolSchool
+        - Newman Catholic School SystemSchool - North Iowa Christian SchoolSchool
+        - Notre Dame Elementary School-BurlingtonSchool - Notre Dame School System-CrescoSchool
+        - Orange City Christian SchoolSchool - Oskaloosa Christian SchoolSchool -
+        Pella Christian Grade SchoolSchool - Pella Christian High SchoolSchool - REGINA
+        CATHOLIC EDUC CNTSchool - Regis Middle SchoolSchool - Rock Valley Christian
+        SchoolSchool - Sac and Fox Tribe of the Mississippi in IowaSchool - Sacred
+        Heart Elementary School-OelweinSchool - Sacred Heart School-BooneSchool -
+        Sacred Heart School-MaquoketaSchool - Sacred Heart School-MonticelloSchool
+        - Sacred Heart School-Sioux CitySchool - Sacred Heart School-SpencerSchool
+        - Sacred Heart School-West DSMSchool - Sanborn Christian SchoolSchool - Seton
+        Catholic School SystemSchool - Shelby County Catholic School SystemSchool
+        - Sheldon Christian SchoolSchool - Sioux Center Christian SchoolSchool - Spalding
+        Catholic School System-GranvilleSchool - St Anthony School-DSMSchool - St
+        Athanasius SchoolSchool - St Augustin SchoolSchool - St Cecilia SchoolSchool
+        - St Edmond Catholic SchSchool - St Francis Catholic School - MarshalltownSchool
+        - St Francis of Assisi-WDsmSchool - St Francis Xavier SchoolSchool - St John
+        Elementary SchoolSchool - St Joseph Community Catholic School-New HamptonSchool
+        - St Joseph Elementary School-DsmSchool - St Josephs School-BellevueSchool
+        - St Josephs School-MarionSchool - St Malachy SchoolSchool - St Mary High
+        School-StormLakeSchool - St Mary School-HumboldtSchool - St Mary\\\\Catherine-RemsenSchool
+        - St Marys School-GuttenbergSchool - St Marys School-ManchesterSchool - St
+        Matthew SchoolSchool - St Michael SchoolSchool - St Patrick School-AnamosaSchool
+        - St Patrick School-Cedar FallsSchool - St Patrick School-PerrySchool - St
+        Patrick School-WaukonSchool - St Patricks School-SheldonSchool - St Pauls
+        Lutheran School-SiouxCitySchool - St Pius X School-Cedar RapidsSchool - St
+        Pius X School-UrbandaleSchool - St Rose Of Lima SchoolSchool - St Theresa
+        SchoolSchool - St Thomas Aquinas SchoolSchool - Timothy Christian SchoolSchool
+        - Trinity Catholic SchoolSchool - Trinity Lutheran School-BooneSchool - Trinity
+        Lutheran School-CedarRapidsSchool - Unity Christian High SchoolSchool - Xavier
+        High SchoolSchool - Zion Lutheran School-DenisonSchool - Zion-St John Lutheran
+        School-PaullinaSchool - Adair-Casey CSDSchool - Adel DeSoto Minburn CSDSchool
+        - AGWSR CSDSchool - AHSTW CSDSchool - Akron Westfield CSDSchool - Albert City-Truesdale
+        CSDSchool - Albia CSDSchool - Alburnett CSDSchool - Alden CSDSchool - Algona
+        CSDSchool - Allamakee CSDSchool - Alta-Aurelia CSDSchool - Ames CSDSchool
+        - Anamosa CSDSchool - Andrew CSDSchool - Ankeny CSDSchool - Aplington-Parkersburg
+        CSDSchool - Ar-We-Va CSDSchool - Atlantic CSDSchool - Audubon CSDSchool -
+        Ballard CSDSchool - Baxter CSDSchool - BCLUW CSDSchool - Bedford CSDSchool
+        - Belle Plaine CSDSchool - Bellevue CSDSchool - Belmond-Klemme CSDSchool -
+        Bennett CSDSchool - Benton CSDSchool - Bettendorf CSDSchool - Bondurant-Farrar
+        CSDSchool - Boone CSDSchool - Boyden-Hull CSDSchool - Boyer Valley CSDSchool
+        - Brooklyn-Guernsey-Malcom CSDSchool - Burlington CSDSchool - CAL CSDSchool
+        - Calamus-Wheatland CSDSchool - CAM CSDSchool - Camanche CSDSchool - Cardinal
+        CSDSchool - Carlisle CSDSchool - Carroll CSDSchool - Cedar Falls CSDSchool
+        - Cedar Rapids CSDSchool - Center Point-Urbana CSDSchool - Centerville CSDSchool
+        - Central City CSDSchool - Central CSDSchool - Central Decatur CSDSchool -
+        Central DeWitt CSDSchool - Central Lee CSDSchool - Central Lyon CSDSchool
+        - Central Springs CSDSchool - Chariton CSDSchool - Charles City CSDSchool
+        - Charter Oak-Ute CSDSchool - Cherokee CSDSchool - Clarinda CSDSchool - Clarion-Goldfield-Dows
+        CSDSchool - Clarke CSDSchool - Clarksville CSDSchool - Clay Central-Everly
+        CSDSchool - Clayton Ridge CSDSchool - Clear Creek Amana CSDSchool - Clear
+        Lake CSDSchool - Clinton CSDSchool - Colfax-Mingo CSDSchool - College CSDSchool
+        - Collins-Maxwell CSDSchool - Colo-NESCO CSDSchool - Columbus CSDSchool -
+        Coon Rapids-Bayard CSDSchool - Corning CSDSchool - Council Bluffs CSDSchool
+        - Creston CSDSchool - Dallas Center-Grimes CSDSchool - Danville CSDSchool
+        - Davenport CSDSchool - Davis County CSDSchool - Decorah Community CSDSchool
+        - Delwood CSDSchool - Denison CSDSchool - Denver CSDSchool - Des Moines Independent
+        SDSchool - Diagonal CSDSchool - Dike-New Hartford CSDSchool - Dubuque CSDSchool
+        - Dunkerton CSDSchool - Durant CSDSchool - Eagle Grove CSDSchool - Earlham
+        CSDSchool - East Buchanan CSDSchool - East Marshall CSDSchool - East Mills
+        CSDSchool - East Sac County CSDSchool - East Union CSDSchool - Eastern Allamakee
+        CSDSchool - Easton Valley CSDSchool - Eddyville-Blakesburg- CSDSchool - Edgewood-Colesburg
+        CSDSchool - Eldora-New Providence CSDSchool - Emmetsburg CSDSchool - English
+        Valleys CSDSchool - Essex CSDSchool - Estherville Lincoln CSDSchool - Exira-Elk
+        Horn- CSDSchool - Fairfield CSDSchool - Forest City CSDSchool - Fort Dodge
+        CSDSchool - Fort Madison CSDSchool - Fremont-Mills CSDSchool - Galva-Holstein
+        CSDSchool - Garner-Hayfield-Ventura CSDSchool - George-Little Rock CSDSchool
+        - Gilbert CSDSchool - Gilmore City-Bradgate CSDSchool - Gladbrook-Reinbeck
+        CSDSchool - Glenwood CSDSchool - Glidden-Ralston CSDSchool - GMG CSDSchool
+        - Graettinger-Terril CSDSchool - Greene County CSDSchool - Grinnell-Newburg
+        CSDSchool - Griswold CSDSchool - Grundy Center CSDSchool - Guthrie Center
+        CSDSchool - H-L-V CSDSchool - Hamburg CSDSchool - Hampton-Dumont CSDSchool
+        - Harlan CSDSchool - Harmony CSDSchool - Harris-Lake Park CSDSchool - Hartley-Melvin-Sanborn
+        CSDSchool - Highland CSDSchool - Hinton CSDSchool - Howard-Winneshiek CSDSchool
+        - Hubbard-Radcliffe CSDSchool - Hudson CSDSchool - Humboldt CSDSchool - IKM-Manning
+        CSDSchool - Independence CSDSchool - Indianola CSDSchool - Interstate 35 CSDSchool
+        - Iowa City CSDSchool - Iowa Falls CSDSchool - Iowa Valley CSDSchool - Janesville
+        Consolidated CSDSchool - Jesup CSDSchool - Johnston CSDSchool - Keokuk CSDSchool
+        - Keota CSDSchool - Kingsley-Pierson CSDSchool - Knoxville CSDSchool - Lake
+        Mills CSDSchool - Lamoni CSDSchool - Laurens-Marathon CSDSchool - Lawton-Bronson
+        CSDSchool - Le Mars CSDSchool - Lenox CSDSchool - Lewis Central CSDSchool
+        - Linn-Mar CSDSchool - Lisbon CSDSchool - Logan-Magnolia CSDSchool - Lone
+        Tree CSDSchool - Louisa-Muscatine CSDSchool - LuVerne CSDSchool - Lynnville-Sully
+        CSDSchool - Madrid CSDSchool - Manson Northwest Webster CSDSchool - Maple
+        Valley-Anthon Oto CSDSchool - Maquoketa CSDSchool - Maquoketa Valley CSDSchool
+        - Marcus-Meriden-Cleghorn CSDSchool - Marion Independent CSDSchool - Marshalltown
+        CSDSchool - Martensdale-St Marys CSDSchool - Mason City CSDSchool - Mediapolis
+        CSDSchool - Melcher-Dallas CSDSchool - MFL MarMac CSDSchool - Mid-Prairie
+        CSDSchool - Midland CSDSchool - Missouri Valley CSDSchool - MOC-Floyd Valley
+        CSDSchool - Montezuma CSDSchool - Monticello CSDSchool - Moravia CSDSchool
+        - Mormon Trail CSDSchool - Morning Sun CSDSchool - Moulton-Udell CSDSchool
+        - Mount Ayr CSDSchool - Mount Pleasant CSDSchool - Mount Vernon CSDSchool
+        - Murray CSDSchool - Muscatine CSDSchool - Nashua-Plainfield CSDSchool - Nevada
+        CSDSchool - New Hampton CSDSchool - New London CSDSchool - Newell-Fonda CSDSchool
+        - Newton CSDSchool - Nodaway Valley CSDSchool - North Butler CSDSchool - North
+        Cedar CSDSchool - North Fayette Valley CSDSchool - North Iowa CSDSchool -
+        North Kossuth CSDSchool - North Linn CSDSchool - North Mahaska CSDSchool -
+        North Polk CSDSchool - North Scott CSDSchool - North Tama County CSDSchool
+        - North Union CSDSchool - North Winneshiek CSDSchool - Northeast CSDSchool
+        - Northeast Hamilton CSDSchool - Northwood-Kensett CSDSchool - Norwalk CSDSchool
+        - Odebolt Arthur Battle Creek Ida Grove CSDSchool - Oelwein CSDSchool - Ogden
+        CSDSchool - Okoboji CSDSchool - Olin Consolidated CSDSchool - Orient-Macksburg
+        CSDSchool - Osage CSDSchool - Oskaloosa CSDSchool - Ottumwa CSDSchool - Panorama
+        CSDSchool - Paton-Churdan CSDSchool - PCM CSDSchool - Pekin CSDSchool - Pella
+        CSDSchool - Perry CSDSchool - Pleasant Valley CSDSchool - Pleasantville CSDSchool
+        - Pocahontas Area CSDSchool - Postville CSDSchool - Prairie Valley CSDSchool
+        - Red Oak CSDSchool - Remsen-Union CSDSchool - Riceville CSDSchool - River
+        Valley CSDSchool - Riverside CSDSchool - Rock Valley CSDSchool - Roland-Story
+        CSDSchool - Rudd-Rockford-Marble Rk CSDSchool - Ruthven-Ayrshire CSDSchool
+        - Saydel CSDSchool - Schaller-Crestland CSDSchool - Schleswig CSDSchool -
+        Sergeant Bluff-Luton CSDSchool - Seymour CSDSchool - Sheldon CSDSchool - Shenandoah
+        CSDSchool - Sibley-Ocheyedan CSDSchool - Sidney CSDSchool - Sigourney CSDSchool
+        - Sioux Center CSDSchool - Sioux Central CSDSchool - Sioux City CSDSchool
+        - Solon CSDSchool - South Central Calhoun CSDSchool - South Hamilton CSDSchool
+        - South O''Brien CSDSchool - South Page CSDSchool - South Tama County CSDSchool
+        - South Winneshiek CSDSchool - Southeast Polk CSDSchool - Southeast Warren
+        CSDSchool - Southeast Webster Grand CSDSchool - Spencer CSDSchool - Spirit
+        Lake CSDSchool - Springville CSDSchool - St Ansgar CSDSchool - Stanton CSDSchool
+        - Starmont CSDSchool - Storm Lake CSDSchool - Stratford CSDSchool - Sumner-Fredericksburg
+        CSDSchool - Tipton CSDSchool - Treynor CSDSchool - Tri-Center CSDSchool -
+        Tri-County CSDSchool - Tripoli CSDSchool - Turkey Valley CSDSchool - Twin
+        Cedars CSDSchool - Twin Rivers CSDSchool - Underwood CSDSchool - Union CSDSchool
+        - United CSDSchool - Urbandale CSDSchool - Van Buren CSDSchool - Van Meter
+        CSDSchool - Villisca CSDSchool - Vinton-Shellsburg CSDSchool - Waco CSDSchool
+        - Wapello CSDSchool - Wapsie Valley CSDSchool - Washington CSDSchool - Waterloo
+        CSDSchool - Waukee CSDSchool - Waverly-Shell Rock CSDSchool - Wayne CSDSchool
+        - Webster City CSDSchool - West Bend-Mallard CSDSchool - West Branch CSDSchool
+        - West Burlington Ind CSDSchool - West Central CSDSchool - West Central Valley
+        CSDSchool - West Delaware County CSDSchool - West Des Moines CSDSchool - West
+        Fork CSDSchool - West Hancock CSDSchool - West Harrison CSDSchool - West Liberty
+        CSDSchool - West Lyon CSDSchool - West Marshall CSDSchool - West Monona CSDSchool
+        - West Sioux CSDSchool - Western Dubuque CSDSchool - Westwood CSDSchool -
+        Whiting CSDSchool - Williamsburg CSDSchool - Wilton CSDSchool - Winfield-Mt
+        Union CSDSchool - Winterset CSDSchool - Woodbine CSDSchool - Woodbury Central
+        CSDSchool - Woodward-Granger CSDSecretary Of StateSenateSourcewellState \u0026
+        Federal RegulationsState Accounting Trust AcctsState FairState LibraryTransportationTransportation-CapTreasurer
+        of StateUniform State LawsUniversity of IowaUniversity of Iowa - CapitalsUniversity
+        of Northern IowaUniversity of Northern Iowa - CapitalsVeterans AffairsVeterans
+        Affairs CapitalsVocational Rehabilitation-capitalsWallace TechWarren County,
+        IAWorkforce Development\n\nShow 152550100 entries\n\n|  | Bid Number | Agency
+        | Contact | Title | Effective Date | Expiration Date |  |  |\n| --- | ---
+        | --- | --- | --- | --- | --- | --- | --- |\n|  |  |  |  |  |  |  |  |  |\n|
+        --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1589-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=69a626c5-25c6-4d86-bb43-02d7ef5428e7)
+        | Administrative Services, Dept | Katelyn Howells | Landscaping and Tree Services
+        for Iowa School for the Deaf | 4/21/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1701-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=84f5e7e6-2321-4619-816c-06d8afc6c2fe)
+        | Administrative Services, Dept | Tami Skadeland | Picnic Tables for DNR |
+        4/21/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [645-RFB-1647-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=b1560d97-2c9d-48cf-97d3-45d5a20afd60)
+        | Transportation | Teri Schulz | Construction of new Pole Building and Salt
+        Structure at Boone Maintenance Garage | 4/20/2025 | 5/12/2025 |  |  |\n| ![Open
+        Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1707-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=7ad981ce-9640-41bc-a6f9-7e60c72421d7)
+        | Administrative Services, Dept | Randy Bennett | Peanut Butter for CDC Warehouse
+        | 4/19/2025 | 5/5/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1708-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=0f79c4f4-36de-484f-a01c-ad3a97ca3750)
+        | Administrative Services, Dept | Randy Bennett | Food Items for CDC Warehouse
+        | 4/19/2025 | 5/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-185-1586-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=79515513-6547-4453-abe8-145d62502edd)
+        | Administrative Services, Dept | Central Procurement | Iowa Lottery Print
+        and Loyalty Services | 4/18/2025 | 6/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [B04182025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=7cf4e337-437a-4d9d-8157-6ef886273b9b)
+        | Corrections Mt Pleasant | Shelly Masterson | Polaris Ranger 1000 | 4/18/2025
+        | 5/9/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFP-1696-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=079c20bc-5acb-4ffd-8ef9-e5875f402825)
+        | Administrative Services, Dept | Craig Trotter | Electrician Licensing Exam
+        Services | 4/18/2025 | 5/2/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFB927940-01](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=40749356-c754-4e03-a4aa-194e2f6b2828)
+        | Administrative Services, Dept | Construction Procurement | WRC Decentralization
+        Phase 4 | 4/17/2025 | 5/14/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-185-1586-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=b946dd00-44b5-48c0-9f7c-7660023c1610)
+        | Department of Management - IT | Steve Dawson | Iowa Lottery Print and Loyalty
+        Services | 4/14/2025 | 6/6/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1694-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=05fa144b-9a42-4c7b-a1a5-8747d199513a)
+        | Administrative Services, Dept | Randy Bennett | Food Items for CDC Warehouse
+        | 4/14/2025 | 5/1/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [RFP-SEP-2025 4](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=fe203b20-fba3-4dbe-b86d-d3d2d14a53f1)
+        | School - Southeast Polk CSD | Amy A''Hearn | Equipment Repair and Maintenance
+        Southeast Polk Schools | 4/14/2025 | 5/14/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [005-RFB-1681-2025](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=888f53ba-b84b-451f-9032-5b785af2f1a4)
+        | Administrative Services, Dept | Rick Tucker | Ford F450 with 18'' box \u0026
+        lift gate or Equivalent | 4/13/2025 | 4/24/2025 |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [JUV-26-TS-06-002](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=a321fee8-cb02-443e-9e2a-128df39e5ced)
+        | Judicial | Mary Loops | Youth Planning Services (YCPM) | 4/11/2025 | 5/28/2025
+        |  |  |\n| ![Open Details](https://bidopportunities.iowa.gov/Content/Images/details_open.png)
+        | [IFB-SEP-2025 5](https://bidopportunities.iowa.gov/Home/BidInfo?bidId=1d6b1b51-e5e5-4660-a6f3-3cbcaf47c0cd)
+        | School - Southeast Polk CSD | Amy A''Hearn | Combi Oven Purchase Southeast
+        Polk Schools - Willowbrook Elementary | 4/11/2025 | 5/8/2025 |  |  |\n\nShowing
+        1 to 15 of 55 entries\n\nPrevious1234Next\n\n    Please provide the following
+        information as a structured JSON object.\n","previous_response_id":"resp_6809808a0b8881918549746533fb6c2e0c2c7e31a056d077","model":"gpt-4.1","tools":[],"tool_choice":"auto","text":{"format":{"type":"json_schema","name":"ProcurementPortalBasicEval","strict":true,"schema":{"type":"object","additionalProperties":false,"required":["reasoning","is_portal","has_opportunities","has_awards"],"properties":{"reasoning":{"type":"string","description":"A
+        brief explanation of your reasoning no longer than 50 words."},"is_portal":{"type":"boolean","description":"YES/NO
+        answer to whether this is a government procurement portal or award listings
+        page."},"has_opportunities":{"type":"boolean","description":"YES/NO answer
+        to whether this portal has active opportunities listed."},"has_awards":{"type":"boolean","description":"YES/NO
+        answer to whether this portal explicitly has awards listed."}}}}}}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer BEARER_TOKEN
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 Apr 2025 00:06:59 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Openai-Version:
+      - '2020-10-01'
+      Openai-Organization:
+      - govly
+      X-Request-Id:
+      - req_f63dc8c43600271ff657d1fd815b2e62
+      Openai-Processing-Ms:
+      - '21564'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Cf-Cache-Status:
+      - DYNAMIC
+      Set-Cookie:
+      - __cf_bm=yAWbqRE3wkmdRU2_rKRu5uBW_qUvYfBFpJ_Rtq69dBc-1745453219-1.0.1.1-KxkZheRLCOcSnJcjdiFl_jrbfY755_DgvaBT88qoat5wEUsDnUjoHdVXermwKzY.ZV.7HPSRqnP61U.hzorG1D9N_J7eT.hRevu4iiQfa3A;
+        path=/; expires=Thu, 24-Apr-25 00:36:59 GMT; domain=.api.openai.com; HttpOnly;
+        Secure; SameSite=None
+      - _cfuvid=sNtEbmyD29.XiCP8X4_PejPpHWeLyMyvj1Ud0TjRY6w-1745453219969-0.0.1.1-604800000;
+        path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None
+      X-Content-Type-Options:
+      - nosniff
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 93515b19588a2f26-LAX
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "id": "resp_6809808e60688191964288ad4b43e9750c2c7e31a056d077",
+          "object": "response",
+          "created_at": 1745453198,
+          "status": "completed",
+          "error": null,
+          "incomplete_details": null,
+          "instructions": null,
+          "max_output_tokens": null,
+          "model": "gpt-4.1-2025-04-14",
+          "output": [
+            {
+              "id": "msg_6809808ffa488191b3346b321022405b0c2c7e31a056d077",
+              "type": "message",
+              "status": "completed",
+              "content": [
+                {
+                  "type": "output_text",
+                  "annotations": [],
+                  "text": "{\n  \"reasoning\": \"Extracted from the provided table listing active bid opportunities on the Iowa procurement portal.\",\n  \"is_portal\": true,\n  \"has_opportunities\": true,\n  \"has_awards\": true\n \t}\n\n \t\t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n\t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n\t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n\t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n\t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n\t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n\t\t                         \n \t\t                         \n \t\n\n \t\t\t                         \n \t\t                         \n \n\n\t\t                        \n \t\t                         \n \n\n \t\t                        \n \t\t                         \n \n\n \t\t                        \n \t\t                         \n \n\n\t\t                        \n \t\t                         \n \n\n \t\t                        \n \t\t                         \n \n\n\t\t                        \n \t\t                         \n \n\n \t\t                        \n \t\t                         \n \n\n \t\t                        \n \t\t                         \n \n\n \t\t                        \n \t\t                         \n \n\n\t\t                        \n \t\t                         \n \n\n\t\t\t\t   \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \n\n \t\t                         \n \t\t                         \n \t\n\n \t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \t\n\n \t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n\t\t                          \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n \t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n \t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n \t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n\t\t                           \n \t\t                         \n \n\n \t\t                          \n \t\t                         \n \n\n\t\t                         \n\t\t"
+                }
+              ],
+              "role": "assistant"
+            }
+          ],
+          "parallel_tool_calls": true,
+          "previous_response_id": "resp_6809808a0b8881918549746533fb6c2e0c2c7e31a056d077",
+          "reasoning": {
+            "effort": null,
+            "summary": null
+          },
+          "service_tier": "default",
+          "store": true,
+          "temperature": 1.0,
+          "text": {
+            "format": {
+              "type": "json_schema",
+              "description": null,
+              "name": "ProcurementPortalBasicEval",
+              "schema": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "reasoning",
+                  "is_portal",
+                  "has_opportunities",
+                  "has_awards"
+                ],
+                "properties": {
+                  "reasoning": {
+                    "type": "string",
+                    "description": "A brief explanation of your reasoning no longer than 50 words."
+                  },
+                  "is_portal": {
+                    "type": "boolean",
+                    "description": "YES/NO answer to whether this is a government procurement portal or award listings page."
+                  },
+                  "has_opportunities": {
+                    "type": "boolean",
+                    "description": "YES/NO answer to whether this portal has active opportunities listed."
+                  },
+                  "has_awards": {
+                    "type": "boolean",
+                    "description": "YES/NO answer to whether this portal explicitly has awards listed."
+                  }
+                }
+              },
+              "strict": true
+            }
+          },
+          "tool_choice": "auto",
+          "tools": [],
+          "top_p": 1.0,
+          "truncation": "disabled",
+          "usage": {
+            "input_tokens": 11502,
+            "input_tokens_details": {
+              "cached_tokens": 5870
+            },
+            "output_tokens": 798,
+            "output_tokens_details": {
+              "reasoning_tokens": 0
+            },
+            "total_tokens": 12300
+          },
+          "user": null,
+          "metadata": {}
+        }
+  recorded_at: Thu, 24 Apr 2025 00:06:59 GMT
+recorded_with: VCR 6.3.1

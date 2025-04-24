@@ -1,0 +1,24 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.example.com/users/1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - MyApp/1.0
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"id":1,"name":"John Doe","email":"john@example.com"}'
+recorded_at: Sun, 23 Apr 2025 21:10:30 GMT

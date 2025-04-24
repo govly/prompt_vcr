@@ -8,15 +8,9 @@ require "prompt_vcr/configuration"
 
 module PromptVCR
   # Returns the path where all cassettes are stored
-  # If custom path is not configured, defaults to the host app's test/vcr_cassettes directory
+  # Uses the default from configuration if not specified
   def self.cassettes_path
-    configuration.cassettes_path || Rails.root.join("test", "vcr_cassettes")
-  end
-  
-  # Returns the path where prompt cassettes are stored
-  # If custom path is not configured, defaults to the host app's test/vcr_cassettes/prompts directory
-  def self.prompt_cassettes_path
-    configuration.prompt_cassettes_path || Rails.root.join("test", "vcr_cassettes", "prompts")
+    configuration.cassettes_path
   end
 end
 

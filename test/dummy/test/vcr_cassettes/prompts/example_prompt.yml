@@ -1,0 +1,34 @@
+---
+name: Example Prompt Cassette
+metadata:
+  name: Weather Query
+  provider: OpenAI
+  type: prompt
+  created_at: '2025-04-23T14:30:00Z'
+http_interactions:
+- request:
+    method: post
+    uri: https://api.openai.com/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-4","messages":[{"role":"system","content":"You are a helpful
+        assistant."},{"role":"user","content":"What''s the weather like today?"}],"temperature":0.7}'
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer sk-xxxxxxxxxxxxxxxxxxxx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"id":"chatcmpl-abc123","object":"chat.completion","created":1713924001,"model":"gpt-4","choices":[{"index":0,"message":{"role":"assistant","content":"I
+        don''t have access to real-time information like weather. To get accurate weather
+        information for today, you could check a weather service website or app, use
+        a search engine, or look outside."},"finish_reason":"stop"}],"usage":{"prompt_tokens":25,"completion_tokens":38,"total_tokens":63}}'
+recorded_at: Sun, 23 Apr 2025 21:10:01 GMT

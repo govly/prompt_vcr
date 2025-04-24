@@ -1,0 +1,108 @@
+<%
+# This partial displays structured output for AI responses
+# Parameters:
+# - structured_data: The structured data hash from the controller
+# - response_string: The raw response string (for fallback/raw display)
+%>
+
+<% if structured_data && structured_data[:has_structured_data] %>
+  <!-- Tabbed interface for raw response and structured view -->
+  <div class="border border-gray-200 dark:border-gray-700 rounded-md mb-4 overflow-hidden">
+    <div class="bg-white dark:bg-gray-700 border-b border-gray-200 dark:border-gray-700 px-4 py-3">
+      <div class="flex space-x-4">
+        <button class="text-sm font-medium text-gray-600 hover:text-gray-800 dark:text-gray-300 dark:hover:text-gray-100 border-b-2 border-slate-500 py-2 px-1" id="raw-tab" onclick="switchTab('raw', 'structured')">Raw Response</button>
+        <button class="text-sm font-medium text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 py-2 px-1" id="structured-tab" onclick="switchTab('structured', 'raw')">Structured Output</button>
+      </div>
+    </div>
+
+    <div id="raw-panel" class="block">
+      <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-b-md overflow-auto">
+        <div class="prose dark:prose-invert prose-sm max-w-none">
+          <pre class="whitespace-pre-wrap break-words"><%= response_string %></pre>
+        </div>
+      </div>
+    </div>
+
+    <div id="structured-panel" class="hidden">
+      <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-b-md overflow-auto">
+        <% if structured_data[:structured_output].present? %>
+          <% structured_data[:structured_output].each do |field| %>
+            <div class="prose dark:prose-invert prose-sm max-w-none">
+              <pre class="whitespace-pre-wrap break-words"><%= JSON.pretty_generate(JSON.parse(field[:value])) rescue field[:value] %></pre>
+            </div>
+          <% end %>
+        <% elsif structured_data[:content].present? %>
+           <div class="prose dark:prose-invert prose-sm max-w-none">
+              <pre class="whitespace-pre-wrap break-words"><%= structured_data[:content].to_s.force_encoding('UTF-8') %></pre>
+            </div>
+
+          <% if structured_data[:json_response].present? %>
+            <div class="prose dark:prose-invert prose-sm max-w-none">
+              <pre class="whitespace-pre-wrap break-words"><%= structured_data[:formatted_json_response] %></pre>
+            </div>
+          <% end %>
+        <% elsif structured_data[:json_response].present? %>
+          <!-- Extract and display key metadata from JSON response -->
+          <%
+            # Check for different key response properties based on API
+            json_data = structured_data[:json_response]
+
+            # Extract key metrics based on known API formats
+            metadata = {}
+
+            if json_data["model"]
+              metadata["Model"] = json_data["model"]
+            end
+
+            if json_data["usage"]
+              metadata["Total Tokens"] = json_data["usage"]["total_tokens"] if json_data["usage"]["total_tokens"]
+              metadata["Prompt Tokens"] = json_data["usage"]["prompt_tokens"] if json_data["usage"]["prompt_tokens"]
+              metadata["Completion Tokens"] = json_data["usage"]["completion_tokens"] if json_data["usage"]["completion_tokens"]
+            end
+
+            if json_data["finish_reason"] || json_data["choices"]&.first&.[]("finish_reason")
+              metadata["Finish Reason"] = json_data["finish_reason"] || json_data["choices"].first["finish_reason"]
+            end
+
+            if json_data["system_fingerprint"]
+              metadata["System Fingerprint"] = json_data["system_fingerprint"]
+            end
+          %>
+
+          <% if metadata.any? %>
+            <div class="mb-4">
+              <h5 class="text-xs font-medium text-gray-600 dark:text-gray-400 mb-1">Response Metadata</h5>
+              <div class="grid grid-cols-2 gap-2">
+                <% metadata.each do |key, value| %>
+                  <div class="bg-white dark:bg-gray-800 p-2 rounded border border-gray-200 dark:border-gray-700">
+                    <span class="block text-xs text-gray-500 dark:text-gray-400"><%= key %></span>
+                    <span class="font-medium text-sm"><%= value %></span>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+
+          <!-- For debugging: show full response structure button -->
+          <details class="mt-4">
+            <summary class="text-xs text-gray-500 cursor-pointer p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">View Complete Response Structure</summary>
+            <div class="mt-2 bg-white dark:bg-gray-800 p-3 rounded border border-gray-200 dark:border-gray-700 overflow-auto max-h-72">
+              <pre class="text-xs"><%= structured_data[:formatted_json_response] %></pre>
+            </div>
+          </details>
+        <% else %>
+          <div class="text-center p-4 text-gray-500">
+            <p>No structured data available</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% else %>
+  <!-- Direct response display -->
+  <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-md overflow-auto">
+    <div class="prose dark:prose-invert prose-sm max-w-none">
+      <pre class="whitespace-pre-wrap break-words"><%= response_string %></pre>
+    </div>
+  </div>
+<% end %>
