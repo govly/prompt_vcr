@@ -69,7 +69,7 @@
                   </span>
                 <% elsif cassette[:has_prompts] %>
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 dark:bg-green-800 dark:text-green-100">
-                    AI Prompt
+                    Prompt
                   </span>
                 <% else %>
                   <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800 dark:bg-blue-800 dark:text-blue-100">
@@ -84,8 +84,18 @@
                   <span class="text-gray-400 dark:text-gray-500 text-xs">—</span>
                 <% end %>
               </td>
-              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                <%= metadata&.dig(:created_at) ? metadata[:created_at].strftime("%Y-%m-%d %H:%M") : "Unknown" %>
+              <td class="px-6 py-4 whitespace-nowrap text-sm">
+                <% if metadata&.dig(:created_at) %>
+                  <% if metadata[:created_at] < 3.months.ago %>
+                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800 dark:bg-red-800 dark:text-red-100">
+                      <%= metadata[:created_at].strftime("%Y-%m-%d %H:%M") %>
+                    </span>
+                  <% else %>
+                    <span class="text-gray-500 dark:text-gray-400"><%= metadata[:created_at].strftime("%Y-%m-%d %H:%M") %></span>
+                  <% end %>
+                <% else %>
+                  <span class="text-gray-500 dark:text-gray-400">Unknown</span>
+                <% end %>
               </td>
               <td class="px-6 py-4 whitespace-nowrap text-sm font-medium dark:font-medium flex space-x-3">
                 <%= link_to "View", prompt_vcr.cassette_path(cassette[:name]), class: "text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-300" %>

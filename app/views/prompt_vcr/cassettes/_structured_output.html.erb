@@ -16,7 +16,7 @@
     </div>
 
     <div id="raw-panel" class="block">
-      <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-b-md overflow-auto">
+      <div class="bg-gray-100 dark:bg-gray-700 mt-2 rounded-md overflow-auto max-h-[70vh]">
         <div class="prose dark:prose-invert prose-sm max-w-none">
           <pre class="whitespace-pre-wrap break-words"><%= response_string %></pre>
         </div>
@@ -24,7 +24,7 @@
     </div>
 
     <div id="structured-panel" class="hidden">
-      <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-b-md overflow-auto">
+      <div class="bg-gray-100 dark:bg-gray-700 mt-2 rounded-md overflow-auto max-h-[70vh]">
         <% if structured_data[:structured_output].present? %>
           <% structured_data[:structured_output].each do |field| %>
             <div class="prose dark:prose-invert prose-sm max-w-none">
@@ -100,9 +100,9 @@
   </div>
 <% else %>
   <!-- Direct response display -->
-  <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-md overflow-auto">
+  <div class="bg-gray-100 dark:bg-gray-700 mt-2 rounded-md overflow-auto max-h-[70vh]">
     <div class="prose dark:prose-invert prose-sm max-w-none">
-      <pre class="whitespace-pre-wrap break-words"><%= response_string %></pre>
+      <pre class="whitespace-pre-wrap break-words"><%= JSON.pretty_generate(JSON.parse(response_string)) rescue response_string %></pre>
     </div>
   </div>
 <% end %>
